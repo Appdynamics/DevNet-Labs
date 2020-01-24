@@ -15,8 +15,16 @@ preseed.cfg eol=lf
 *.bat eol=crlf
 Autounattend.xml eol=crlf
 
+# Force text on these files
+*.jsp text
+
 # Force binary on these files
 *.cer binary
 *.gz binary
 *.png binary
 *.zip binary
+*.war binary
+*.png binary
+*.gif binary
+*.jpg binary
+*.psd binary
