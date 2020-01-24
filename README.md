@@ -1,2 +1,2 @@
-# Supercar-Trader
-Sample App for Labs with a Web UI and Java Service running in Tomcat 
+# DevNet-Labs
+A series of AppDynamics learning labs on DevNet
