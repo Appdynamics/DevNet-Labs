@@ -1,0 +1,118 @@
+a{
+color: #e8e8e8;}
+
+table
+{ text-align: center;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+color: #e8e8e8;
+background-color: #222a2d;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+td.home
+{ text-align: left;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+color: #e8e8e8;
+width: 203px;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+td.ad
+{ text-align: center;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+background-color: #222a2d;
+border: 0px #222a2d solid;
+border-collapse: collapse;
+border-spacing: 30px;}
+
+
+img
+{ text-align: left;
+background-color: #222a2d;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+tr.grey
+{ background-color: #222a2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+td
+{
+text-align: left;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+table.car
+{
+background-color: #222a2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+width: 1050px;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+p.car
+{
+background-color: #232b2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+width: 1048px;
+color: #e8e8e8;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+p
+{
+background-color: #222a2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+color: #e8e8e8;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+p.normal
+{
+background-color: #222a2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+width:550;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+p.summary
+{
+text-align: left;
+background-color: #222a2d;
+font-family: Verdana;
+font-weight: normal;
+font-size: 14px;
+width: 430px;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
