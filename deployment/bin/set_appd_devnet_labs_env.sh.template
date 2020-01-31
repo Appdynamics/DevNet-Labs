@@ -5,8 +5,8 @@
 # ------------------------------------------------------------------------------
 # set kickstart home.
 # ------------------------------------------------------------------------------
-# [optional] kickstart home (defaults to '/opt/appd-cloud-kickstart').
-kickstart_home="/opt/appd-cloud-kickstart"
+# [optional] kickstart home (defaults to '/opt/devnet-labs').
+kickstart_home="/opt/devnet-labs"
 export kickstart_home
 
 # ------------------------------------------------------------------------------
@@ -60,11 +60,11 @@ export appd_password
 #export appd_platform_server_port
 
 # [optional] platform name (defaults to 'My Platform').
-appd_platform_name="AppDynamics Cloud Kickstart"
+appd_platform_name="AppDynamics DevNet Labs"
 export appd_platform_name
 
 # [optional] platform description (defaults to 'My platform config.').
-appd_platform_description="This is a demo configuration for the AppDynamics Cloud Kickstart Project."
+appd_platform_description="This is a demo configuration for AppDynamics DevNet labs."
 export appd_platform_description
 
 # [optional] platform base installation directory for products (defaults to 'product').
@@ -308,8 +308,8 @@ export aws_cli_user_config
 #       configuration. To successfully connect to your AWS environment, you should set 'AWS_ACCESS_KEY_ID'
 #       and 'AWS_SECRET_ACCESS_KEY'.
 
-# [optional] aws cli default region name (defaults to 'us-east-1' [N. Virginia]).
-aws_cli_default_region_name="us-east-1"
+# [optional] aws cli default region name (defaults to 'us-west-2' [Oregon]).
+aws_cli_default_region_name="us-west-2"
 export aws_cli_default_region_name
 
 # [optional] aws cli default output format (defaults to 'json').
@@ -325,5 +325,5 @@ export aws_ami_owner
 # aws region to create packer build ami's.
 # current valid regions are:
 #   'ap-southeast-2', eu-central-1', 'eu-west-2', 'eu-west-3, 'sa-east-1', 'us-east-1', 'us-east-2', 'us-west-1', 'us-west-2'
-aws_ami_region="us-east-1"
+aws_ami_region="us-west-2"
 export aws_ami_region
