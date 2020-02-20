@@ -14,8 +14,8 @@ try {
 <form name="searchForm" action="search.do?query=search" method="POST">
     <p class="normal"><img src="images/line.gif"></p>
     <p class="normal">Please enter your search criteria, for example 'Lamborghini', or '911'<br>
-        <br><input type="text" name="criteria" />&nbsp;
-        <input type="image" src="images/search_button.gif"/ align="absmiddle"><br>
+        <br><input type="text" id="criteria" name="criteria" />&nbsp;
+        <input type="image" id="commit" name="commit" src="images/search_button.gif"/ align="absmiddle"><br>
         <% if (request.getParameter("criteria") != null) { %>
         <br>Your search '<%=request.getParameter("criteria")%>' returned the following <%=((ArrayList)request.getAttribute("cars")).size()%> results:
         <% }%></p>

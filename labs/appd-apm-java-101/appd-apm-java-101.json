@@ -1,0 +1,42 @@
+{
+    "labId": "appd-apm-java-101",
+    "title": "Getting Started with AppDynamics Application Monitoring",
+    "slug": "Quickly learn how to use AppDynamics to monitor the health of your application services.  In this example, we show how to quickly install the Application Performance Monitoring (APM) module, how to add the code needed to monitor your application&#39;s health, and how to generate alerts in AppDynamic&#39;s monitoring service based off of data captured by APM.",
+    "time": "30",
+    "byod": true,
+    "tags": [
+        {"title": "AppDynamics"},
+        {"title": "Beginner"},
+        {"title": "Javascript"}
+    ],
+    "files": [{
+            "title": "Title 1",
+            "file": "1.md"
+        },
+        {
+            "title": "Title 2",
+            "file": "2.md"
+        },
+        {
+            "title": "Title ",
+            "file": "3.md"
+        },
+        {
+            "title": "Title ",
+            "file": "4.md"
+        }
+    ],
+    "related": [{
+            "labId": "app-dynamics-docker",
+            "title": "Monitoring Docker with AppDynamics"
+    }],
+    "authors": [{
+        "name": "James Schneider",
+        "email": "james101@cisco.com"
+    },
+    {
+        "name": "",
+        "email": ""
+    }],
+    "active": true
+}

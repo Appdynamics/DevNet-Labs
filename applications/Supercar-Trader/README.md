@@ -48,5 +48,9 @@ This app uses [Maven](https://maven.apache.org) for the build. To get a build en
 	</code></pre>
 1. Restart Tomcat
 1. Use the Tomcat Manager to deploy the war file
-1. Now the app is available on "/Supercar-Trader/index.jsp" on your Tomcat
+   
+   You can either upload the war file through the Tomcat Manager web page or copy the war file to your Tomcat host and and enter the context path and path to the war file as in the example below
+   ![image](doc-images/tomcat-war-deployment.png)
+    
+1. Now the app is available on "/Supercar-Trader/index.jsp" on your Tomcat instance
 	

@@ -10,7 +10,7 @@ connectionDefaults = HTTPPluginControl.getConnectionDefaults()
 httpUtilities = HTTPPluginControl.getHTTPUtilities()
 
 # To use a proxy server, uncomment the next line and set the host and port.
-connectionDefaults.setProxyServer("localhost", 8080)
+# connectionDefaults.setProxyServer("localhost", 8080)
 
 def createRequest(test, url, headers=None):
     """Create an instrumented HTTPRequest."""
@@ -29,25 +29,25 @@ connectionDefaults.defaultHeaders = \
 
 headers0= \
   [ NVPair('Accept', '*/*'),
-    NVPair('Referer', 'http://localhost/Supercar-Trader/supercars.do'), ]
+    NVPair('Referer', 'http://localhost:8080/Supercar-Trader/supercars.do'), ]
 
 headers1= \
   [ NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-    NVPair('Referer', 'http://localhost/Supercar-Trader/supercars.do'), ]
+    NVPair('Referer', 'http://localhost:8080/Supercar-Trader/supercars.do'), ]
 
 headers2= \
   [ NVPair('Accept', '*/*'),
-    NVPair('Referer', 'http://localhost/Supercar-Trader/cars.do?query=manu&mid=3'), ]
+    NVPair('Referer', 'http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=3'), ]
 
 headers3= \
   [ NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-    NVPair('Referer', 'http://localhost/Supercar-Trader/cars.do?query=manu&mid=3'), ]
+    NVPair('Referer', 'http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=3'), ]
 
 headers4= \
   [ NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-    NVPair('Referer', 'http://localhost/Supercar-Trader/car.do?query=car&cid=2'), ]
+    NVPair('Referer', 'http://localhost:8080/Supercar-Trader/car.do?query=car&cid=2'), ]
 
-url0 = 'http://localhost:80'
+url0 = 'http://localhost:8080'
 
 request101 = createRequest(Test(101, 'GET supercars.do'), url0)
 
@@ -223,7 +223,7 @@ class TestRunner:
     grinder.sleep(107)
     request402.GET('/Supercar-Trader/images/submit_button.gif', None,
       ( NVPair('Accept', '*/*'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/enquire.do?car=2&carName=S%A0DB9'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/enquire.do?car=2&carName=S%A0DB9'), ))
 
     return result
 
@@ -243,7 +243,7 @@ class TestRunner:
         NVPair('y', '16'), ),
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
         NVPair('Content-Type', 'application/x-www-form-urlencoded'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/enquire.do?car=2&carName=S%A0DB9'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/enquire.do?car=2&carName=S%A0DB9'), ))
 
     return result
 
@@ -251,7 +251,7 @@ class TestRunner:
     """GET supercars.do (request 601)."""
     result = request601.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/enquire.do?query=save'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/enquire.do?query=save'), ))
     self.token_query = \
       httpUtilities.valueFromBodyURI('query') # 'manu'
     # 14 different values for token_mid found in response; the first matched
@@ -304,7 +304,7 @@ class TestRunner:
     """GET search.do (request 1001)."""
     result = request1001.GET('/Supercar-Trader/search.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/car.do?query=carEnquiries&cid=2'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/car.do?query=carEnquiries&cid=2'), ))
 
     return result
 
@@ -320,7 +320,7 @@ class TestRunner:
         NVPair('y', '19'), ),
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
         NVPair('Content-Type', 'application/x-www-form-urlencoded'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/search.do'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/search.do'), ))
     self.token_query = \
       httpUtilities.valueFromBodyURI('query') # 'car'
     # 3 different values for token_cid found in response; the first matched
@@ -329,7 +329,7 @@ class TestRunner:
     grinder.sleep(95)
     request1102.GET('/Supercar-Trader/images/cars/1.jpg', None,
       ( NVPair('Accept', '*/*'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/search.do?query=search'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/search.do?query=search'), ))
 
     return result
 
@@ -345,7 +345,7 @@ class TestRunner:
         NVPair('y', '5'), ),
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
         NVPair('Content-Type', 'application/x-www-form-urlencoded'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/search.do?query=search'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/search.do?query=search'), ))
 
     return result
 
@@ -353,7 +353,7 @@ class TestRunner:
     """GET sell.do (request 1301)."""
     result = request1301.GET('/Supercar-Trader/sell.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/search.do?query=search'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/search.do?query=search'), ))
 
     return result
 
@@ -376,7 +376,7 @@ class TestRunner:
         NVPair('y', '13'), ),
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
         NVPair('Content-Type', 'application/x-www-form-urlencoded'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/sell.do'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/sell.do'), ))
 
     return result
 
@@ -384,7 +384,7 @@ class TestRunner:
     """GET insurance.do (request 1501)."""
     result = request1501.GET('/Supercar-Trader/insurance.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/sell.do?query=save'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/sell.do?query=save'), ))
 
     return result
 
@@ -392,12 +392,12 @@ class TestRunner:
     """GET about.do (requests 1601-1602)."""
     result = request1601.GET('/Supercar-Trader/about.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/insurance.do'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/insurance.do'), ))
 
     grinder.sleep(118)
     request1602.GET('/Supercar-Trader/images/about_car.gif', None,
       ( NVPair('Accept', '*/*'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/about.do'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/about.do'), ))
 
     return result
 
@@ -405,7 +405,7 @@ class TestRunner:
     """GET supercars.do (request 1701)."""
     result = request1701.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/about.do'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/about.do'), ))
     self.token_query = \
       httpUtilities.valueFromBodyURI('query') # 'manu'
     # 14 different values for token_mid found in response; the first matched
@@ -456,7 +456,7 @@ class TestRunner:
       '&cid=' +
       self.token_cid, None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/car.do?query=car&cid=26'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/car.do?query=car&cid=26'), ))
 
     return result
 
@@ -464,7 +464,7 @@ class TestRunner:
     """GET supercars.do (request 2101)."""
     result = request2101.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/car.do?query=carEnquiries&cid=26'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/car.do?query=carEnquiries&cid=26'), ))
     self.token_query = \
       httpUtilities.valueFromBodyURI('query') # 'manu'
     # 14 different values for token_mid found in response; the first matched
@@ -488,7 +488,7 @@ class TestRunner:
     """GET supercars.do (request 2301)."""
     result = request2301.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/cars.do?query=manu&mid=8'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=8'), ))
     # 15 different values for token_mid found in response, using the first one.
     self.token_mid = \
       httpUtilities.valueFromBodyURI('mid') # '3'
@@ -516,7 +516,7 @@ class TestRunner:
     """GET supercars.do (request 2501)."""
     result = request2501.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/cars.do?query=manu&mid=7'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=7'), ))
     self.token_query = \
       httpUtilities.valueFromBodyURI('query') # 'manu'
     # 15 different values for token_mid found in response, using the first one.
@@ -541,7 +541,7 @@ class TestRunner:
     """GET supercars.do (request 2701)."""
     result = request2701.GET('/Supercar-Trader/supercars.do', None,
       ( NVPair('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'),
-        NVPair('Referer', 'http://localhost/Supercar-Trader/cars.do?query=manu&mid=1'), ))
+        NVPair('Referer', 'http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=1'), ))
     # 15 different values for token_mid found in response, using the first one.
     self.token_mid = \
       httpUtilities.valueFromBodyURI('mid') # '3'
