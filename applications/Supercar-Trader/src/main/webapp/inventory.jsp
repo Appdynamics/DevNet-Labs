@@ -18,7 +18,7 @@ try {
     <td bgcolor="#222a2d"> 
     <p><a href="cars.do?query=manu&mid=<c:out value="${manu.manufacturerId}"/>"><c:out value="${manu.name}"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
   	</td>
-  	<td><p><a href="cars.do?query=manu&mid=<c:out value="${manu.manufacturerId}"/>"><img src="images/manufacturers/<c:out value="${manu.logo}"/>"></a></p></td>
+  	<td><p><a href="cars.do?query=manu&mid=<c:out value="${manu.manufacturerId}"/>"><img src="images/manufacturers/<c:out value="${manu.largeLogo}"/>"></a></p></td>
   </tr>
 </c:forEach>
 </table>

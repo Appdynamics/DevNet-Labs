@@ -19,7 +19,8 @@ public class Manufacturer {
 	private String country;
 	private String web;
 	private String email;
-	private String logo;
+	private String smallLogo;
+	private String largeLogo;
 	private long engineId;
 	
 	
@@ -35,11 +36,17 @@ public class Manufacturer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getLogo() {
-		return logo;
+	public String getSmallLogo() {
+		return smallLogo;
 	}
-	public void setLogo(String logo) {
-		this.logo = logo;
+	public void setSmallLogo(String smallLogo) {
+		this.smallLogo = smallLogo;
+	}
+	public String getLargeLogo() {
+		return largeLogo;
+	}
+	public void setLargeLogo(String largeLogo) {
+		this.largeLogo = largeLogo;
 	}
 	public long getManufacturerId() {
 		return manufacturerId;

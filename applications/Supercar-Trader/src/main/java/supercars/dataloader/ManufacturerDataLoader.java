@@ -33,7 +33,7 @@ public class ManufacturerDataLoader {
         List manufacturers = new ArrayList();
         
         try (Connection connection = Constants.getDBConnection()) {
-            String sql = "SELECT MANUFACTURER_ID, NAME, WEB, EMAIL, LOGO FROM MANUFACTURER ORDER BY NAME";
+            String sql = "SELECT MANUFACTURER_ID, NAME, WEB, EMAIL, SMLLOGO, LRGLOGO FROM MANUFACTURER ORDER BY NAME";
             
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -43,7 +43,8 @@ public class ManufacturerDataLoader {
                 manufacturer.setName(resultSet.getString("NAME"));
                 manufacturer.setWeb(resultSet.getString("WEB"));
                 manufacturer.setEmail(resultSet.getString("EMAIL"));
-                manufacturer.setLogo(resultSet.getString("LOGO"));
+                manufacturer.setSmallLogo(resultSet.getString("SMLLOGO"));
+                manufacturer.setLargeLogo(resultSet.getString("LRGLOGO"));
                 manufacturers.add(manufacturer);
             }
             resultSet.close();
@@ -61,7 +62,7 @@ public class ManufacturerDataLoader {
         Manufacturer manufacturer = null;
         
         try (Connection connection = Constants.getDBConnection()) {
-            String sql = "SELECT MANUFACTURER_ID, NAME, WEB, EMAIL, LOGO FROM MANUFACTURER WHERE MANUFACTURER_ID = "+manufacturerId;
+            String sql = "SELECT MANUFACTURER_ID, NAME, WEB, EMAIL, SMLLOGO, LRGLOGO FROM MANUFACTURER WHERE MANUFACTURER_ID = "+manufacturerId;
             
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -71,7 +72,8 @@ public class ManufacturerDataLoader {
                 manufacturer.setName(resultSet.getString("NAME"));
                 manufacturer.setWeb(resultSet.getString("WEB"));
                 manufacturer.setEmail(resultSet.getString("EMAIL"));
-                manufacturer.setLogo(resultSet.getString("LOGO"));
+                manufacturer.setSmallLogo(resultSet.getString("SMLLOGO"));
+                manufacturer.setLargeLogo(resultSet.getString("LRGLOGO"));
             }
             resultSet.close();
             statement.close();

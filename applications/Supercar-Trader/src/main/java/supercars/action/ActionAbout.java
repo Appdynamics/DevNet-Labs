@@ -28,6 +28,7 @@ public class ActionAbout extends Action {
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
 		
+		
 		return(mapping.findForward("success"));
 	}
 }

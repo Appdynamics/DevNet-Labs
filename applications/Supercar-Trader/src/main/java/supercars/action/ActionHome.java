@@ -30,6 +30,7 @@ public class ActionHome extends Action {
             ActionForm form,
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
+		
 		FuelPrices prices = FuelPrices.getFuelPrices();
                 request.setAttribute("prices", prices);
 		return(mapping.findForward("success"));

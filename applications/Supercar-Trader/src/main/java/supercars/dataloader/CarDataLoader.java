@@ -57,7 +57,7 @@ public class CarDataLoader {
 
         Car car = new Car();
         Engine engine = new Engine();
-        try (Connection connection = Constants.getDBConnection()) {
+        try (Connection connection = Constants.getOldDBConnection()) {
             String sql = "SELECT CARS.CAR_ID, NAME, MODEL, SUMMARY, DESCRIPTION, MANUFACTURER_ID, COLOUR, YEAR, PRICE, PHOTO";
             sql += " FROM CARS WHERE CARS.CAR_ID = " + carId;
 
@@ -90,7 +90,7 @@ public class CarDataLoader {
 
         List cars = new ArrayList();
         Car car = null;
-        try (Connection connection = Constants.getDBConnection()) {
+        try (Connection connection = Constants.getOldDBConnection()) {
             String sql = "SELECT NAME, MODEL, SUMMARY, DESCRIPTION, PHOTO FROM CARS";
             
             statement = connection.createStatement();
@@ -118,7 +118,7 @@ public class CarDataLoader {
 
         List cars = new ArrayList();
         Car car = null;
-        try (Connection connection = Constants.getDBConnection()) {
+        try (Connection connection = Constants.getOldDBConnection()) {
             String sql = "SELECT CAR_ID, NAME, MODEL, SUMMARY, DESCRIPTION, PRICE, PHOTO FROM CARS WHERE MANUFACTURER_ID = " + manufacturerId;
             
             statement = connection.createStatement();
@@ -147,7 +147,7 @@ public class CarDataLoader {
 
         List cars = new ArrayList();
         Car car = null;
-        try (Connection connection = Constants.getDBConnection()) {
+        try (Connection connection = Constants.getOldDBConnection()) {
             String sql = "SELECT CAR_ID, C.NAME, MODEL, SUMMARY, DESCRIPTION, PRICE, PHOTO, M.MANUFACTURER_ID FROM CARS C, MANUFACTURER M WHERE C.MANUFACTURER_ID = M.MANUFACTURER_ID AND (C.NAME LIKE '%" + query + "%' OR C.MODEL LIKE '%" + query + "%' OR M.NAME LIKE '%" + query + "%')";
             
             statement = connection.createStatement();

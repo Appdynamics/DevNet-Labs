@@ -6,15 +6,23 @@
  */
 package supercars.action;
 
+import java.util.Collection;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import supercars.dataloader.ManufacturerDataLoader;
+import supercars.Manufacturer;
+import supercars.utils.JsonHelper;
+import supercars.utils.PropertiesHelper;
 
 /**
  * @author v023094
@@ -30,9 +38,45 @@ public class ActionInventory extends Action {
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
 	
-		ManufacturerDataLoader mdl = new ManufacturerDataLoader();
-		request.setAttribute("manufacturers", mdl.getManufacturers());
+		try {
+			String apiPort =  PropertiesHelper.getApiServiceProps().getProperty("listener.port");
+			String apiContext = PropertiesHelper.getApiServiceProps().getProperty("root.context");
+			String inventoryContext = PropertiesHelper.getInventoryServiceProps().getProperty("root.context");
+			
+			// String url = "http://localhost:8171/api/inventory/manufacturers";
+			String url = "http://localhost:" + apiPort + "/" + apiContext + "/" + inventoryContext + "/manufacturers";
+			
+			HttpClient client = HttpClientBuilder.create().build();
+			HttpGet req = new HttpGet(url);
+			 
+			HttpResponse res = client.execute(req);
+			
+			if (res.getStatusLine().getStatusCode() == 200) {
+				System.out.println("########################## API Service returned 200 ##########################");
+				
+				String json = JsonHelper.getJsonFromHttpResponse(res);
+				Collection<Manufacturer> result = JsonHelper.getManufacturerList(json);
+				request.setAttribute("manufacturers", result);
+				
+			} else {
+				System.out.println("########################## API Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+			}
+			
+		} catch (Throwable ex) {
+			System.out.println("########################## API Service Failure ##########################");
+			System.out.println("########################## " + ex.getMessage() + " ##########################");
+			ex.printStackTrace();
+			
+		}		
+		
+//		ManufacturerDataLoader mdl = new ManufacturerDataLoader();
+//		request.setAttribute("manufacturers", mdl.getManufacturers());
+		
 		
 		return(mapping.findForward("success"));
 	}
+	
+	
+	
+	
 }

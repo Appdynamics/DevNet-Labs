@@ -1,0 +1,6 @@
+/applications/Supercar-Trader/target
+/applications/Supercar-Trader/.settings/.jsdtscope
+/applications/Supercar-Trader/.settings/*org*
+*.classpath
+*.project
+*.psd

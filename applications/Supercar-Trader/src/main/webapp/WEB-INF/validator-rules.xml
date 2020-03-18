@@ -1,6 +1,6 @@
 <!DOCTYPE form-validation PUBLIC
           "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
-          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+          "http://localhost:8080/dtds/validator_1_1_3.dtd">
 <!--
   $Id: validator-rules.xml 159291 2005-03-28 20:19:29Z niallp $
 

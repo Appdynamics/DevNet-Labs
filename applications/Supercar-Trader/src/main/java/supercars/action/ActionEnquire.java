@@ -34,14 +34,18 @@ public class ActionEnquire extends Action {
 		String query = request.getParameter("query");
 		String forward = "success";
 		
-		if(query == null){}
-		else if (query.equals("load")) {
+		if(query == null) {
+			// do nothing
+		} else if (query.equals("load")) {
+			
 			getEnquireForm(Integer.parseInt(request.getParameter("enquireId")));
-		}
-		else if(query.equals("save")) {
+			
+		} else if(query.equals("save")) {
+			
 			saveEnquireForm((EnquireForm)form);
-                        request.setAttribute("actionText", "enquiring");
+            request.setAttribute("actionText", "enquiring");
 			forward = "thanks";
+			
 		}
 		form.reset(mapping, request);
 		return(mapping.findForward(forward));

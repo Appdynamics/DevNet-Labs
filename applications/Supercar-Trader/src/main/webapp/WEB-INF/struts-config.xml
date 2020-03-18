@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE struts-config PUBLIC
           "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
-          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+          "http://localhost:8080/dtds/struts-config_1_2.dtd">
 <struts-config>
     <form-beans>
         <form-bean name="enquireForm" type="supercars.form.EnquireForm" />
@@ -65,6 +65,11 @@
         </action>
         <action path="/about" 
                 type="supercars.action.ActionAbout">
+            <forward name="success" 
+                     path="/about.jsp"/>
+        </action>
+        <action path="/initjvms" 
+                type="supercars.action.ActionInitServices">
             <forward name="success" 
                      path="/about.jsp"/>
         </action>

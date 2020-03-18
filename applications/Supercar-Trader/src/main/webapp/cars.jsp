@@ -11,12 +11,13 @@ try {
 			e.printStackTrace();
 		}
 %>
-<p class="normal"><img src="images/manufacturers/<c:out value="${manufacturer.logo}"/>" align="absmiddle"> &nbsp;&nbsp;<%=((ArrayList)request.getAttribute("cars")).size()%> cars found:<br/><br/><img src="images/line.gif"></p>
+<p class="normal"><img src="images/manufacturers/<c:out value="${manufacturer.smallLogo}"/>" align="absmiddle"> &nbsp;&nbsp;<%=((ArrayList)request.getAttribute("cars")).size()%> cars found:<br/><br/><img src="images/line.gif"></p>
 <table>
 <c:forEach var="car" items="${cars}">
   <tr class="grey"> 
     <td> 
-    	<p><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></p>
+        <p><a href="car.do?query=car&cid=<c:out value="${car.carId}"/>"><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></a></p>
+    	<!--  p><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></p -->
   	</td>
     <td>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

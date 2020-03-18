@@ -13,7 +13,7 @@ try {
 <%@ include file="header.jsp" %>
   <tr> 
     <td>
-    <p><img src="images/cars/<c:out value="${car.photo}"/>.jpg" align="absmiddle">&nbsp;&nbsp;&nbsp;<img src="images/manufacturers/<c:out value="${manufacturer.logo}"/>">
+    <p><img src="images/cars/<c:out value="${car.photo}"/>.jpg" align="absmiddle">&nbsp;&nbsp;&nbsp;<img src="images/manufacturers/<c:out value="${manufacturer.smallLogo}"/>">
    	<br/><br/><a href="enquire.do?car=<c:out value="${car.carId}"/>&carName=<c:out value="${car.name}"/>&nbsp;<c:out value="${car.model}"/>"><img src="images/enquire_button.gif"/></a>
     </p> 
     <p class="car"><b>Performance Summary:</b><br>

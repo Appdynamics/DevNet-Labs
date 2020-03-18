@@ -11,7 +11,7 @@ try {
                         e.printStackTrace();
                 }
 %>
-<form name="searchForm" action="search.do?query=search" method="POST">
+<form name="searchForm" id="searchForm" action="search.do?query=search" method="POST">
     <p class="normal"><img src="images/line.gif"></p>
     <p class="normal">Please enter your search criteria, for example 'Lamborghini', or '911'<br>
         <br><input type="text" id="criteria" name="criteria" />&nbsp;
@@ -23,7 +23,9 @@ try {
         <c:forEach var="car" items="${cars}">
             <tr class="grey"> 
                 <td> 
-                    <p><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></p>
+                    <p><a href="car.do?query=car&cid=<c:out value="${car.carId}"/>"><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></a></p>
+                    <!-- p><img src="images/cars/<c:out value="${car.photo}"/>.jpg"></p -->
+                    
                 </td>
                 <td> 
                     &nbsp;&nbsp;&nbsp;
