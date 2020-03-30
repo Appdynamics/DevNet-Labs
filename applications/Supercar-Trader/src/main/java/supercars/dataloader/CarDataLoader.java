@@ -15,11 +15,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import supercars.Car;
 import supercars.Engine;
 import supercars.XMLException;
 import supercars.form.CarForm;
-import supercars.logging.Logger;
+
 
 /**
  * @author v023094
@@ -29,6 +31,8 @@ import supercars.logging.Logger;
  */
 public class CarDataLoader {
 
+	private static Logger log = Logger.getLogger(CarDataLoader.class);
+	
     Statement statement = null;
     ResultSet resultSet = null;
 
@@ -48,8 +52,9 @@ public class CarDataLoader {
             pstmt.close();
             connection.close();
             throw new XMLException("XML Example Exception Thrown");
-        } catch (SQLException | XMLException e) {
-            Logger.log(e);
+        } catch (SQLException | XMLException ex) {
+        	log.error("Error saving car to database: ", ex);
+            
         }
     }
 
@@ -79,8 +84,9 @@ public class CarDataLoader {
 
             resultSet.close();
             statement.close();
-        } catch (Exception e) {
-            Logger.log(e);
+        } catch (Exception ex) {
+        	log.error("Error getting car details from database: ", ex);
+            
         }
 
         return car;
@@ -108,8 +114,8 @@ public class CarDataLoader {
             resultSet.close();
             statement.close();
             connection.close();
-        } catch (Exception e) {
-            Logger.log(e);
+        } catch (Exception ex) {
+        	log.error("Error getting car summary from database: ", ex);
         }
         return cars;
     }
@@ -137,8 +143,8 @@ public class CarDataLoader {
             resultSet.close();
             statement.close();
             connection.close();
-        } catch (Exception e) {
-            Logger.log(e);
+        } catch (Exception ex) {
+        	log.error("Error getting cars by manufacturer from database: ", ex);
         }
         return cars;
     }
@@ -167,8 +173,8 @@ public class CarDataLoader {
             resultSet.close();
             statement.close();
             connection.close();
-        } catch (Exception e) {
-            Logger.log(e);
+        } catch (Exception ex) {
+        	log.error("Error getting cars by search from database: ", ex);
         }
 
         return cars;

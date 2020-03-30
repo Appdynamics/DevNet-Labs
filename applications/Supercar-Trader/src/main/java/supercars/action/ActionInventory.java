@@ -15,6 +15,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -32,6 +33,8 @@ import supercars.utils.PropertiesHelper;
  */
 public class ActionInventory extends Action {
 
+	private static Logger log = Logger.getLogger(ActionInventory.class);
+	
 	// Perform Action
 	public ActionForward execute(ActionMapping mapping,
             ActionForm form,
@@ -52,19 +55,22 @@ public class ActionInventory extends Action {
 			HttpResponse res = client.execute(req);
 			
 			if (res.getStatusLine().getStatusCode() == 200) {
-				System.out.println("########################## API Service returned 200 ##########################");
+				log.info("########################## API Service returned 200 ##########################");
+				//System.out.println("########################## API Service returned 200 ##########################");
 				
 				String json = JsonHelper.getJsonFromHttpResponse(res);
 				Collection<Manufacturer> result = JsonHelper.getManufacturerList(json);
 				request.setAttribute("manufacturers", result);
 				
 			} else {
-				System.out.println("########################## API Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+				log.info("########################## API Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+				//System.out.println("########################## API Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
 			}
 			
 		} catch (Throwable ex) {
-			System.out.println("########################## API Service Failure ##########################");
-			System.out.println("########################## " + ex.getMessage() + " ##########################");
+			log.error("########################## API Service Failure ##########################", ex);
+			//System.out.println("########################## API Service Failure ##########################");
+			//System.out.println("########################## " + ex.getMessage() + " ##########################");
 			ex.printStackTrace();
 			
 		}		

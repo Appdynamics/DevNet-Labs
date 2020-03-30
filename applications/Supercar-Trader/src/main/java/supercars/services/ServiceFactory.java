@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 import supercars.services.api.ApiService;
 import supercars.services.enquiry.EnquiryService;
 import supercars.services.insurance.InsuranceService;
@@ -27,6 +29,7 @@ import supercars.utils.StringUtils;
  *
  */
 public class ServiceFactory {
+	private static Logger log = Logger.getLogger(ServiceFactory.class);
 
 	private static Map<String, Process> processes = new HashMap<String, Process>();
 	private static Map<String, String> appdProps = new HashMap<String, String>();
@@ -53,19 +56,23 @@ public class ServiceFactory {
 	public static int startAllServices() throws Throwable {
 		int numServicesStarted = 0;
 		
-		System.out.println("!!! Attempting to start API Service !!!"); 
+		log.info("!!! Attempting to start API Service !!!");
+		//System.out.println("!!! Attempting to start API Service !!!"); 
 		if (startApiService()) {
 			numServicesStarted++;
 		}
-		System.out.println("!!! Attempting to start Inventory Service !!!");
+		log.info("!!! Attempting to start Inventory Service !!!");
+		//System.out.println("!!! Attempting to start Inventory Service !!!");
 		if (startInventoryService()) {
 			numServicesStarted++;
 		}
-		System.out.println("!!! Attempting to start Insurance Service !!!");
+		log.info("!!! Attempting to start Insurance Service !!!");
+		//System.out.println("!!! Attempting to start Insurance Service !!!");
 		if (startInsuranceService()) {
 			numServicesStarted++;
 		}
-		System.out.println("!!! Attempting to start Enquiry Service !!!");
+		log.info("!!! Attempting to start Enquiry Service !!!");
+		//System.out.println("!!! Attempting to start Enquiry Service !!!");
 		if (startEnquiryService()) {
 			numServicesStarted++;
 		}
@@ -76,9 +83,11 @@ public class ServiceFactory {
 			      public void run() 
 			      { 
 			    	try {
-				       System.out.println("!!! Services Shutdown Hook is running !!!"); 
-				       int servicesStopped = ServiceFactory.stopAllServices();
-				       System.out.println("!!! A total of " + servicesStopped + " services were shutdown !!!");  
+			    		log.info("!!! Services Shutdown Hook is running !!!");
+			    		//System.out.println("!!! Services Shutdown Hook is running !!!"); 
+				        int servicesStopped = ServiceFactory.stopAllServices();
+				        log.info("!!! A total of " + servicesStopped + " services were shutdown !!!");
+				        //System.out.println("!!! A total of " + servicesStopped + " services were shutdown !!!");  
 			    	} catch (Throwable ex) {
 			    		ex.printStackTrace();
 			    	}
@@ -86,8 +95,9 @@ public class ServiceFactory {
 			    }); 
 			     
 		} catch (Throwable ex) {
-			System.out.println("!!! Error on Services Shutdown !!! : " + ex.getMessage());
-			ex.printStackTrace();
+			log.error("!!! Error on Services Shutdown !!! : " + ex.getMessage(), ex);
+			//System.out.println("!!! Error on Services Shutdown !!! : " + ex.getMessage());
+			//ex.printStackTrace();
 		}
 
 		return numServicesStarted;
@@ -270,14 +280,14 @@ public class ServiceFactory {
 	        	numAppdOptsFound++;
 	        }
 	        
-//	        System.out.println("Number of Options Found = " + optsFound);
-//	        
-//	        System.out.println("APPDYNAMICS_CONTROLLER_HOST_NAME = " + System.getenv("APPDYNAMICS_CONTROLLER_HOST_NAME"));
-//	        System.out.println("APPDYNAMICS_CONTROLLER_PORT = " + System.getenv("APPDYNAMICS_CONTROLLER_PORT"));
-//	        System.out.println("APPDYNAMICS_CONTROLLER_SSL_ENABLED = " + System.getenv("APPDYNAMICS_CONTROLLER_SSL_ENABLED"));
-//	        System.out.println("APPDYNAMICS_AGENT_APPLICATION_NAME = " + System.getenv("APPDYNAMICS_AGENT_APPLICATION_NAME"));
-//	        System.out.println("APPDYNAMICS_AGENT_ACCOUNT_NAME = " + System.getenv("APPDYNAMICS_AGENT_ACCOUNT_NAME"));
-//	        System.out.println("APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY = " + System.getenv("APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY"));
+	        log.info("Number of Options Found = " + numAppdOptsFound);
+	        
+	        log.info("APPDYNAMICS_CONTROLLER_HOST_NAME = " + System.getenv("APPDYNAMICS_CONTROLLER_HOST_NAME"));
+	        log.info("APPDYNAMICS_CONTROLLER_PORT = " + System.getenv("APPDYNAMICS_CONTROLLER_PORT"));
+	        log.info("APPDYNAMICS_CONTROLLER_SSL_ENABLED = " + System.getenv("APPDYNAMICS_CONTROLLER_SSL_ENABLED"));
+	        log.info("APPDYNAMICS_AGENT_APPLICATION_NAME = " + System.getenv("APPDYNAMICS_AGENT_APPLICATION_NAME"));
+	        log.info("APPDYNAMICS_AGENT_ACCOUNT_NAME = " + System.getenv("APPDYNAMICS_AGENT_ACCOUNT_NAME"));
+	        log.info("APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY = " + System.getenv("APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY"));
 	        
 	        
 	        
@@ -327,14 +337,14 @@ public class ServiceFactory {
 		        	}
 		        }
 	        	
-//		        System.out.println("Number of Options Found = " + optsFound);
-//		        
-//		        System.out.println("appdynamics.controller.hostName = " + System.getProperty("appdynamics.controller.hostName"));
-//		        System.out.println("appdynamics.controller.port = " + System.getProperty("appdynamics.controller.port"));
-//		        System.out.println("appdynamics.controller.ssl.enabled = " + System.getProperty("appdynamics.controller.ssl.enabled"));
-//		        System.out.println("appdynamics.agent.applicationName = " + System.getProperty("appdynamics.agent.applicationName"));
-//		        System.out.println("appdynamics.agent.accountName = " + System.getProperty("appdynamics.agent.accountName"));
-//		        System.out.println("appdynamics.agent.accountAccessKey = " + System.getProperty("appdynamics.agent.accountAccessKey"));	        	        	
+		        log.info("Number of Options Found = " + numAppdOptsFound);
+		        
+		        log.info("appdynamics.controller.hostName = " + System.getProperty("appdynamics.controller.hostName"));
+		        log.info("appdynamics.controller.port = " + System.getProperty("appdynamics.controller.port"));
+		        log.info("appdynamics.controller.ssl.enabled = " + System.getProperty("appdynamics.controller.ssl.enabled"));
+		        log.info("appdynamics.agent.applicationName = " + System.getProperty("appdynamics.agent.applicationName"));
+		        log.info("appdynamics.agent.accountName = " + System.getProperty("appdynamics.agent.accountName"));
+		        log.info("appdynamics.agent.accountAccessKey = " + System.getProperty("appdynamics.agent.accountAccessKey"));	        	        	
 	        	
 	        }
 	        
@@ -432,23 +442,23 @@ public class ServiceFactory {
 		        	}
 		        	
 		        	
-//		        	System.out.println("Number of Options Found = " + optsFound);
-//		        	
-//		        	System.out.println("<controller-host> = " + strConHostName);
-//		        	System.out.println("<controller-port> = " + strConPort);
-//		        	System.out.println("<controller-ssl-enabled> = " + strConSslEnabled);
-//		        	System.out.println("<application-name> = " + strAppName);
-//		        	System.out.println("<account-name> = " + strAcctName);
-//		        	System.out.println("<account-access-key> = " + strAccessKey);
+		        	log.info("Number of Options Found = " + numAppdOptsFound);
+		        	
+		        	log.info("<controller-host> = " + strConHostName);
+		        	log.info("<controller-port> = " + strConPort);
+		        	log.info("<controller-ssl-enabled> = " + strConSslEnabled);
+		        	log.info("<application-name> = " + strAppName);
+		        	log.info("<account-name> = " + strAcctName);
+		        	log.info("<account-access-key> = " + strAccessKey);
 		        	
 		        	
 		        } else {
-		        	System.out.println("AgentVerConfDir = NOT FOUND");
+		        	log.info("AgentVerConfDir = NOT FOUND");
 		        }
 		        
-		        System.out.println("Number of Options Found = " + numAppdOptsFound);
+		        log.info("Final Number of Options Found = " + numAppdOptsFound);
 		        for (String key : appdProps.keySet()) {
-					System.out.println(key + " = " + appdProps.get(key).toString());
+		        	log.info(key + " = " + appdProps.get(key).toString());
 				}
 		        
 		        

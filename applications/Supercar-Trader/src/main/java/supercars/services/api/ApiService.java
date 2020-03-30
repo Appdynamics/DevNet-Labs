@@ -5,8 +5,9 @@ package supercars.services.api;
 
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 import supercars.services.JettyServer;
-import supercars.services.inventory.InventoryService;
 import supercars.utils.PropertiesHelper;
 
 /**
@@ -15,7 +16,21 @@ import supercars.utils.PropertiesHelper;
  */
 public class ApiService {
 
+	private static Logger log;
+	
+	static {
+		try {
+			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7.0.99/webapps/Supercar-Trader/logging/api-log4j.xml");
+			log = Logger.getLogger(ApiService.class);
+			
+		} catch (Throwable ex) {
+			ex.printStackTrace();
+		}
+	}	
+	
+	
 	private static JettyServer server;
+	
 	
 	/**
 	 * 
@@ -42,6 +57,7 @@ public class ApiService {
 					serviceProps.getProperty("root.context"));
 			
 		} catch (Throwable ex) {
+			log.error("Error starting API Service", ex);
 			ex.printStackTrace();
 		}
 	}

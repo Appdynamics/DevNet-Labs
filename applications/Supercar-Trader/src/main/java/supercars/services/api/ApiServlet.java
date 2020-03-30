@@ -15,6 +15,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 
 import supercars.utils.JsonHelper;
 
@@ -28,6 +29,7 @@ public class ApiServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -7888011897341720634L;
+	private static Logger log = Logger.getLogger(ApiServlet.class);
 
 	/**
 	 * 
@@ -40,7 +42,7 @@ public class ApiServlet extends HttpServlet {
 		
 		try {
 			
-			System.out.println("!!!!!!!!!!!!!!!! API Service Recieved Request URI: " + request.getRequestURI());
+			log.info("!!!!!!!!!!!!!!!! API Service Recieved Request URI: " + request.getRequestURI());
 			
 			String reqUri = request.getRequestURI();
 	    	
@@ -53,25 +55,25 @@ public class ApiServlet extends HttpServlet {
 				HttpResponse res = client.execute(req);
 				
 				if (res.getStatusLine().getStatusCode() == 200) {
-					System.out.println("########################## Inventory Service returned 200 ##########################");
+					log.info("########################## Inventory Service returned 200 ##########################");
 					
 					String resp = JsonHelper.getJsonFromHttpResponse(res);
 					
-			        System.out.println("!!!!!!!!!!!!!!!! JSON Payload received by Inventory Service " + request.getRequestURI());
-			        System.out.println(resp);
+					log.info("!!!!!!!!!!!!!!!! JSON Payload received by Inventory Service " + request.getRequestURI());
+					log.info(resp);
 					
 			        response.setContentType("application/json");
 			        response.setStatus(HttpServletResponse.SC_OK);
 			        response.getWriter().println(resp);
 			        
 				} else {
-					System.out.println("########################## Inventory Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+					log.info("########################## Inventory Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
 				}
 
 	    	} else if (reqUri.startsWith("/api/enquiry/carEnquiries")) {
 	    		
 	    		String carId = request.getParameter("carId");
-	    		System.out.println("########################## API Service recieved REQ Param carId = " + carId + " ##########################");
+	    		log.info("########################## API Service recieved REQ Param carId = " + carId + " ##########################");
 	    		
 	    		String url = "http://localhost:8174/enquiry/carEnquiries";
     			HttpClient client = HttpClientBuilder.create().build();
@@ -84,24 +86,24 @@ public class ApiServlet extends HttpServlet {
     							
 				
 				if (res.getStatusLine().getStatusCode() == 200) {
-					System.out.println("########################## Enquiry Service returned 200 ##########################");
+					log.info("########################## Enquiry Service returned 200 ##########################");
 
 					String resp = JsonHelper.getJsonFromHttpResponse(res);
 					
-			        System.out.println("!!!!!!!!!!!!!!!! JSON Payload received by Enquiry Service " + request.getRequestURI());
-			        System.out.println(resp);
+			        log.info("!!!!!!!!!!!!!!!! JSON Payload received by Enquiry Service " + request.getRequestURI());
+			        log.info(resp);
 					
 			        response.setContentType("application/json");
 			        response.setStatus(HttpServletResponse.SC_OK);
 			        response.getWriter().println(resp);
 								        
 				} else {
-					System.out.println("########################## Enquiry Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+					log.info("########################## Enquiry Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
 				}
 				
 	    	} else {
 	    		
-	    		System.out.println("!!!!!!!!!!!!!!!! API Service URI HAD NO MATCH: " + request.getRequestURI());
+	    		log.info("!!!!!!!!!!!!!!!! API Service URI HAD NO MATCH: " + request.getRequestURI());
 	    		
 	            response.setContentType("application/json");
 	            response.setStatus(HttpServletResponse.SC_OK);
@@ -109,8 +111,8 @@ public class ApiServlet extends HttpServlet {
 	    	}
 			
 		} catch (Throwable ex) {
-			System.out.println("########################## API Service Failure ##########################");
-			System.out.println("########################## " + ex.getMessage() + " ##########################");
+			log.info("########################## API Service Failure ##########################");
+			log.error("########################## " + ex.getMessage() + " ##########################", ex);
 			ex.printStackTrace();
 				
 		}

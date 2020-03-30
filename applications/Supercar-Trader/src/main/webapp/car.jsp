@@ -2,8 +2,8 @@
 <%@ taglib uri="/WEB-INF/c.tld" prefix="c" %>
 <%
 try {
-			Random r = new Random();
-			int i = r.nextInt(2000);
+			//Random r = new Random();
+			int i = 142; // r.nextInt(2000);
 			Thread.sleep(i);
 		}
 		catch(Exception e){

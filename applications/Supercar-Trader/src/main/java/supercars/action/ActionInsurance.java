@@ -6,8 +6,6 @@
  */
 package supercars.action;
 
-import java.util.Collection;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,13 +13,11 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-
-import supercars.Manufacturer;
-import supercars.utils.JsonHelper;
 
 /**
  * @author v023094
@@ -31,6 +27,8 @@ import supercars.utils.JsonHelper;
  */
 public class ActionInsurance extends Action {
 
+	private static Logger log = Logger.getLogger(ActionInsurance.class);
+	
 	// Perform Action
 	public ActionForward execute(ActionMapping mapping,
             ActionForm form,
@@ -44,9 +42,11 @@ public class ActionInsurance extends Action {
 			 
 			HttpResponse res = client.execute(req);
 			if (res.getStatusLine().getStatusCode() == 200) {
-				System.out.println("########################## Insurance Service returned 200 ##########################");				
+				log.info("########################## Insurance Service returned 200 ##########################");
+				//System.out.println("########################## Insurance Service returned 200 ##########################");				
 			} else {
-				System.out.println("########################## Insurance Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+				log.info("########################## Insurance Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
+				//System.out.println("########################## Insurance Service returned " + res.getStatusLine().getStatusCode() + " ##########################");
 			}			
 			
 		} catch (Throwable ex) {

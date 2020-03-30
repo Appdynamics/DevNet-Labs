@@ -11,6 +11,9 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.glassfish.jersey.client.ClientConfig;
+import org.glassfish.jersey.client.ClientProperties;
+
 /**
  *
  * @author tom.batchelor
@@ -28,10 +31,14 @@ public class FuelPrices {
     private double regular;
     
     public static FuelPrices getFuelPrices() {
-        Client client = ClientBuilder.newClient();
+    	ClientConfig configuration = new ClientConfig();
+    	configuration = configuration.property(ClientProperties.CONNECT_TIMEOUT, 1500);
+    	configuration = configuration.property(ClientProperties.READ_TIMEOUT, 1500);
+    	Client client = ClientBuilder.newClient(configuration);    	
+        
         WebTarget target = client.target("https://www.fueleconomy.gov/ws/rest/fuelprices");
-        return target.request(MediaType.APPLICATION_XML)
-                .get(FuelPrices.class);
+        
+        return target.request(MediaType.APPLICATION_XML).get(FuelPrices.class);
     }
 
     /**

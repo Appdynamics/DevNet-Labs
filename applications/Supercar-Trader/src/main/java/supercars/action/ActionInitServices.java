@@ -9,12 +9,11 @@ package supercars.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-
-import supercars.services.ServiceFactory;
 
 /**
  * @author james
@@ -24,7 +23,8 @@ import supercars.services.ServiceFactory;
  */
 public class ActionInitServices extends Action {
 
-	private static boolean servicesInitialized = false;
+	
+	private static Logger log = Logger.getLogger(ActionInitServices.class);
 	
 	// Perform Action
 	public ActionForward execute(ActionMapping mapping,
@@ -32,20 +32,6 @@ public class ActionInitServices extends Action {
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
 		
-		if (!servicesInitialized) {
-			try {
-				
-				int servicesStarted = ServiceFactory.startAllServices();
-				System.out.println("########################## Services Started = " + servicesStarted + " ##########################");
-				servicesInitialized = true;
-			} catch (Throwable ex) {
-				System.out.println("########################## Service Start Failure ##########################");
-				System.out.println("########################## " + ex.getMessage() + " ##########################");
-				ex.printStackTrace();
-				
-			}
-			
-		}
 		
 		
 		return(mapping.findForward("success"));

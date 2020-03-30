@@ -5,6 +5,8 @@ package supercars.services.enquiry;
 
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 import supercars.services.JettyServer;
 import supercars.utils.PropertiesHelper;
 
@@ -14,6 +16,18 @@ import supercars.utils.PropertiesHelper;
  */
 public class EnquiryService {
 
+	private static Logger log;
+	
+	static {
+		try {
+			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7.0.99/webapps/Supercar-Trader/logging/enquiry-log4j.xml");
+			log = Logger.getLogger(EnquiryService.class);
+			
+		} catch (Throwable ex) {
+			ex.printStackTrace();
+		}
+	}	
+	
 	private static JettyServer server;
 	
 	/**
@@ -41,6 +55,7 @@ public class EnquiryService {
 					serviceProps.getProperty("root.context"));
 			
 		} catch (Throwable ex) {
+			log.error("Error starting Enquiry Service", ex);
 			ex.printStackTrace();
 		}
 	}

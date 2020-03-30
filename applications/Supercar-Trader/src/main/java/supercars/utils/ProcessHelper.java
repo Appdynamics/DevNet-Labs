@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 
 /**
  * @author james
@@ -17,6 +19,7 @@ import java.util.Map;
  */
 public class ProcessHelper {
 
+	private static Logger log = Logger.getLogger(ProcessHelper.class);
 	private static Map<String, Process> processes = new HashMap<String, Process>();
 	
 	/**
@@ -31,10 +34,7 @@ public class ProcessHelper {
 
 		ProcessBuilder processBuilder = createProcess(optionsAsString, mainClass, arguments, processLibDir);
 		Process process = processBuilder.start();
-		//StreamGobbler streamGobbler = new StreamGobbler(process.getInputStream(), System.out::println);
-		//Executors.newSingleThreadExecutor().submit(streamGobbler);
 		processes.put(processName, process);
-		//log.debug("Process " + process.toString() + " has started");
 		return process;
 	}
 	
@@ -47,8 +47,8 @@ public class ProcessHelper {
 		
 		//log.debug("classpath: " + classpath);
 		//String workingDirectory = System.getProperty("user.dir");
-		//System.out.println("########################## Process Helper user.dir ##########################");
-		//System.out.println("########################## " + workingDirectory + " ##########################");
+		//log.info("########################## Process Helper user.dir ##########################");
+		//log.info("########################## " + workingDirectory + " ##########################");
 
 		String[] options = null;
 		if (optionsAsString != null) {
@@ -70,14 +70,14 @@ public class ProcessHelper {
 		ProcessBuilder processBuilder = new ProcessBuilder(command);
 		Map< String, String > environment = processBuilder.environment();
 		//for (String key : environment.keySet()) {
-			//System.out.println("######## " + key + ": " + environment.get(key).toString());
+			//log.info("######## " + key + ": " + environment.get(key).toString());
 			
 		//}
-		//System.out.println("########################## Process Helper CLASSPATH ##########################");
-		//System.out.println("########################## " + classpath + " ##########################");
+		//log.info("########################## Process Helper CLASSPATH ##########################");
+		//log.info("########################## " + classpath + " ##########################");
 		
 		environment.put("CLASSPATH", processLibDir + "/*");
-		System.out.println("######## " + "CLASSPATH" + ": " + environment.get("CLASSPATH").toString());
+		log.info("######## " + "CLASSPATH" + ": " + environment.get("CLASSPATH").toString());
 		// TODO not sure if this is the correct place to do this
 		processBuilder.inheritIO();
 		

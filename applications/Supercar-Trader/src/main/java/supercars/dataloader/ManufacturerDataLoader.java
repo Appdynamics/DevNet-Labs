@@ -13,8 +13,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import supercars.Manufacturer;
-import supercars.logging.Logger;
+
 
 /**
  * @author v023094
@@ -23,6 +25,8 @@ import supercars.logging.Logger;
  * Window - Preferences - Java - Code Style - Code Templates
  */
 public class ManufacturerDataLoader {
+	
+	private static Logger log = Logger.getLogger(ManufacturerDataLoader.class);
     
     Statement statement = null;
     ResultSet resultSet = null;
@@ -50,8 +54,8 @@ public class ManufacturerDataLoader {
             resultSet.close();
             statement.close();
             connection.close();
-        } catch(Exception e){
-            Logger.log(e);
+        } catch(Exception ex){
+        	log.error("Error on method getManufacturers", ex);
         }
         
         return manufacturers;
@@ -78,8 +82,8 @@ public class ManufacturerDataLoader {
             resultSet.close();
             statement.close();
             connection.close();
-        } catch(Exception e){
-            Logger.log(e);
+        } catch(Exception ex){
+        	log.error("Error on method getManufacturer", ex);
         }
         
         return manufacturer;

@@ -13,13 +13,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
+
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 import supercars.utils.PropertiesHelper;
 
@@ -29,6 +30,7 @@ import supercars.utils.PropertiesHelper;
  */
 public class Constants {
     
+	private static Logger log = Logger.getLogger(Constants.class);
     
     /** Creates a new instance of Constants */
     public Constants() {
@@ -42,11 +44,11 @@ public class Constants {
             Connection dbCon = DriverManager.getConnection(props.getProperty("db.url"), props.getProperty("db.user"), props.getProperty("db.password"));;
             return dbCon;
         } catch (NamingException ex) {
-            Logger.getLogger(Constants.class.getName()).log(Level.SEVERE, null, ex);
+        	log.error("Error getting database connection from the DriverManager", ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Constants.class.getName()).log(Level.SEVERE, null, ex);
+        	log.error("Error getting database connection from the DriverManager", ex);
         } catch (Throwable ex) {
-            Logger.getLogger(Constants.class.getName()).log(Level.SEVERE, null, ex);
+        	log.error("Error getting database connection from the DriverManager", ex);
 
         }
         
@@ -62,9 +64,9 @@ public class Constants {
             Connection dbCon = ds.getConnection();
             return dbCon;
         } catch (NamingException ex) {
-            Logger.getLogger(Constants.class.getName()).log(Level.SEVERE, null, ex);
+        	log.error("Error getting database connection from JNDI", ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Constants.class.getName()).log(Level.SEVERE, null, ex);
+        	log.error("Error getting database connection from JNDI", ex);
         }
         
         return null;

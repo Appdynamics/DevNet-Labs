@@ -14,6 +14,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 
 /**
  * @author james
@@ -21,6 +22,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
  */
 public class InsuranceServlet extends HttpServlet {
 
+	private static Logger log = Logger.getLogger(InsuranceServlet.class);
+	
 	/**
 	 * 
 	 */
@@ -37,8 +40,7 @@ public class InsuranceServlet extends HttpServlet {
 		
 		
 		try {
-			
-			System.out.println("!!!!!!!!!!!!!!!! Insurance Service Recieved Request URI: " + request.getRequestURI());
+			log.info("!!!!!!!!!!!!!!!! Insurance Service Recieved Request URI: " + request.getRequestURI());
 
 			String url = "https://ratekick.com/";
 			HttpClient client = HttpClientBuilder.create().build();
@@ -62,10 +64,11 @@ public class InsuranceServlet extends HttpServlet {
 			response.setStatus(HttpServletResponse.SC_OK);
 			response.getWriter().println("{ \"status\": \"ok\"}");	  				
 
-
+			
+			
 		} catch (Throwable ex) {
-			System.out.println("########################## Insurance Service Failure ##########################");
-			System.out.println("########################## " + ex.getMessage() + " ##########################");
+			log.info("########################## Insurance Service Failure ##########################");
+			log.error("########################## " + ex.getMessage() + " ##########################", ex);
 			ex.printStackTrace();
 				
 		}
