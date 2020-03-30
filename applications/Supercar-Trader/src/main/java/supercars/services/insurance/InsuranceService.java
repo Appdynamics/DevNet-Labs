@@ -20,7 +20,7 @@ public class InsuranceService {
 	
 	static {
 		try {
-			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7.0.99/webapps/Supercar-Trader/logging/insurance-log4j.xml");
+			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7/webapps/Supercar-Trader/logging/insurance-log4j.xml");
 			log = Logger.getLogger(InsuranceService.class);
 			
 		} catch (Throwable ex) {

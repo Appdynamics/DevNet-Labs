@@ -20,7 +20,7 @@ public class ApiService {
 	
 	static {
 		try {
-			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7.0.99/webapps/Supercar-Trader/logging/api-log4j.xml");
+			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7/webapps/Supercar-Trader/logging/api-log4j.xml");
 			log = Logger.getLogger(ApiService.class);
 			
 		} catch (Throwable ex) {

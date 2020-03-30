@@ -88,6 +88,21 @@ public class EnquiryDataLoader {
                     resultSet.close();
                     statement.close();            
                     
+    			    // error generated intentionally
+			    	try {
+			    		
+			    		EnquireForm form = new EnquireForm();
+			    		form.setEnquireFormId(1l);
+			    		form.setCarId(24);
+			    		form.setName("John Smith");
+			    		form.setEmail("john.smith@email.com");
+			    		form.setComment("I would like to come see this car.");
+			    		new EnquiryDataLoader().saveEnquireFormWithPK(form);
+			    		
+			    	} catch (Throwable ex) {
+			    		log.error("Error Saving Enquiry", ex);
+			    	}
+                    
                 }           
         		
         	//}

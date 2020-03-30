@@ -17,7 +17,88 @@ page.onConsoleMessage = function(msg) {
 };
 /**********DEFINE STEPS THAT FANTOM SHOULD DO***********************/
 steps = [
- 
+
+
+    //Step 25 - Open Insurance page
+    function(){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
+            
+        });
+    },
+    //Step 26 - Get a screenshot
+    function(){
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 27 - Get a second screenshot
+    function(){
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+
+
+     //Step 25 - Open Insurance page
+    function(){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
+            
+        });
+    },
+    //Step 26 - Get a screenshot
+    function(){
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 27 - Get a second screenshot
+    function(){
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+    
+
+
+    //Step 25 - Open Insurance page
+    function(){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
+            
+        });
+    },
+    //Step 26 - Get a screenshot
+    function(){
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 27 - Get a second screenshot
+    function(){
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+
+
+    //Step 25 - Open Insurance page
+    function(){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
+            
+        });
+    },
+    //Step 26 - Get a screenshot
+    function(){
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 27 - Get a second screenshot
+    function(){
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+
+    
 	//Step 1 - Open home page
     function(){
         console.log('Step 1 - Open home page');

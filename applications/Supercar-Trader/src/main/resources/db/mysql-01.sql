@@ -1,3 +1,7 @@
+SET GLOBAL query_cache_size = 0;
+
+SET GLOBAL query_cache_type = 0;
+
 DROP DATABASE IF EXISTS supercars;
 
 CREATE DATABASE supercars;
