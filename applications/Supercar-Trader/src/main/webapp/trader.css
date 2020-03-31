@@ -7,7 +7,7 @@ font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
 color: #e8e8e8;
-background-color: #222a2d;
+/* background-color: #222a2d; */ 
 border: 0px #d79900 solid;
 border-collapse: collapse;
 border-spacing: 0px;}
@@ -28,7 +28,7 @@ td.ad
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
-background-color: #222a2d;
+/* background-color: #222a2d; */
 border: 0px #222a2d solid;
 border-collapse: collapse;
 border-spacing: 30px;}
@@ -36,13 +36,14 @@ border-spacing: 30px;}
 
 img
 { text-align: left;
-background-color: #222a2d;
+/* background-color: #222a2d; */
 border: 0px #d79900 solid;
 border-collapse: collapse;
 border-spacing: 0px;}
 
 tr.grey
-{ background-color: #222a2d;
+{ 
+/* background-color: #222a2d;*/
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
@@ -62,7 +63,7 @@ border-spacing: 0px;}
 
 table.car
 {
-background-color: #222a2d;
+/* background-color: #222a2d; */
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
@@ -73,7 +74,7 @@ border-spacing: 0px;}
 
 p.car
 {
-background-color: #232b2d;
+/* background-color: #232b2d; */
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
@@ -85,7 +86,7 @@ border-spacing: 0px;}
 
 p
 {
-background-color: #222a2d;
+/* background-color: #222a2d; */
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
@@ -96,7 +97,7 @@ border-spacing: 0px;}
 
 p.normal
 {
-background-color: #222a2d;
+/* background-color: #222a2d; */
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;
@@ -108,7 +109,7 @@ border-spacing: 0px;}
 p.summary
 {
 text-align: left;
-background-color: #222a2d;
+/* background-color: #222a2d; */
 font-family: Verdana;
 font-weight: normal;
 font-size: 14px;

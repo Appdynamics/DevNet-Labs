@@ -12,7 +12,7 @@
 %>
 <table>
     <tr>
-        <td><br/><img src="images/line.gif"></td>
+        <!-- td><br/><img src="images/line.gif"></td -->
     </tr>
     <tr>
         <td><br/></td>
