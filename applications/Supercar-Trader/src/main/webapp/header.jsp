@@ -15,12 +15,6 @@
 
 <table>
 	<tr>
-		<td align="left"><a href="home.do"><IMG SRC="images/logo.gif"><a/></td>
-		<td><a HREF="supercars.do"><img src="images/supercars_but.png"></a></td>
-		<td><a HREF="search.do"><img src="images/search_but.png"></a></td>
-		<td><a HREF="sell.do"><img src="images/sell_but.png"></a></td>
-		<td><a HREF="enquire.do"><img src="images/enquire_but.png"></a></td>
-		<td><a HREF="insurance.do"><img src="images/insurance_but.png"></a></td>
-		<td><a HREF="about.do"><img src="images/aboutus_but.png"></a></td>
+		<td align="left"><a href="home.do"><IMG SRC="images/logo.gif"><a/><a HREF="supercars.do"><img src="images/supercars_but.png"></a><a HREF="search.do"><img src="images/search_but.png"></a><a HREF="sell.do"><img src="images/sell_but.png"></a><a HREF="enquire.do"><img src="images/enquire_but.png"></a><a HREF="insurance.do"><img src="images/insurance_but.png"></a><a HREF="about.do"><img src="images/aboutus_but.png"></a></td>
 	</tr>
 </table>

@@ -11,6 +11,7 @@ try {
 			e.printStackTrace();
 		}
 %>
+<br>
 <p class="normal"><img src="images/manufacturers/<c:out value="${manufacturer.smallLogo}"/>" align="absmiddle"> &nbsp;&nbsp;<%=((ArrayList)request.getAttribute("cars")).size()%> cars found:<br/><br/></p>
 <table>
 <c:forEach var="car" items="${cars}">
