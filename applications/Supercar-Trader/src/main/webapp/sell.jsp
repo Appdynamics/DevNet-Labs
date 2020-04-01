@@ -12,7 +12,8 @@ try {
 		}
 %>
 <%@ include file="header.jsp" %>
-<p class="normal"><img src="images/line.gif"></p>
+<p class="normal"><!-- img src="images/line.gif" --></p>
+<p class="normal"></br></p>
 <p class="normal">Please enter details of your supercar:</p>
   <html:form action="/sell?query=save"> 
     <table width="80%" border="0">
@@ -40,13 +41,13 @@ try {
        <td>Price:<br>&nbsp;<html:text property="price" /></td> 
       </tr>
       <tr>
-       <td>Summary:<br><img src="images/line.gif"><br><br>&nbsp;<html:textarea rows="6" cols="45" property="summary" /></td> 
+       <td>Summary:<br><!-- img src="images/line.gif" --><br>&nbsp;<html:textarea rows="6" cols="45" property="summary" /></td> 
       </tr>
       <tr>
-       <td>Detailed Description:<br><img src="images/line.gif"><br><br>&nbsp;<html:textarea rows="12" cols="45" property="description" /></td> 
+       <td>Detailed Description:<br><!-- img src="images/line.gif" --><br>&nbsp;<html:textarea rows="12" cols="45" property="description" /></td> 
       </tr>  
       <tr> 
-        <td><input type="image" src="images/submit_button.gif"/ align="absmiddle"></td> 
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" src="images/submit_button.gif" align="absmiddle"></td> 
       </tr> 
     </table> 
   </html:form> 

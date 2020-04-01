@@ -12,7 +12,8 @@ try {
                 }
 %>
 <form name="searchForm" id="searchForm" action="search.do?query=search" method="POST">
-    <p class="normal"><img src="images/line.gif"></p>
+    <p class="normal"><!-- img src="images/line.gif" --></p>
+    <p class="normal"></br></p>
     <p class="normal">Please enter your search criteria, for example 'Lamborghini', or '911'<br>
         <br><input type="text" id="criteria" name="criteria" />&nbsp;
         <input type="image" id="commit" name="commit" src="images/search_button.gif"/ align="absmiddle"><br>

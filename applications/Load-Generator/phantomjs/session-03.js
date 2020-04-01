@@ -17,6 +17,65 @@ page.onConsoleMessage = function(msg) {
 };
 /**********DEFINE STEPS THAT FANTOM SHOULD DO***********************/
 steps = [
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-01.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-01.png');
+    },
+
+
+
  
 	//Step 1 - Open home page
     function(){

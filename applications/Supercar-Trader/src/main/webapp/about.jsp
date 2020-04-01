@@ -10,7 +10,7 @@
         e.printStackTrace();
     }
 %>
-<p class="normal"><img src="images/line.gif"></p>
+<p class="normal"><!--  img src="images/line.gif" --></p>
 <p class="car" align="left"><img src="images/about_car.gif"></p>
 <p class="car" >
     Supercar Trader is published in 13 regional editions. To find details of your local edition, simply click on the links below or use the map to locate your local Supercar Trader magazine.

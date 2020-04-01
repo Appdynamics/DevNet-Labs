@@ -18,7 +18,8 @@ try {
 <title>Enquire</title>
 </head>
 <body>
-<p class="normal"><img src="images/line.gif"></p>
+<p class="normal"><!-- img src="images/line.gif" --></p>
+<p class="normal"></br></p>
   <html:form action="enquire?query=save"> 
     <table width="80%" border="0"> 
       <tr> 
@@ -34,7 +35,7 @@ try {
       	<td><input type="hidden" name="carId" value="<%= request.getParameter("car")%>"/></td>
       </tr>
       <tr>
-       <td>Description:<br><img src="images/line.gif"><br><br>&nbsp;<html:textarea rows="12" cols="45" property="comment" /></td> 
+       <td>Description:<br><!-- img src="images/line.gif" --><br>&nbsp;<html:textarea rows="12" cols="45" property="comment" /></td> 
       </tr> 
       <tr> 
         <td><input type="image" src="images/submit_button.gif"/ align="absmiddle"></td> 

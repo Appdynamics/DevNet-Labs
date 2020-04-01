@@ -11,7 +11,7 @@ try {
 			e.printStackTrace();
 		}
 %>
-<p class="normal"><img src="images/line.gif"></p>
+<p class="normal"><!-- img src="images/line.gif" --></p>
 <P class="car" align="center"><img src="images/insurance_car.gif"></p>
 <P class="car" >Welcome to Supercar Insurance If you're looking for a cheap car insurance quote, you're in the right place.
 
