@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
@@ -36,11 +37,20 @@ public class ActionInsurance extends Action {
             HttpServletResponse response) throws Exception {
 		
 		try {
+			String heapLeak = request.getParameter("heapLeak");
+			
 			String url = "http://localhost:8173/insurance";
+			
 			HttpClient client = HttpClientBuilder.create().build();
-			HttpGet req = new HttpGet(url);
-			 
-			HttpResponse res = client.execute(req);
+			
+			URIBuilder builder = new URIBuilder(url);
+			if (heapLeak != null) {
+				builder.setParameter("heapLeak", heapLeak);
+			}
+			
+			HttpGet req = new HttpGet(builder.build());
+			HttpResponse res = client.execute(req);			
+						
 			if (res.getStatusLine().getStatusCode() == 200) {
 				log.info("########################## Insurance Service returned 200 ##########################");
 				//System.out.println("########################## Insurance Service returned 200 ##########################");				

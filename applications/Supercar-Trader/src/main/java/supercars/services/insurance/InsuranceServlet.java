@@ -4,6 +4,8 @@
 package supercars.services.insurance;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,6 +26,9 @@ public class InsuranceServlet extends HttpServlet {
 
 	private static Logger log = Logger.getLogger(InsuranceServlet.class);
 	
+	private static Map<String, String> leakMap = new HashMap<String, String>();
+	private static long memCntr = 0;
+	
 	/**
 	 * 
 	 */
@@ -42,6 +47,37 @@ public class InsuranceServlet extends HttpServlet {
 		try {
 			log.info("!!!!!!!!!!!!!!!! Insurance Service Recieved Request URI: " + request.getRequestURI());
 
+			String leakNum = request.getParameter("heapLeak");
+			if (leakNum != null) {
+				
+				log.info("Insurance Service : parameter heapLeak was " + leakNum);
+				
+				int lNum = Integer.parseInt(leakNum);
+				
+				if (lNum == 0) {
+					log.info("Insurance Service : clearing the leak map");
+					leakMap.clear();
+				} else {
+					log.info("Insurance Service : adding " + leakNum + " entries to the leak map");
+					for (int i = 0; i < lNum; i++) {
+						memCntr++;
+						leakMap.put(memCntr + "", "*********************************"
+								+ "*********************************************************"
+								+ "*********************************************************"
+								+ "*********************************************************"
+								+ "*********************************************************"
+								+ "*********************************************************"
+								+ "*********************************************************"
+								+ "********************************************************");
+					}
+					log.info("Insurance Service : number of entries in leak map = " + leakMap.size());
+				}
+				
+				
+			} else {
+				log.info("Insurance Service : parameter heapLeak was NULL");
+			}
+			
 			String url = "https://ratekick.com/";
 			HttpClient client = HttpClientBuilder.create().build();
 			
