@@ -1,0 +1,6 @@
+/applications/Supercar-Trader/target
+/applications/Supercar-Trader/.settings
+*.classpath
+*.project
+*.psd
+/target/

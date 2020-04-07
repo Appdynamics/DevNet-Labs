@@ -1,8 +1,8 @@
 {
     "labId": "appd-apm-java-101",
-    "title": "Getting Started with AppDynamics Application Monitoring",
-    "slug": "Quickly learn how to use AppDynamics to monitor the health of your application services.  In this example, we show how to quickly install the Application Performance Monitoring (APM) module, how to add the code needed to monitor your application&#39;s health, and how to generate alerts in AppDynamic&#39;s monitoring service based off of data captured by APM.",
-    "time": "30",
+    "title": "Getting Started with AppDynamics Java Application Monitoring",
+    "slug": "Quickly learn how to use AppDynamics to monitor the health of your application services.  In this example, we show how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your application&#39;s health, and how to generate alerts in AppDynamic&#39;s monitoring service based off of data captured by APM.",
+    "time": "90",
     "byod": true,
     "tags": [
         {"title": "AppDynamics"},
@@ -10,20 +10,32 @@
         {"title": "Javascript"}
     ],
     "files": [{
-            "title": "Title 1",
+            "title": "Getting started",
             "file": "1.md"
         },
         {
-            "title": "Title 2",
+            "title": "Download the AppDynamics Java APM Agent",
             "file": "2.md"
         },
         {
-            "title": "Title ",
+            "title": "Install the AppDynamics Java APM Agent",
             "file": "3.md"
         },
         {
-            "title": "Title ",
+            "title": "Initialize the sample application with load",
             "file": "4.md"
+        },
+        {
+            "title": "Configure collection settings in the Controller",
+            "file": "5.md"
+        },
+        {
+            "title": "Monitor and troubleshoot application issues",
+            "file": "6.md"
+        },
+        {
+            "title": "Configure health rules and alerts",
+            "file": "7.md"
         }
     ],
     "related": [{
