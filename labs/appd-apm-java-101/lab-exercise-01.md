@@ -27,12 +27,12 @@ The second virtual machine hosts the Supercar Trader application used in the lab
  
 <br>
 
-## Controller VM:
+## Controller VM
 ![Controller VM Screenshot](./assets/images/01-controller-vm.png)
 
 <br>
 
-## Application VM:
+## Application VM
 ![Application VM Screenshot](./assets/images/01-application-vm.png)
 
 <br>
