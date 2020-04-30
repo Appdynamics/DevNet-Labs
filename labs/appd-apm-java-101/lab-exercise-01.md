@@ -1,6 +1,6 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
 
-![Lab Icon](./assets/images/lab-icon.png) Get started with AppDynamics Java Application Monitoring
+![Lab Icon](./assets/images/lab-icon.png) AppDynamics Java Application Monitoring 101
 =========================================================================
 
 ## Objectives
