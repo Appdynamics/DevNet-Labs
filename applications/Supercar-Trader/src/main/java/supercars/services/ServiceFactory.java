@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.services.api.ApiService;
 import supercars.services.enquiry.EnquiryService;
@@ -29,8 +30,9 @@ import supercars.utils.StringUtils;
  *
  */
 public class ServiceFactory {
-	private static Logger log = Logger.getLogger(ServiceFactory.class);
-
+	
+	private static Log log = LogFactory.getLog(ServiceFactory.class);
+	
 	private static Map<String, Process> processes = new HashMap<String, Process>();
 	private static Map<String, String> appdProps = new HashMap<String, String>();
 	private static boolean haveChecked4AppdAgent = false;

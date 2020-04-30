@@ -8,10 +8,12 @@ package supercars.action;
 
 import java.util.LinkedList;
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -28,7 +30,8 @@ import supercars.form.LeakForm;
  */
 public class ActionLeak extends Action {
 
-	private static Logger log = Logger.getLogger(ActionLeak.class);
+	private static Log log = LogFactory.getLog(ActionLeak.class);
+	
 	
     public static List<byte[]> leakyCollection = new LinkedList<>();
     

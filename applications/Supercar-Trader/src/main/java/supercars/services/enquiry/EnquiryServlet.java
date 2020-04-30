@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.dataloader.EnquiryDataLoader;
 import supercars.utils.json.JSONArray;
@@ -26,7 +27,8 @@ public class EnquiryServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -7988011897341720634L;
-	private static Logger log = Logger.getLogger(EnquiryServlet.class);
+	private static Log log = LogFactory.getLog(EnquiryServlet.class);
+	
 	private static int ERROR_COUNT = 0;
 
 	/**

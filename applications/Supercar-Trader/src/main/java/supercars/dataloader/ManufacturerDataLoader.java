@@ -13,7 +13,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.Manufacturer;
 
@@ -26,7 +27,8 @@ import supercars.Manufacturer;
  */
 public class ManufacturerDataLoader {
 	
-	private static Logger log = Logger.getLogger(ManufacturerDataLoader.class);
+	private static Log log = LogFactory.getLog(ManufacturerDataLoader.class);
+
     
     Statement statement = null;
     ResultSet resultSet = null;

@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.Car;
 import supercars.Engine;
@@ -31,7 +32,8 @@ import supercars.form.CarForm;
  */
 public class CarDataLoader {
 
-	private static Logger log = Logger.getLogger(CarDataLoader.class);
+	private static Log log = LogFactory.getLog(CarDataLoader.class);
+	
 	
     Statement statement = null;
     ResultSet resultSet = null;

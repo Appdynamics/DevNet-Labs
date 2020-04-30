@@ -10,7 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 
 /**
@@ -19,7 +20,8 @@ import org.apache.log4j.Logger;
  */
 public class ProcessHelper {
 
-	private static Logger log = Logger.getLogger(ProcessHelper.class);
+	private static Log log = LogFactory.getLog(ProcessHelper.class);
+	
 	private static Map<String, Process> processes = new HashMap<String, Process>();
 	
 	/**

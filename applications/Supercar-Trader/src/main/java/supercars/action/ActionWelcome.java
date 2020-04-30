@@ -6,7 +6,8 @@
  */
 package supercars.action;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.ActionMapping;
 
 /**
@@ -21,7 +22,8 @@ public class ActionWelcome extends ActionMapping {
 	 * 
 	 */
 	private static final long serialVersionUID = 4336854541038003756L;
-	private static Logger log = Logger.getLogger(ActionWelcome.class);
+	private static Log log = LogFactory.getLog(ActionWelcome.class);
+	
 
 	// Perform Action
 	

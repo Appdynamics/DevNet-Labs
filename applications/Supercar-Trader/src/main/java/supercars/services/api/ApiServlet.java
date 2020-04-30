@@ -10,12 +10,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.log4j.Logger;
 
 import supercars.utils.JsonHelper;
 
@@ -29,7 +30,8 @@ public class ApiServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -7888011897341720634L;
-	private static Logger log = Logger.getLogger(ApiServlet.class);
+	private static Log log = LogFactory.getLog(ApiServlet.class);
+	
 
 	/**
 	 * 

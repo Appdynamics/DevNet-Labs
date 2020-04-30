@@ -12,11 +12,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.log4j.Logger;
 
 /**
  * @author james
@@ -24,7 +25,8 @@ import org.apache.log4j.Logger;
  */
 public class InsuranceServlet extends HttpServlet {
 
-	private static Logger log = Logger.getLogger(InsuranceServlet.class);
+	private static Log log = LogFactory.getLog(InsuranceServlet.class);
+	
 	
 	private static Map<String, String> leakMap = new HashMap<String, String>();
 	private static long memCntr = 0;

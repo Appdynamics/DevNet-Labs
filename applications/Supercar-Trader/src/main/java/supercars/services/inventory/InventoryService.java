@@ -7,7 +7,8 @@ package supercars.services.inventory;
 
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.services.JettyServer;
 import supercars.utils.PropertiesHelper;
@@ -21,12 +22,14 @@ import supercars.utils.PropertiesHelper;
  */
 public class InventoryService {
 	
-	private static Logger log;
+	
+	private static Log log;
 	
 	static {
 		try {
 			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7/webapps/Supercar-Trader/logging/inventory-log4j.xml");
-			log = Logger.getLogger(InventoryService.class);
+			log = LogFactory.getLog(InventoryService.class);
+			
 			
 		} catch (Throwable ex) {
 			ex.printStackTrace();

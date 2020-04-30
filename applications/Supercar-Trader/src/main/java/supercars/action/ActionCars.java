@@ -14,7 +14,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -33,7 +34,8 @@ import supercars.dataloader.ManufacturerDataLoader;
  */
 public class ActionCars extends Action {
 
-	private static Logger log = Logger.getLogger(ActionCars.class);
+	private static Log log = LogFactory.getLog(ActionCars.class);
+	
 	
     // Perform Action
     @Override

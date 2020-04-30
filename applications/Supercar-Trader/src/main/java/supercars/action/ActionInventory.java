@@ -11,11 +11,12 @@ import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.log4j.Logger;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -33,7 +34,8 @@ import supercars.utils.PropertiesHelper;
  */
 public class ActionInventory extends Action {
 
-	private static Logger log = Logger.getLogger(ActionInventory.class);
+	private static Log log = LogFactory.getLog(ActionInventory.class);
+	
 	
 	// Perform Action
 	public ActionForward execute(ActionMapping mapping,

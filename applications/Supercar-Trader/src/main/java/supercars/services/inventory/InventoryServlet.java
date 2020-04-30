@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.Manufacturer;
 import supercars.dataloader.ManufacturerDataLoader;
@@ -27,7 +28,8 @@ public class InventoryServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -918705794873331672L;
-	private static Logger log = Logger.getLogger(InventoryServlet.class);
+	private static Log log = LogFactory.getLog(InventoryServlet.class);
+	
 
 	/**
 	 * 

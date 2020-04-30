@@ -9,7 +9,8 @@ package supercars.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -28,13 +29,15 @@ import supercars.services.ServiceFactory;
 public class ActionHome extends Action {
 
 	private static boolean servicesInitialized = false;
-	private static Logger log;
+	private static Log log;
+	
 	
 	static {
 		try {
 
 			System.setProperty("log4j.configuration", "file:/usr/local/apache/apache-tomcat-7.0.99/webapps/Supercar-Trader/logging/web-log4j.xml");
-			log = Logger.getLogger(ActionHome.class);
+			
+			log = LogFactory.getLog(ActionHome.class);
 			
 			if (!servicesInitialized) {
 				try {

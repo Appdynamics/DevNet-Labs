@@ -19,8 +19,8 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import supercars.utils.PropertiesHelper;
 
@@ -30,7 +30,8 @@ import supercars.utils.PropertiesHelper;
  */
 public class Constants {
     
-	private static Logger log = Logger.getLogger(Constants.class);
+	private static Log log = LogFactory.getLog(Constants.class);
+	
     
     /** Creates a new instance of Constants */
     public Constants() {

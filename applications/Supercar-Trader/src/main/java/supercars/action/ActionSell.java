@@ -9,7 +9,8 @@ package supercars.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -28,7 +29,8 @@ import supercars.form.FormHelper;
  */
 public class ActionSell extends Action {
 	
-	private static Logger log = Logger.getLogger(ActionSell.class);
+	private static Log log = LogFactory.getLog(ActionSell.class);
+	
 
 	// Perform Action
 	public ActionForward execute(ActionMapping mapping,
