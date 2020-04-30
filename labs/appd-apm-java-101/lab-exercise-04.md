@@ -12,7 +12,7 @@ In this exercise you will need to do the following:
 Use the commands below to clone the GitHub lab repository.
 
 ```
-cd /home/centos
+cd /opt/appdynamics
 
 git clone https://github.com/Appdynamics/DevNet-Labs.git
 ```
@@ -56,7 +56,7 @@ You should now see the Tomcat Manager App page as seen in the image below.  Foll
 ```
 2. Enter the value below in the "WAR or Directory path:" field
 ```
-file://home/centos/DevNet-Labs/applications/Supercar-Trader/Supercar-Trader.war
+file://opt/appdynamics/DevNet-Labs/applications/Supercar-Trader/Supercar-Trader.war
 ```
 3. Click on the "Deploy" button
 
@@ -91,9 +91,9 @@ You should see the home page like the image below.
 Initiate the transaction load for the application using the commands below.
 
 ```
-sudo chmod 754 /home/centos/DevNet-Labs/applications/Load-Generator/phantomjs/*.sh
+sudo chmod 754 /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs/*.sh
 
-cd /home/centos/DevNet-Labs/applications/Load-Generator/phantomjs
+cd /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs
 
 ./start_load.sh
 ```

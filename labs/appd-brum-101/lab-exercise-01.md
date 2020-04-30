@@ -1,12 +1,20 @@
-# Get started with AppDynamics Java Application Monitoring
+# Get started with AppDynamics Browser Real User monitoring
 
 ## Objectives
 
-In this Lab you learn how to use AppDynamics to monitor the health of your application services. In this Lab, you learn how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your application's health, how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics.
+In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics.
 
 ## Prerequisites
 
-You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).  You should have basic experience with Java and Linux.
+You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).
+
+  
+- You will need to use the same Lab Virtual Machines you used in the AppDynamics Java Application Monitoring 101 Lab
+- This Lab has dependencies associated with the AppDynamics Java Application Monitoring 101 Lab
+- Please complete the [AppDynamics Java Application Monitoring 101 Lab](../appd-apm-java-101/lab-exercise-01.md) before you proceed with this Lab if you have not already done so.
+
+  
+
 
 ## Lab Contents
 This lab covers six main areas:
