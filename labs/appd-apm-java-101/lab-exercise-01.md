@@ -7,9 +7,11 @@
 
 In this Lab you learn how to use AppDynamics to monitor the health of your application services. In this Lab, you learn how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your application's health, how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics.
 
+
 ## Prerequisites
 
 You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).  You should have basic experience with Java and Linux.
+
 
 ## Lab Contents
 This lab covers six main areas:
@@ -21,6 +23,7 @@ This lab covers six main areas:
 5. Monitor and troubleshoot application issues - Part 1
 6. Monitor and troubleshoot application issues - Part 2
 
+
 ## Lab Virtual Machines
 
 The lab environment has two virtual machines.  The first virtual machine hosts the AppDynamics Controller and will be referred to from this point on as the "Controller VM".  
@@ -29,12 +32,12 @@ The second virtual machine hosts the Supercar Trader application used in the lab
  
 <br>
 
-## Controller VM
+### Controller VM
 ![Controller VM Screenshot](./assets/images/01-controller-vm.png)
 
 <br>
 
-## Application VM
+### Application VM
 ![Application VM Screenshot](./assets/images/01-application-vm.png)
 
 <br>

@@ -7,6 +7,7 @@
 
 In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and find the root cause, whether it occurs on the browser side or the server side of the transaction.
 
+
 ## Prerequisites
 
 You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).
@@ -26,6 +27,7 @@ This lab covers six main areas:
 4. Configure collection settings in the Controller
 5. Monitor and troubleshoot application issues : Part 1
 6. Monitor and troubleshoot application issues : Part 2
+
 
 ## Lab Virtual Machines
 
