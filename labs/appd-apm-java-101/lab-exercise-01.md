@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png) 
 # Get started with AppDynamics Java Application Monitoring
 
 ## Objectives
