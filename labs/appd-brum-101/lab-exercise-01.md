@@ -2,9 +2,7 @@
 
 ## Objectives
 
-In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics.
-
-how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics
+In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and understand if the root cause is due to an issue on the browser side or server side.
 
 ## Prerequisites
 
