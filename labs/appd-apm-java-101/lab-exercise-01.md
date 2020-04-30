@@ -38,8 +38,6 @@ The second virtual machine hosts the Supercar Trader application used in the lab
 
 If you are ready to learn how AppDynamics can help you monitor your application's health, let's get started!   
 
-Click [next](lab-exercise-02.md) to go to the next exercise.
-
 <br>
 
 [Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/1.md) | [Next](lab-exercise-02.md)

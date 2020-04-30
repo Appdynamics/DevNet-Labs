@@ -4,12 +4,14 @@
 
 In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics.
 
+how to troubleshoot application performance issues to find root cause, and how to monitor alerts in AppDynamic's monitoring service based off of data captured by AppDynamics
+
 ## Prerequisites
 
 You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).
 
   
-- You will need to use the same Lab Virtual Machines you used in the AppDynamics Java Application Monitoring 101 Lab
+- You will need to use the same two Lab Virtual Machines you used in the AppDynamics Java Application Monitoring 101 Lab
 - This Lab has dependencies associated with the AppDynamics Java Application Monitoring 101 Lab
 - Please complete the [AppDynamics Java Application Monitoring 101 Lab](../appd-apm-java-101/lab-exercise-01.md) before you proceed with this Lab if you have not already done so.
 
@@ -19,9 +21,9 @@ You should already have access to the virtual machines for the lab.  If do not a
 ## Lab Contents
 This lab covers six main areas:
 
-1. Download the AppDynamics Java APM Agent
-2. Install the AppDynamics Java APM Agent
-3. Initialize the sample application with load
+1. Check the lab prerequisites 
+2. Create browser application in the Controller
+3. Configure browser agent injection settings
 4. Configure collection settings in the Controller
 5. Monitor and troubleshoot application issues : Part 1
 6. Monitor and troubleshoot application issues : Part 2
@@ -31,7 +33,9 @@ This lab covers six main areas:
 The lab environment has two virtual machines.  The first virtual machine hosts the AppDynamics Controller and will be referred to from this point on as the "Controller VM".  
 
 The second virtual machine hosts the Supercar Trader application used in the labs.  It will be the host where you will install the AppDynamics agents and will be referred to from this point on as the "Application VM".
- 
+
+**NOTE:** You will need to use the same two Lab Virtual Machines you used in the AppDynamics Java Application Monitoring 101 Lab.
+
 <br>
 
 ## Controller VM:
@@ -44,9 +48,7 @@ The second virtual machine hosts the Supercar Trader application used in the lab
 
 <br>
 
-If you are ready to learn how AppDynamics can help you monitor your application's health, let's get started!   
-
-Click [next](lab-exercise-02.md) to go to the next exercise.
+If you are ready to learn how AppDynamics can help you monitor the health of your browser based application, let's get started!   
 
 <br>
 

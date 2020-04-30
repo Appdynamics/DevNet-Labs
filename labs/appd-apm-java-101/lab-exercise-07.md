@@ -118,7 +118,6 @@ You can read more about Errors and Exceptions [here](https://docs.appdynamics.co
 
 ![Monitor 24](./assets/images/06-monitor-troubleshoot-24.png)
 
-
 <br>
 
 You have now completed this lab.

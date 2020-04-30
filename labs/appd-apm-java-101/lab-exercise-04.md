@@ -238,9 +238,6 @@ You can read more about Call Graphs [here](https://docs.appdynamics.com/display/
 
 ![Initialize App 15](./assets/images/04-initialize-app-15.png)
 
-
 <br>
-
-Click [next](lab-exercise-05.md) to go to the next exercise.
 
 [Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), 4, [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-03.md) | [Next](lab-exercise-05.md)    
