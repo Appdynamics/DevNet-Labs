@@ -255,7 +255,7 @@ You should see output like the image below showing that port 8080 is in use by A
 
 <br>
 
-Click [next](4.md) to go to the next exercise.
+Click [next](lab-exercise-04.md) to go to the next exercise.
 
-[Lab setup](../appd-vm-setup-101/1.md) | [1](1.md), [2](2.md), 3, [4](4.md), [5](5.md), [6](6.md), [7](7.md) | [Back](2.md) | [Next](4.md)
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), 3, [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-02.md) | [Next](lab-exercise-04.md)
 

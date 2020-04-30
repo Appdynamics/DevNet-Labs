@@ -66,6 +66,6 @@ Your browser should bring up a prompt for you to save the agent file to your loc
 
 <br>
 
-Click [next](3.md) to go to the next exercise.
+Click [next](lab-exercise-03.md) to go to the next exercise.
 
-[Lab setup](../appd-vm-setup-101/1.md) | [1](1.md), 2, [3](3.md), [4](4.md), [5](5.md), [6](6.md), [7](7.md) | [Back](1.md) | [Next](3.md)
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), 2, [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-01.md) | [Next](lab-exercise-03.md)

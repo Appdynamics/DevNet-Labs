@@ -241,6 +241,6 @@ You can read more about Call Graphs [here](https://docs.appdynamics.com/display/
 
 <br>
 
-Click [next](5.md) to go to the next exercise.
+Click [next](lab-exercise-05.md) to go to the next exercise.
 
-[Lab setup](../appd-vm-setup-101/1.md) | [1](1.md), [2](2.md), [3](3.md), 4, [5](5.md), [6](6.md), [7](7.md) | [Back](3.md) | [Next](5.md)    
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), 4, [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-03.md) | [Next](lab-exercise-05.md)    

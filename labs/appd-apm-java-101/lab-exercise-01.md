@@ -6,7 +6,7 @@ In this Lab you learn how to use AppDynamics to monitor the health of your appli
 
 ## Prerequisites
 
-You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/1.md).  You should have basic experience with Java and Linux.
+You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).  You should have basic experience with Java and Linux.
 
 ## Lab Contents
 This lab covers six main areas:
@@ -38,8 +38,8 @@ The second virtual machine hosts the Supercar Trader application used in the lab
 
 If you are ready to learn how AppDynamics can help you monitor your application's health, let's get started!   
 
-Click [next](2.md) to go to the next exercise.
+Click [next](lab-exercise-02.md) to go to the next exercise.
 
 <br>
 
-[Lab setup](../appd-vm-setup-101/1.md) | 1, [2](2.md), [3](3.md), [4](4.md), [5](5.md), [6](6.md), [7](7.md) | [Back](../appd-sandbox-setup-101/1.md) | [Next](2.md)
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/1.md) | [Next](lab-exercise-02.md)

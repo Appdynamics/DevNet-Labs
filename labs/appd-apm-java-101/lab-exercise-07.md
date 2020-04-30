@@ -123,4 +123,4 @@ You can read more about Errors and Exceptions [here](https://docs.appdynamics.co
 
 You have now completed this lab.
 
-[Lab setup](../appd-vm-setup-101/1.md) | [1](1.md), [2](2.md), [3](3.md), [4](4.md), [5](5.md), [6](6.md), 7 | [Back](6.md) | Next   
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), 7 | [Back](lab-exercise-06.md) | Next   
