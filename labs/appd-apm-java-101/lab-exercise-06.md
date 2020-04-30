@@ -1,5 +1,5 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
-# Monitor and troubleshoot application issues : Part 1
+# Monitor and troubleshoot application issues - Part 1
 
 In this exercise you will need to do the following:
 - Monitor the application dashboard and flow map

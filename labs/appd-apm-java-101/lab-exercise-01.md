@@ -16,8 +16,8 @@ This lab covers six main areas:
 2. Install the AppDynamics Java APM Agent
 3. Initialize the sample application with load
 4. Configure collection settings in the Controller
-5. Monitor and troubleshoot application issues : Part 1
-6. Monitor and troubleshoot application issues : Part 2
+5. Monitor and troubleshoot application issues - Part 1
+6. Monitor and troubleshoot application issues - Part 2
 
 ## Lab Virtual Machines
 

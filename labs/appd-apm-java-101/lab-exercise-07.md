@@ -1,5 +1,5 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
-# Monitor and troubleshoot application issues : Part 2
+# Monitor and troubleshoot application issues - Part 2
 
 In this exercise you will need to do the following:
 - Find specific errors in the application

@@ -1,5 +1,5 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
-# Install the AppDynamics Java APM Agent
+# Install the Java APM Agent
 
 In this exercise you will need to do the following:
 - Upload the Java agent file to your "Application VM"

@@ -1,5 +1,5 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
-# Download the AppDynamics Java APM Agent from the Controller
+# Download the Java APM Agent from the Controller
 
 In this exercise you will access your AppDynamics Controller from your web browser and download the Java APM agent from there.  
 
