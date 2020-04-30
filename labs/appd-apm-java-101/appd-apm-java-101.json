@@ -11,31 +11,31 @@
     ],
     "files": [{
             "title": "Getting started",
-            "file": "1.md"
+            "file": "lab-exercise-01.md"
         },
         {
             "title": "Download the AppDynamics Java APM Agent",
-            "file": "2.md"
+            "file": "lab-exercise-02.md"
         },
         {
             "title": "Install the AppDynamics Java APM Agent",
-            "file": "3.md"
+            "file": "lab-exercise-03.md"
         },
         {
             "title": "Initialize the sample application with load",
-            "file": "4.md"
+            "file": "lab-exercise-04.md"
         },
         {
             "title": "Configure collection settings in the Controller",
-            "file": "5.md"
+            "file": "lab-exercise-05.md"
         },
         {
             "title": "Monitor and troubleshoot application issues : Part 1",
-            "file": "6.md"
+            "file": "lab-exercise-06.md"
         },
         {
             "title": "Monitor and troubleshoot application issues : Part 2",
-            "file": "7.md"
+            "file": "lab-exercise-07.md"
         }
     ],
     "related": [{
