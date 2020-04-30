@@ -24,9 +24,8 @@ This lab covers six main areas:
 1. Check the lab prerequisites 
 2. Create browser application in the Controller
 3. Configure browser agent injection settings
-4. Configure collection settings in the Controller
-5. Monitor and troubleshoot application issues : Part 1
-6. Monitor and troubleshoot application issues : Part 2
+4. Monitor and troubleshoot application issues - Part 1
+5. Monitor and troubleshoot application issues - Part 2
 
 
 ## Lab Virtual Machines
@@ -53,4 +52,4 @@ If you are ready to learn how AppDynamics can help you monitor the health of you
 
 <br>
 
-[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/1.md) | [Next](lab-exercise-02.md)
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/lab-exercise-01.md) | [Next](lab-exercise-02.md)

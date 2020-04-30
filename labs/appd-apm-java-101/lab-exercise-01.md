@@ -46,4 +46,4 @@ If you are ready to learn how AppDynamics can help you monitor your application'
 
 <br>
 
-[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/1.md) | [Next](lab-exercise-02.md)
+[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/lab-exercise-01.md) | [Next](lab-exercise-02.md)
