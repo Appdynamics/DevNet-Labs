@@ -1,4 +1,4 @@
-# Get started with AppDynamics Browser Real User monitoring
+# Get started with AppDynamics Browser Real User Monitoring
 
 ## Objectives
 
@@ -14,8 +14,6 @@ You should already have access to the virtual machines for the lab.  If do not a
 - You will need to use the same two Lab Virtual Machines you used in the AppDynamics Java Application Monitoring 101 Lab
 - This Lab has dependencies associated with the AppDynamics Java Application Monitoring 101 Lab
 - Please complete the [AppDynamics Java Application Monitoring 101 Lab](../appd-apm-java-101/lab-exercise-01.md) before you proceed with this Lab if you have not already done so.
-
-  
 
 
 ## Lab Contents
