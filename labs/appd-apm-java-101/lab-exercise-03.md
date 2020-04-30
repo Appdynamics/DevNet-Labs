@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png)
 # Install the AppDynamics Java APM Agent
 
 In this exercise you will need to do the following:

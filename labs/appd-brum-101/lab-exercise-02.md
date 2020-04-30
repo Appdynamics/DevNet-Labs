@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png)
 # Check the Lab Prerequisites
 
 In this exercise you will need to do the following:

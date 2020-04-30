@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png)
 # Configure collection settings in the Controller
 
 In this exercise you will need to do the following:

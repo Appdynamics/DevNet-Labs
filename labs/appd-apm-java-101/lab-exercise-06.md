@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png)
 # Monitor and troubleshoot application issues : Part 1
 
 In this exercise you will need to do the following:

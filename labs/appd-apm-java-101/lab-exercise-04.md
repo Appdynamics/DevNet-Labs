@@ -1,3 +1,4 @@
+![APPD LOGO](./assets/images/appd-logo.png)
 # Initialize the sample application with load
 
 In this exercise you will need to do the following:
