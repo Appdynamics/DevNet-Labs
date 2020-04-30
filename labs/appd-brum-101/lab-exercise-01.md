@@ -1,4 +1,4 @@
-![APPD LOGO](./assets/images/appd-logo.png)
+![APPD LOGO](./assets/images/appd-logo.jpg)
 # Get started with AppDynamics Browser Real User Monitoring
 
 ## Objectives
