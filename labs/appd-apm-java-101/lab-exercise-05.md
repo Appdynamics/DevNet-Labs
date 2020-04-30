@@ -1,4 +1,5 @@
-# Configure collection settings in the Controller
+![Lab Icon](./assets/images/lab-icon.png) Configure collection settings in the Controller
+=========================================================================
 
 In this exercise you will need to do the following:
 - Adjust Business Transaction auto-detection settings

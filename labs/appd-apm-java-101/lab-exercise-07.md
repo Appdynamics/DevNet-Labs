@@ -1,4 +1,5 @@
-# Monitor and troubleshoot application issues - Part 2
+![Lab Icon](./assets/images/lab-icon.png) Monitor and troubleshoot application issues - Part 2
+=========================================================================
 
 In this exercise you will need to do the following:
 - Find specific errors in the application

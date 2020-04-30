@@ -1,4 +1,5 @@
-# Monitor and troubleshoot application issues - Part 1
+![Lab Icon](./assets/images/lab-icon.png) Monitor and troubleshoot application issues - Part 1
+=========================================================================
 
 In this exercise you will need to do the following:
 - Monitor the application dashboard and flow map

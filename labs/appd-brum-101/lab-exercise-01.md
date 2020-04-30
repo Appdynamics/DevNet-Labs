@@ -1,5 +1,7 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
-# Get started with AppDynamics Browser Real User Monitoring
+
+![Lab Icon](./assets/images/lab-icon.png) Get started with AppDynamics Browser Real User Monitoring
+=========================================================================
 
 ## Objectives
 

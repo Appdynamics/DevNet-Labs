@@ -1,4 +1,5 @@
-# Check the Lab Prerequisites
+![Lab Icon](./assets/images/lab-icon.png) Check the Lab Prerequisites
+=========================================================================
 
 In this exercise you will need to do the following:
 

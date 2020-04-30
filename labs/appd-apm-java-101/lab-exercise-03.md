@@ -1,4 +1,5 @@
-# Install the Java APM Agent
+![Lab Icon](./assets/images/lab-icon.png) Install the Java APM Agent
+=========================================================================
 
 In this exercise you will need to do the following:
 - Upload the Java agent file to your "Application VM"

@@ -1,4 +1,5 @@
-# Initialize the sample application with load
+![Lab Icon](./assets/images/lab-icon.png) Initialize the sample application with load
+=========================================================================
 
 In this exercise you will need to do the following:
 - Clone the GitHub lab repository on your "Application VM"
