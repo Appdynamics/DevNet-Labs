@@ -38,18 +38,18 @@ The second virtual machine hosts the Supercar Trader application used in the lab
 
 <br>
 
-## Controller VM:
+### Controller VM
 ![Controller VM Screenshot](./assets/images/01-controller-vm.png)
 
 <br>
 
-## Application VM:
+### Application VM
 ![Application VM Screenshot](./assets/images/01-application-vm.png)
 
 <br>
 
-If you are ready to learn how AppDynamics can help you monitor the health of your browser based application, let's get started!   
+If you are ready to learn how AppDynamics can help you monitor the health of your applications host and services, let's get started!   
 
 <br>
 
-[Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/lab-exercise-01.md) | [Next](lab-exercise-02.md)
+[Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../101-00-appd-vm-setup/lab-exercise-01.md) | [Next](lab-exercise-02.md)
