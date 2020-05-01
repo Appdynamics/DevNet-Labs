@@ -102,7 +102,7 @@ The Health Rule Violation details viewer shows you:
 
 When you click on the "View Dashboard During Health Rule Violation" button, it takes you to the "Server" tab of the Node dashboard by default.
 
-If you haven't installed the AppDynamics Server Monitoring agent yet then you won't see the resource metrics for the host of the Node.  The AppDynamics Java agent collects memory metrics from the JVM.  Investigate the JVM heap data following the steps below.
+If you haven't installed the AppDynamics Server Visibilty Monitoring agent yet then you won't see the resource metrics for the host of the Node. You will be able to see those metrics in the next lab. The AppDynamics Java agent collects memory metrics from the JVM via JMX.  Investigate the JVM heap data following the steps below.
 
 1. Click on the "Memory" tab
 2. Look at the current heap utilization
