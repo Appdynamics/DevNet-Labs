@@ -74,19 +74,19 @@ If any of the checks you performed in the previous steps could not be verified, 
 
 Use the command below to stop the running instance of Apache Tomcat.
 
-```bash
+```
 sudo systemctl stop apache-tomcat-7.service
 ```
 
 Wait for one minute then use the command below to start Apache Tomcat.
 
-```bash
+```
 sudo systemctl start apache-tomcat-7.service
 ```
 
 Wait for two minutes and use the command below to ensure Apache Tomcat is running on port 8080.
 
-```bash
+```
 sudo netstat -tulpn | grep LISTEN
 ```
 You should see output like the image below showing that port 8080 is in use by Apache Tomcat.
