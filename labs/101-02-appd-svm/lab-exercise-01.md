@@ -24,8 +24,8 @@ This lab covers six main areas:
 1. Check the lab prerequisites 
 2. Download the AppDynamics Server Visibility Agent
 3. Install the AppDynamics Server Visibility Agent
-4. Monitor and troubleshoot application issues - Part 1
-5. Monitor and troubleshoot application issues - Part 2
+4. Monitor Server Health
+5. Monitor Service Availability
 
 
 ## Lab Virtual Machines
