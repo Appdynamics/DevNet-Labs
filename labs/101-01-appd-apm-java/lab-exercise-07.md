@@ -121,6 +121,6 @@ You can read more about Node and JVM monitoring [here](https://docs.appdynamics.
 
 <br>
 
-You have now completed this lab.
+You have now completed this lab!
 
 [Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), 7 | [Back](lab-exercise-06.md) | Next   
