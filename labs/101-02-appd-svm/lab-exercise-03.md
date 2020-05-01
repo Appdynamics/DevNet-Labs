@@ -47,7 +47,7 @@ Use the case sensative credentials below to login:
 
 ### **4.** Download the Server Visibility Agent
 
-1. Leave the JVM type set to "Sun/JRockit"
+1. Leave the Platform Bundle set to "Linux" and "64-bit"
 2. Leave the defaults for the Controller connection as is
 3. Click on the "Click Here to Download" button
 
@@ -57,7 +57,7 @@ Use the case sensative credentials below to login:
 
 <br>
 
-### **5.** Save the Java Agent file to your file local system
+### **5.** Save the Server Visibility Agent file to your file local system
 
 Your browser should bring up a prompt for you to save the agent file to your local file system, similar to the image seen below (depending on your OS).
 
@@ -67,4 +67,4 @@ Your browser should bring up a prompt for you to save the agent file to your loc
 
 <br>
 
-[Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | [1](lab-exercise-01.md), 2, [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-01.md) | [Next](lab-exercise-03.md)
+[Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), 3, [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-02.md) | [Next](lab-exercise-04.md)
