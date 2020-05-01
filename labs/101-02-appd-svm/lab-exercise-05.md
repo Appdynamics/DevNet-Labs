@@ -140,7 +140,7 @@ You are now on the main Node dashboard.
 
 When you have the Server Visibility Monitoring agent installed, the host metrics are always available within the context of the related Node.
 
-You can read more about navigate between Server and Application Contexts [here](https://docs.appdynamics.com/display/PRO45/Navigating+Between+Server+and+Application+Contexts)
+You can read more about navigating between Server and Application Contexts [here](https://docs.appdynamics.com/display/PRO45/Navigating+Between+Server+and+Application+Contexts)
 
 ![SVM Dash 10](./assets/images/05-svm-dashboard-10.png)
 
