@@ -33,11 +33,6 @@ Run the command below from a new terminal window to upload the Java agent zip fi
 scp /tmp/AppServerAgent-20.3.0.29587.zip centos@application.vm.ip.address:/tmp/
 ```
 
-```diff
--TODO:  
-Add screenshot of upload here.
-```
-
 Executing the command will prompt you for the password for the "Application VM".  Enter the password to complete the command.
 
 <br>
@@ -49,11 +44,6 @@ Open a new terminal window and use the command below to SSH into your "Applicati
 
 ```
 ssh centos@application.vm.ip.address
-```
-
-```diff
--TODO:  
-Add screenshot of SSH window here.
 ```
 
 Executing the command will prompt you for the password for the "Application VM".  Enter the password to complete the command.
