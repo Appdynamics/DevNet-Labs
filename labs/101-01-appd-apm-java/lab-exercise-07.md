@@ -115,7 +115,7 @@ If you haven't installed the AppDynamics Server Visibilty Monitoring agent yet t
 4. Use the outer scroll bar to scroll to the bottom of the screen
 5. Notice that the "PS Old Gen" memory space is at 100%
 
-You can read more about Errors and Exceptions [here](https://docs.appdynamics.com/display/latest/Troubleshoot+Node+Problems) and [here](https://docs.appdynamics.com/display/latest/Monitor+JVMs)
+You can read more about Node and JVM monitoring [here](https://docs.appdynamics.com/display/latest/Troubleshoot+Node+Problems) and [here](https://docs.appdynamics.com/display/latest/Monitor+JVMs)
 
 ![Monitor 24](./assets/images/06-monitor-troubleshoot-24.png)
 
