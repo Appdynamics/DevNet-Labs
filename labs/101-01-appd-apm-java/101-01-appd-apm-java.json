@@ -1,6 +1,6 @@
 {
-    "labId": "appd-apm-java-101",
-    "title": "Getting Started with AppDynamics Java Application Monitoring",
+    "labId": "101-01-appd-apm-java-101",
+    "title": "Java Application Monitoring - 101",
     "slug": "Quickly learn how to use AppDynamics to monitor the health of your application services.  In this example, we show how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your application&#39;s health, and how to generate alerts in AppDynamic&#39;s monitoring service based off of data captured by APM.",
     "time": "90",
     "byod": true,
@@ -39,9 +39,14 @@
         }
     ],
     "related": [{
-            "labId": "app-dynamics-docker",
-            "title": "Monitoring Docker with AppDynamics"
-    }],
+            "labId": "101-02-appd-svm",
+            "title": "Server Visibility Monitoring - 101"
+        },
+        {
+            "labId": "101-03-appd-brum",
+            "title": "Browser Real User Monitoring - 101"
+        }
+    ],
     "authors": [{
         "name": "James Schneider",
         "email": "james101@cisco.com"
