@@ -1,11 +1,11 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
 
-![Lab Icon](./assets/images/lab-icon.png) Browser Real User Monitoring - 101
+![Lab Icon](./assets/images/lab-icon.png) Analytics UI - 101
 =========================================================================
 
 ## Objectives
 
-In this Lab you learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and find the root cause, whether it occurs on the browser side or the server side of the transaction.
+In this Lab you learn how to use AppDynamics to ....................
 
 
 ## Prerequisites
@@ -52,4 +52,4 @@ If you are ready to learn how AppDynamics can help you monitor the health of you
 
 <br>
 
-[Lab setup](../00-appd-vm-setup-101/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/lab-exercise-01.md) | [Next](lab-exercise-02.md)
+[Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | 1, [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](../appd-sandbox-setup-101/lab-exercise-01.md) | [Next](lab-exercise-02.md)
