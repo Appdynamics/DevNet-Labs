@@ -129,5 +129,5 @@ You can read more about troubleshooting slow transactions [here](https://docs.ap
 
 <br>
 
-[Lab setup](../appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), 6, [7](lab-exercise-07.md) | [Back](lab-exercise-05.md) | [Next](lab-exercise-07.md)    
+[Lab setup](../00-appd-vm-setup-101/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), 6, [7](lab-exercise-07.md) | [Back](lab-exercise-05.md) | [Next](lab-exercise-07.md)    
 
