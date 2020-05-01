@@ -5,12 +5,12 @@
 
 ## Objectives
 
-In this Lab you learn how to use AppDynamics to ....................
+In this Lab you learn how AppDynamics Server Visibility Monitoring provides extended hardware metrics and how Service Availability Monitoring enables you to quickly see underlying infrastructure issues impacting your application performance. This means you can rapidly troubleshoot hardware performance problems that are impacting your applications.
 
 
 ## Prerequisites
 
-You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).
+You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../101-00-appd-vm-setup/lab-exercise-01.md).
 
   
 - You will need to use the same two virtual machines you used in the [Java Application Monitoring 101 Lab](../101-01-appd-apm-java/lab-exercise-01.md)
@@ -22,8 +22,8 @@ You should already have access to the virtual machines for the lab.  If do not a
 This lab covers six main areas:
 
 1. Check the lab prerequisites 
-2. Create browser application in the Controller
-3. Configure browser agent injection settings
+2. Download the AppDynamics Server Visibility Agent
+3. Install the AppDynamics Server Visibility Agent
 4. Monitor and troubleshoot application issues - Part 1
 5. Monitor and troubleshoot application issues - Part 2
 

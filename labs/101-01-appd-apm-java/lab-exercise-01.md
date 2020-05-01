@@ -10,7 +10,7 @@ In this Lab you learn how to use AppDynamics to monitor the health of your appli
 
 ## Prerequisites
 
-You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../appd-sandbox-setup-101/lab-exercise-01.md).  You should have basic experience with Java and Linux.
+You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](../101-00-appd-vm-setup/lab-exercise-01.md).  You should have basic experience with Java and Linux.
 
 
 ## Lab Contents
