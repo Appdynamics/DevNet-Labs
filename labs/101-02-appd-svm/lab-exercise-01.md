@@ -19,7 +19,7 @@ You should already have access to the virtual machines for the lab.  If do not a
 
 
 ## Lab Contents
-This lab covers six main areas:
+This lab covers five main areas:
 
 1. Check the lab prerequisites 
 2. Download the AppDynamics Server Visibility Agent
