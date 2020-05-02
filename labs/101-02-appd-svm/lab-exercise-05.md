@@ -19,7 +19,7 @@ Navigate to the Servers list dashboard and drill into the servers main dashboard
 2. Check the checkbox on the left for the first server
 3. Click on the "View Details" button 
 
-You can read more about Servers List dashboard [here](https://docs.appdynamics.com/display/latest/Servers+List)
+You can read more about the Servers List dashboard [here](https://docs.appdynamics.com/display/latest/Servers+List)
 
 ![SVM Dash 1](./assets/images/05-svm-dashboard-01.png)
 
@@ -40,7 +40,7 @@ View Health Rule Status in the UI
 - Find and switch to other Server Dashboards (pull-down menu next to server tier, top left)
 - View an aggregate of the top 10 processes by CPU usage, and top 10 processes by memory
 
-You can read more about Server Main dashboard [here](https://docs.appdynamics.com/display/latest/Server+Dashboard)
+You can read more about the Server Main dashboard [here](https://docs.appdynamics.com/display/latest/Server+Dashboard)
 
 ![SVM Dash 2](./assets/images/05-svm-dashboard-02.png)
 ![SVM Dash 3](./assets/images/05-svm-dashboard-03.png)
@@ -64,7 +64,7 @@ Explore the server processes dashboard where you can:
 - See CPU and Memory usage trends at a glance
 
 
-You can read more about Server Processes dashboard [here](https://docs.appdynamics.com/display/latest/Server+Process+Metrics)
+You can read more about the Server Processes dashboard [here](https://docs.appdynamics.com/display/latest/Server+Process+Metrics)
 
 ![SVM Dash 4](./assets/images/05-svm-dashboard-04.png)
 
@@ -82,7 +82,7 @@ Explore the server volumes dashboard where you can:
 - Click on any point on a chart to see the metric value for that time
   
 
-You can read more about Server Volumes dashboard [here](https://docs.appdynamics.com/display/latest/Server+Volumes+Metrics)
+You can read more about the Server Volumes dashboard [here](https://docs.appdynamics.com/display/latest/Server+Volumes+Metrics)
 
 ![SVM Dash 5](./assets/images/05-svm-dashboard-05.png)
 
@@ -101,7 +101,7 @@ Explore the server network dashboard where you can:
 - Hover over on any point on a chart to see the metric value for that time.
   
 
-You can read more about Server Network dashboard [here](https://docs.appdynamics.com/display/latest/Server+Network+Metrics)
+You can read more about the Server Network dashboard [here](https://docs.appdynamics.com/display/latest/Server+Network+Metrics)
 
 ![SVM Dash 6](./assets/images/05-svm-dashboard-06.png)
 
