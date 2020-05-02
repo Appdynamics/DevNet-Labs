@@ -1,6 +1,6 @@
 ![APPD LOGO](./assets/images/appd-logo.png)
 
-![Lab Icon](./assets/images/lab-icon.png) Java Application Monitoring - 101
+![Lab Icon](./assets/images/lab-icon.png) Java Application Monitoring Fundamentals
 =========================================================================
 
 ## Objectives
