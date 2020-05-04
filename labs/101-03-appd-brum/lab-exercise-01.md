@@ -23,7 +23,7 @@ This lab covers five main areas:
 
 1. Check the lab prerequisites 
 2. Create a browser application in the Controller
-3. Configure browser agent injection settings
+3. Configure the browser agent injection settings
 4. Monitor and troubleshoot application issues - Part 1
 5. Monitor and troubleshoot application issues - Part 2
 
