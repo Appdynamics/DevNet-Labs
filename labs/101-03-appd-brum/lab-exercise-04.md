@@ -5,7 +5,6 @@ In this exercise you will need to do the following:
 
 - Enable JavaScript Agent injection
 - Select Business Transactions for injection
-- Configure the Browser Application
 
 ### **1.** Enable JavaScript Agent injection
 
@@ -48,15 +47,22 @@ Use the following steps to select the Business Transactions for Auto-Injection.
 3. Ensure there are nine Business Transactions in the list box on the left
 4. If all nine Business Transactions do not appear in the list, click the "Refresh List" link until all nine appear
 
-<br>
 
 ![BRUM Dash 4](./assets/images/04-brum-dashboard-04.png)
 
 <br>
 
+Use the following steps to move the Business Transactions for Auto-Injection.
 
+1. Select all nine Business Transactions from the right list box
+2. Click on the arrow button to move them to the left list box
+3. Ensure there are nine Business Transactions in the left list box
+4. Click on the "Save" button
+
+You can read more about configuring Automatic Injection of the JavaScript Agent [here](https://docs.appdynamics.com/display/latest/Automatic+Injection+of+the+JavaScript+Agent)
+
+![BRUM Dash 5](./assets/images/04-brum-dashboard-05.png)
 
 <br>
-
 
 [Lab setup](../101-00-appd-vm-setup/lab-exercise-01.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), 4, [5](lab-exercise-05.md), [6](lab-exercise-06.md), [7](lab-exercise-07.md) | [Back](lab-exercise-03.md) | [Next](lab-exercise-05.md)
