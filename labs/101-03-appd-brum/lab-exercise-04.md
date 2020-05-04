@@ -46,7 +46,7 @@ Use the following steps to select the Business Transactions for Auto-Injection.
 1. Click on the "JavaScript Agent Injection" tab
 2. Type .do in the search box
 3. Ensure there are nine Business Transactions in the list box on the left
-4. If you have all nine Business Transactions in the list, then click the "Refresh List" link until all nine Business Transactions appear in the list
+4. If all nine Business Transactions do not appear in the list, click the "Refresh List" link until all nine appear
 
 <br>
 
