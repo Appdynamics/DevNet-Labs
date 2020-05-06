@@ -65,7 +65,7 @@ public class ActionCar extends Action {
     			String enquiryContext = PropertiesHelper.getEnquiryServiceProps().getProperty("root.context");
     			
     			// String url = "http://localhost:8171/api/enquiry/carEnquiries/";
-    			String url = "http://localhost:" + apiPort + "/" + apiContext + "/" + enquiryContext + "/carEnquiries/";
+    			String url = "http://127.0.0.1:" + apiPort + "/" + apiContext + "/" + enquiryContext + "/carEnquiries/";
     			
     			HttpClient client = HttpClientBuilder.create().build();
     			

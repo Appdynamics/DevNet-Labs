@@ -31,12 +31,17 @@ Use the case sensative credentials below to login:
 
 Use the following steps to create your new browser application.
 
+**NOTE:** It is **very important** that you **create a unique name** for your browser application **in step five below**.  This lab uses a trial license from AppDynamics which has a constraint with the name of the browser application.
+
 1. Click on the "User Experience" tab on the top menu
 2. Click on the "Browser Apps" option under "User Experience"
 3. Clcik on the "Create Browser App" button
 4. Select the option to "Create an Application manually"
-5. Type in the name = Supercar-Trader-Web
-6. Click on the "OK" button
+5. Type in **a unique name** for your browser application
+   - **Format:** Supercar-Trader-Web-<your_initials_or_name>-<four_random_numbers>
+   - **Example 1:** Supercar-Trader-Web-JFK-3179
+   - **Example 2:** Supercar-Trader-Web-JohnSmith-0953
+7. Click on the "OK" button
 
 <br>
 
@@ -46,7 +51,7 @@ Use the following steps to create your new browser application.
 
 If you were not automatically taken to the "Browser App Dashboard" for the "Supercar-Trader-Web" application, you can get there by:
 
-1. Clicking on the "Supercar-Trader-Web" application in the list
+1. Clicking on the "Supercar-Trader-Web-###-####" application in the list
 2. Click on the "Details" button
 
 ![BRUM Dash 2](./assets/images/03-brum-dashboard-02.png)
