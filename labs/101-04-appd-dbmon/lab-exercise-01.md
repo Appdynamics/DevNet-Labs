@@ -7,6 +7,7 @@
 
 In this Lab you learn how to use AppDynamics to ....................
 
+**!!!!!! Time to see SQL wait states and Queries = 17 minutes from agent startup !!!!!!!**
 
 ## Prerequisites
 
