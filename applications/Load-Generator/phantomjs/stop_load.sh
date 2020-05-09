@@ -1,41 +1,39 @@
 #!/bin/bash
 echo "Finding processes for load scripts..."
-ps -ef | grep home-init
+ps -ef | grep appd-sc-home-init
 sleep 1s
-ps -ef | grep slow-query
+ps -ef | grep appd-sc-slow-query
 sleep 1s
-ps -ef | grep session-0
+ps -ef | grep appd-sc-session
 sleep 1s
-ps -ef | grep request-error
+ps -ef | grep appd-sc-request-error
 sleep 1s
-ps -ef | grep search-0
+ps -ef | grep appd-sc-search
 sleep 1s
-ps -ef | grep mem-leak-insurance
+ps -ef | grep appd-sc-mem-leak-insurance
 sleep 1s
 echo "Stopping processes for load scripts..."
-sudo pkill -f phantomjs
+sudo pkill -f appd-sc-home-init
 sleep 1s
-sudo pkill -f home-init-01
+sudo pkill -f appd-sc-slow-query
 sleep 1s
-sudo pkill -f slow-query-01
+sudo pkill -f appd-sc-session
 sleep 1s
-sudo pkill -f session-0
+sudo pkill -f appd-sc-request-error
 sleep 1s
-sudo pkill -f request-error-01
+sudo pkill -f appd-sc-search
 sleep 1s
-sudo pkill -f search-0
-sleep 1s
-sudo pkill -f mem-leak-insurance
+sudo pkill -f appd-sc-mem-leak-insurance
 sleep 1s
 echo "Checking for processes after stopping load..."
-ps -ef | grep home-init
+ps -ef | grep appd-sc-home-init
 sleep 1s
-ps -ef | grep slow-query
+ps -ef | grep appd-sc-slow-query
 sleep 1s
-ps -ef | grep session-0
+ps -ef | grep appd-sc-session
 sleep 1s
-ps -ef | grep request-error
+ps -ef | grep appd-sc-request-error
 sleep 1s
-ps -ef | grep search-0
+ps -ef | grep appd-sc-search
 sleep 1s
-ps -ef | grep mem-leak-insurance
+ps -ef | grep appd-sc-mem-leak-insurance

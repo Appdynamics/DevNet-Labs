@@ -198,7 +198,7 @@ steps = [
     //Step 12 - Open Insurance page start memory leak
     function(){
         console.log('Step 12 - Open Insurance page with memory leak');
-        page.open("http://localhost:8080/Supercar-Trader/insurance.do?heapLeak=20000", function(status){
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do?heapLeak=15000", function(status){
         });
     },    
     function(){

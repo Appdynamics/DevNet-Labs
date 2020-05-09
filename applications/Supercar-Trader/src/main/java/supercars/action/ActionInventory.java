@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -43,6 +43,8 @@ public class ActionInventory extends Action {
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
 	
+		CloseableHttpResponse res = null;
+		
 		try {
 			String apiPort =  PropertiesHelper.getApiServiceProps().getProperty("listener.port");
 			String apiContext = PropertiesHelper.getApiServiceProps().getProperty("root.context");
@@ -51,10 +53,10 @@ public class ActionInventory extends Action {
 			// String url = "http://localhost:8171/api/inventory/manufacturers";
 			String url = "http://localhost:" + apiPort + "/" + apiContext + "/" + inventoryContext + "/manufacturers";
 			
-			HttpClient client = HttpClientBuilder.create().build();
+			CloseableHttpClient client = HttpClientBuilder.create().build();
 			HttpGet req = new HttpGet(url);
 			 
-			HttpResponse res = client.execute(req);
+			res = client.execute(req);
 			
 			if (res.getStatusLine().getStatusCode() == 200) {
 				log.info("########################## API Service returned 200 ##########################");
@@ -74,6 +76,15 @@ public class ActionInventory extends Action {
 			//System.out.println("########################## API Service Failure ##########################");
 			//System.out.println("########################## " + ex.getMessage() + " ##########################");
 			ex.printStackTrace();
+			
+		} finally {
+			try {
+				if (res != null) {
+					res.close();
+				}
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
 			
 		}		
 		

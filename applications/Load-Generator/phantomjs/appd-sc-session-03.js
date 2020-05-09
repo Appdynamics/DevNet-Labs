@@ -4,7 +4,7 @@ var loadInProgress = false;//This is set to true when a page is still loading
 /*********SETTINGS*********************/
 var webPage = require('webpage');
 var page = webPage.create();
-page.settings.userAgent = 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko';
+page.settings.userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/74.0';
 page.settings.javascriptEnabled = true;
 page.settings.loadImages = true;//Script is much faster with this field set to false
 phantom.cookiesEnabled = true;
@@ -17,6 +17,65 @@ page.onConsoleMessage = function(msg) {
 };
 /**********DEFINE STEPS THAT FANTOM SHOULD DO***********************/
 steps = [
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-03.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-03.png');
+    },
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-03.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-03.png');
+    },
+
+
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-03.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-03.png');
+    },
+
+
+
  
 	//Step 1 - Open home page
     function(){
@@ -28,12 +87,12 @@ steps = [
 	//Step 2 - Get a screenshot
     function(){
 		console.log("Step 2 - Get a screen capture");
-		page.render('session-01.png');
+		page.render('session-03.png');
     },
     //Step 3 - Get a second screenshot
     function(){
 		console.log("Step 3 - Get a second screen capture");
-		page.render('session-01.png');
+		page.render('session-03.png');
     },
 
 
@@ -47,12 +106,12 @@ steps = [
     //Step 5 - Get a screenshot
     function(){
         console.log("Step 5 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 6 - Get a second screenshot
     function(){
         console.log("Step 6 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -66,12 +125,12 @@ steps = [
     //Step 8 - Get a screenshot
     function(){
         console.log("Step 8 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 9 - Get a second screenshot
     function(){
         console.log("Step 9 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -85,12 +144,12 @@ steps = [
     //Step 11 - Get a screenshot
     function(){
         console.log("Step 11 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 12 - Get a second screenshot
     function(){
         console.log("Step 12 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -104,12 +163,12 @@ steps = [
     //Step 14 - Get a screenshot
     function(){
         console.log("Step 14 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 15 - Get a second screenshot
     function(){
         console.log("Step 15 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -124,33 +183,14 @@ steps = [
     //Step 17 - Get a screenshot
     function(){
         console.log("Step 17 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 18 - Get a second screenshot
     function(){
         console.log("Step 18 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
-
-
-    //Step 19 - Open Ferrari Pista Enquiries page
-    function(){
-        console.log('Step 19 - Open Ferrari Pista Enquiries page');
-        page.open("http://localhost:8080/Supercar-Trader/car.do?query=carEnquiries&cid=18", function(status){
-            
-        });
-    },
-    //Step 20 - Get a screenshot
-    function(){
-        console.log("Step 20 - Get a screen capture");
-        page.render('session-01.png');
-    },
-    //Step 21 - Get a second screenshot
-    function(){
-        console.log("Step 21 - Get a second screen capture");
-        page.render('session-01.png');
-    },
 
 
 
@@ -164,12 +204,12 @@ steps = [
     //Step 23 - Get a screenshot
     function(){
         console.log("Step 23 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 24 - Get a second screenshot
     function(){
         console.log("Step 24 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -184,12 +224,12 @@ steps = [
     //Step 26 - Get a screenshot
     function(){
         console.log("Step 26 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 27 - Get a second screenshot
     function(){
         console.log("Step 27 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -204,12 +244,12 @@ steps = [
     //Step 29 - Get a screenshot
     function(){
         console.log("Step 29 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 30 - Get a second screenshot
     function(){
         console.log("Step 30 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -224,12 +264,12 @@ steps = [
     //Step 32 - Get a screenshot
     function(){
         console.log("Step 32 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 33 - Get a second screenshot
     function(){
         console.log("Step 33 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 
@@ -244,12 +284,12 @@ steps = [
     //Step 35 - Get a screenshot
     function(){
         console.log("Step 35 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
     //Step 36 - Get a second screenshot
     function(){
         console.log("Step 36 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-03.png');
     },
 
 

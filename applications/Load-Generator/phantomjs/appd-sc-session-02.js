@@ -4,7 +4,7 @@ var loadInProgress = false;//This is set to true when a page is still loading
 /*********SETTINGS*********************/
 var webPage = require('webpage');
 var page = webPage.create();
-page.settings.userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/23.0 Mobile/16B92 Safari/605.1.15';
+page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/74.0';
 page.settings.javascriptEnabled = true;
 page.settings.loadImages = true;//Script is much faster with this field set to false
 phantom.cookiesEnabled = true;
@@ -17,159 +17,64 @@ page.onConsoleMessage = function(msg) {
 };
 /**********DEFINE STEPS THAT FANTOM SHOULD DO***********************/
 steps = [
- 
-	//Step 1 - Open home page
-    function(){
-        console.log('Step 1 - Open home page');
-        page.open("http://localhost:8080/Supercar-Trader/home.do", function(status){
-			
-		});
-    },
-	//Step 2 - Get a screenshot
-    function(){
-		console.log("Step 2 - Get a screen capture");
-		page.render('session-01.png');
-    },
-    //Step 3 - Get a second screenshot
-    function(){
-		console.log("Step 3 - Get a second screen capture");
-		page.render('session-01.png');
-    },
 
 
-    //Step 4 - Open inventory page
+    //Step 25 - Open Insurance page
     function(){
-        console.log('Step 4 - Open inventory page');
-        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
             
         });
     },
-    //Step 5 - Get a screenshot
+    //Step 26 - Get a screenshot
     function(){
-        console.log("Step 5 - Get a screen capture");
-        page.render('session-01.png');
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-02.png');
     },
-    //Step 6 - Get a second screenshot
+    //Step 27 - Get a second screenshot
     function(){
-        console.log("Step 6 - Get a second screen capture");
-        page.render('session-01.png');
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-02.png');
     },
 
 
-    //Step 7 - Open Aston Martins page
+
+     //Step 25 - Open Insurance page
     function(){
-        console.log('Step 7 - Open Aston Martins page');
-        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=3", function(status){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
             
         });
     },
-    //Step 8 - Get a screenshot
+    //Step 26 - Get a screenshot
     function(){
-        console.log("Step 8 - Get a screen capture");
-        page.render('session-01.png');
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-02.png');
     },
-    //Step 9 - Get a second screenshot
+    //Step 27 - Get a second screenshot
     function(){
-        console.log("Step 9 - Get a second screen capture");
-        page.render('session-01.png');
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-02.png');
     },
+    
 
 
-    //Step 10 - Open BMWs page
+    //Step 25 - Open Insurance page
     function(){
-        console.log('Step 10 - Open BMWs page');
-        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=4", function(status){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
             
         });
     },
-    //Step 11 - Get a screenshot
+    //Step 26 - Get a screenshot
     function(){
-        console.log("Step 11 - Get a screen capture");
-        page.render('session-01.png');
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-02.png');
     },
-    //Step 12 - Get a second screenshot
+    //Step 27 - Get a second screenshot
     function(){
-        console.log("Step 12 - Get a second screen capture");
-        page.render('session-01.png');
-    },
-
-
-    //Step 13 - Open Ferraris page
-    function(){
-        console.log('Step 13 - Open Ferraris page');
-        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=2", function(status){
-            
-        });
-    },
-    //Step 14 - Get a screenshot
-    function(){
-        console.log("Step 14 - Get a screen capture");
-        page.render('session-01.png');
-    },
-    //Step 15 - Get a second screenshot
-    function(){
-        console.log("Step 15 - Get a second screen capture");
-        page.render('session-01.png');
-    },
-
-
-
-    //Step 16 - Open Ferrari Pista page
-    function(){
-        console.log('Step 16 - Open Ferrari Pista page');
-        page.open("http://localhost:8080/Supercar-Trader/car.do?query=car&cid=4", function(status){
-            
-        });
-    },
-    //Step 17 - Get a screenshot
-    function(){
-        console.log("Step 17 - Get a screen capture");
-        page.render('session-01.png');
-    },
-    //Step 18 - Get a second screenshot
-    function(){
-        console.log("Step 18 - Get a second screen capture");
-        page.render('session-01.png');
-    },
-
-
-
-    //Step 19 - Open Ferrari Pista Enquiries page
-    function(){
-        console.log('Step 19 - Open Ferrari Pista Enquiries page');
-        page.open("http://localhost:8080/Supercar-Trader/car.do?query=carEnquiries&cid=15", function(status){
-            
-        });
-    },
-    //Step 20 - Get a screenshot
-    function(){
-        console.log("Step 20 - Get a screen capture");
-        page.render('session-01.png');
-    },
-    //Step 21 - Get a second screenshot
-    function(){
-        console.log("Step 21 - Get a second screen capture");
-        page.render('session-01.png');
-    },
-
-
-
-    //Step 22 - Open Sell page
-    function(){
-        console.log('Step 22 - Open Sell page');
-        page.open("http://localhost:8080/Supercar-Trader/sell.do", function(status){
-            
-        });
-    },
-    //Step 23 - Get a screenshot
-    function(){
-        console.log("Step 23 - Get a screen capture");
-        page.render('session-01.png');
-    },
-    //Step 24 - Get a second screenshot
-    function(){
-        console.log("Step 24 - Get a second screen capture");
-        page.render('session-01.png');
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-02.png');
     },
 
 
@@ -184,12 +89,170 @@ steps = [
     //Step 26 - Get a screenshot
     function(){
         console.log("Step 26 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
     //Step 27 - Get a second screenshot
     function(){
         console.log("Step 27 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
+    },
+
+
+    
+	//Step 1 - Open home page
+    function(){
+        console.log('Step 1 - Open home page');
+        page.open("http://localhost:8080/Supercar-Trader/home.do", function(status){
+			
+		});
+    },
+	//Step 2 - Get a screenshot
+    function(){
+		console.log("Step 2 - Get a screen capture");
+		page.render('session-02.png');
+    },
+    //Step 3 - Get a second screenshot
+    function(){
+		console.log("Step 3 - Get a second screen capture");
+		page.render('session-02.png');
+    },
+
+
+    //Step 4 - Open inventory page
+    function(){
+        console.log('Step 4 - Open inventory page');
+        page.open("http://localhost:8080/Supercar-Trader/supercars.do", function(status){
+            
+        });
+    },
+    //Step 5 - Get a screenshot
+    function(){
+        console.log("Step 5 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 6 - Get a second screenshot
+    function(){
+        console.log("Step 6 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+    //Step 7 - Open Aston Martins page
+    function(){
+        console.log('Step 7 - Open Aston Martins page');
+        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=3", function(status){
+            
+        });
+    },
+    //Step 8 - Get a screenshot
+    function(){
+        console.log("Step 8 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 9 - Get a second screenshot
+    function(){
+        console.log("Step 9 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+    //Step 10 - Open BMWs page
+    function(){
+        console.log('Step 10 - Open BMWs page');
+        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=4", function(status){
+            
+        });
+    },
+    //Step 11 - Get a screenshot
+    function(){
+        console.log("Step 11 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 12 - Get a second screenshot
+    function(){
+        console.log("Step 12 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+    //Step 13 - Open Ferraris page
+    function(){
+        console.log('Step 13 - Open Ferraris page');
+        page.open("http://localhost:8080/Supercar-Trader/cars.do?query=manu&mid=2", function(status){
+            
+        });
+    },
+    //Step 14 - Get a screenshot
+    function(){
+        console.log("Step 14 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 15 - Get a second screenshot
+    function(){
+        console.log("Step 15 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+
+    //Step 16 - Open Ferrari Pista page
+    function(){
+        console.log('Step 16 - Open Ferrari Pista page');
+        page.open("http://localhost:8080/Supercar-Trader/car.do?query=car&cid=4", function(status){
+            
+        });
+    },
+    //Step 17 - Get a screenshot
+    function(){
+        console.log("Step 17 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 18 - Get a second screenshot
+    function(){
+        console.log("Step 18 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+
+
+
+    //Step 22 - Open Sell page
+    function(){
+        console.log('Step 22 - Open Sell page');
+        page.open("http://localhost:8080/Supercar-Trader/sell.do", function(status){
+            
+        });
+    },
+    //Step 23 - Get a screenshot
+    function(){
+        console.log("Step 23 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 24 - Get a second screenshot
+    function(){
+        console.log("Step 24 - Get a second screen capture");
+        page.render('session-02.png');
+    },
+
+
+
+    //Step 25 - Open Insurance page
+    function(){
+        console.log('Step 25 - Open Insurance page');
+        page.open("http://localhost:8080/Supercar-Trader/insurance.do", function(status){
+            
+        });
+    },
+    //Step 26 - Get a screenshot
+    function(){
+        console.log("Step 26 - Get a screen capture");
+        page.render('session-02.png');
+    },
+    //Step 27 - Get a second screenshot
+    function(){
+        console.log("Step 27 - Get a second screen capture");
+        page.render('session-02.png');
     },
 
 
@@ -204,12 +267,12 @@ steps = [
     //Step 29 - Get a screenshot
     function(){
         console.log("Step 29 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
     //Step 30 - Get a second screenshot
     function(){
         console.log("Step 30 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
 
 
@@ -224,12 +287,12 @@ steps = [
     //Step 32 - Get a screenshot
     function(){
         console.log("Step 32 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
     //Step 33 - Get a second screenshot
     function(){
         console.log("Step 33 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
 
 
@@ -244,12 +307,12 @@ steps = [
     //Step 35 - Get a screenshot
     function(){
         console.log("Step 35 - Get a screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
     //Step 36 - Get a second screenshot
     function(){
         console.log("Step 36 - Get a second screen capture");
-        page.render('session-01.png');
+        page.render('session-02.png');
     },
 
 

@@ -12,6 +12,20 @@ try {
 		}
 %>
 <%@ include file="header.jsp" %>
+<script>
+  function init() {
+    var myButton = document.getElementById("myButton");
+    var myTextfield = document.getElementById("myTextfield");
+    myButton.onclick = function() {
+      var userName = myTextfield.value;
+    }
+  }
+  document.addEventListener('readystatechange', function() {
+    if (document.readyState === "complete") {
+      init();
+    }
+  });
+</script>
 <p class="normal"><!-- img src="images/line.gif" --></p>
 <p class="normal"></br></p>
 <p class="normal">Please enter details of your supercar:</p>
