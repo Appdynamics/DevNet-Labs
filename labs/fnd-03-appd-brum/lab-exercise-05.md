@@ -88,8 +88,6 @@ Navigate to the Browser Application Usage Stats dashboard and explore the featur
 3. Look at the different browsers and versions by load
 4. Hover over the sections in the pie chart to see the details
 
-You can read more about the Browser Application Geo dashboard [here](https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-usage-stats)
-
 ![BRUM Dash 4](./assets/images/05-brum-dashboard-04.png)
 
 <br>
@@ -110,6 +108,8 @@ Navigate to the Devices dashboard and explore the features of the dashboard desc
 2. Look at the load by device break out
 3. Hover over the sections in the pie chart to see the details
 4. Explore the available performance metrics by device
+
+You can read more about the Browser Application Geo dashboard [here](https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-usage-stats)
 
 ![BRUM Dash 6](./assets/images/05-brum-dashboard-06.png)
 
@@ -170,7 +170,7 @@ Search for cars and continue browsing the site by following the steps below.
 
 1. Click on the "Search" tab on the top menu
 2. Type the letter A into the search box and click the "search" button
-3. Click on the remain tabs to explore the web site
+3. Click on the remaining tabs to explore the web site
 
 ![App Page 6](./assets/images/05-app-page-06.png)
 
