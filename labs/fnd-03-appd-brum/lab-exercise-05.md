@@ -117,7 +117,7 @@ You can read more about the Browser Application Geo dashboard [here](https://doc
 
 ### **4.** Navigate the Supercar-Trader application web pages
 
-Now that you have the Browser Real User Monitoring agent configured and explored the first series of features, let's generate some additional load by navigating the web pages of the Supercar-Trader application.
+Now that you have the Browser Real User Monitoring agent configured and explored the first series of features, let's generate some additional load and record your unique browser session by navigating the web pages of the Supercar-Trader application.
 
 Start by opening the main page of the app with your web browser.  In the example URL below, substitute the IP Address or fully qualified domain name of your Application VM. 
 
