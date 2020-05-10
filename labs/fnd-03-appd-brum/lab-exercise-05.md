@@ -109,7 +109,7 @@ Navigate to the Devices dashboard and explore the features of the dashboard desc
 3. Hover over the sections in the pie chart to see the details
 4. Explore the available performance metrics by device
 
-You can read more about the Browser Application Geo dashboard [here](https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-usage-stats)
+You can read more about the Browser Application Usage Stats dashboard [here](https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-usage-stats)
 
 ![BRUM Dash 6](./assets/images/05-brum-dashboard-06.png)
 
