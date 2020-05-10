@@ -21,10 +21,10 @@
 <p class="car">
     Supercar Trader has positioned itself as the synonymous choice for buying and selling a motor vehicle with the success of the magazine built on the combination of photo-ads, choice and a unique structure of regional publishing, offering the combined advantages of local targeting and comprehensive national coverage.
 </p>
-<p style="color:#ffffff">
+<!--  p style="color:#ffffff">
     <b>Leak Generation</b>
 </p>
 <p>
     To generate a memory leak, visit the <a href="leak.do">Leak Page</a>
-</p>
+</p -->
 <%@ include file="footer.jsp" %>
