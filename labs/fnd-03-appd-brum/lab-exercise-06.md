@@ -39,8 +39,38 @@ Once you find and open the session you created, follow the steps below to explor
 
 You can read more about the Browser RUM Sessions [here](https://docs.appdynamics.com/display/latest/Browser+RUM+Sessions)
 
-![BRUM Dash 1](./assets/images/06-brum-dashboard-02.png)
+![BRUM Dash 2](./assets/images/06-brum-dashboard-02.png)
 
+<br>
+
+### **2.** Review the Pages & AJAX Requests Dashboard
+
+Navigate to the Pages & AJAX Requests dashboard, review the options there, and open a specific Base Page dashboard by following the steps below.
+
+1. Click on the "Pages & AJAX Requests" tab on the left menu
+2. Explore the options on the toolbar
+3. Click on the "localhost:8080/supercar-trader/car.do" page
+4. Click on the "Details" button to open the Base Page dashboard
+
+![BRUM Dash 3](./assets/images/06-brum-dashboard-03.png)
+
+<br>
+
+### **3.** Review the Dashboard for a specific Base Page
+
+Review the details for the "localhost:8080/supercar-trader/car.do" Base Page by following the steps below.
+
+1. Click on the "Pages & AJAX Requests" tab on the left menu
+2. Explore the options on the toolbar
+3. Click on the "localhost:8080/supercar-trader/car.do" page
+4. Click on the "Details" button to open the Base Page dashboard
+
+![BRUM Dash 4](./assets/images/06-brum-dashboard-04.png)
+
+
+<br>
+
+![BRUM Dash 5](./assets/images/06-brum-dashboard-05.png)
 
 <br>
 
