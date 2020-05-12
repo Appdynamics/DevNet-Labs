@@ -115,9 +115,9 @@ Once you open the correlated server side snapshot, use the steps below to pinpoi
 Once you open the snapshot segment for the Enquiry-Services Tier, you can see that there were JDBC calls to the database that caused issues with the transaction.
 
 1. Click on the "JDBC" link with the largest time to open the detail panel for the JDBC calls
-2. The timing between the browser and the Web-Portal Tier represents the initial connection from the browser until the full response was returned
-3. It's evedant that the JDBC call was taking the most time
-4. Click on the "Drill Down" button to look at the code level view inside the Enquiry-Services Tier
+2. The detail panel for the JDBC exit calls shows the specific query that took most of the time
+3. You can see the full SQL statement along with the SQL parameter values
+
 
 ![BRUM Dash 9](./assets/images/06-brum-dashboard-09.png)
 
