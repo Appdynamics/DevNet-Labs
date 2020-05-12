@@ -70,6 +70,8 @@ Review the details for the "localhost:8080/supercar-trader/car.do" Base Page by 
 4. Use the vertical scroll bar to move down the page
 5. Explore the graphs for all of the KPI Trends
 
+You can read more about the Base Page dashboard [here](https://docs.appdynamics.com/display/latest/Page+and+IFrame+Dashboards)
+
 ![BRUM Dash 4](./assets/images/06-brum-dashboard-04.png)
 
 ![BRUM Dash 5](./assets/images/06-brum-dashboard-05.png)
@@ -109,7 +111,6 @@ Once you open the correlated server side snapshot, use the steps below to pinpoi
 
 ![BRUM Dash 8](./assets/images/06-brum-dashboard-08.png)
 
-
 <br>
 
 Once you open the snapshot segment for the Enquiry-Services Tier, you can see that there were JDBC calls to the database that caused issues with the transaction.
@@ -118,6 +119,7 @@ Once you open the snapshot segment for the Enquiry-Services Tier, you can see th
 2. The detail panel for the JDBC exit calls shows the specific query that took most of the time
 3. You can see the full SQL statement along with the SQL parameter values
 
+You can read more about the Browser Snapshots [here](https://docs.appdynamics.com/display/latest/Browser+Snapshots) and [here](https://docs.appdynamics.com/display/latest/Page+Browser+Snapshots)
 
 ![BRUM Dash 9](./assets/images/06-brum-dashboard-09.png)
 
