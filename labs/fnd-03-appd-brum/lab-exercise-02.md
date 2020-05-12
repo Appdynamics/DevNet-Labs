@@ -99,6 +99,8 @@ You should see output like the image below showing that port 8080 is in use by A
 Use the commands below to stop the load generation for the application.
 
 ```
+su centos
+
 cd /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs
 
 ./stop_load.sh

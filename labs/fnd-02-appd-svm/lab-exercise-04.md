@@ -113,6 +113,8 @@ Open an SSH window to your "Application VM" using the steps below:
 Use the commands below to create the directory structure where you will unzip the Server Visibility agent zip file.
 
 ```
+su centos
+
 cd /opt/appdynamics
 
 mkdir machineagent

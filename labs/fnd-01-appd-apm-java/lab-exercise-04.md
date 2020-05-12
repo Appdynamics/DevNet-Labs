@@ -13,6 +13,8 @@ In this exercise you will need to do the following:
 Use the commands below to clone the GitHub lab repository.
 
 ```
+su centos
+
 cd /opt/appdynamics
 
 git clone https://github.com/Appdynamics/DevNet-Labs.git
