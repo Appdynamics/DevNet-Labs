@@ -1,13 +1,14 @@
 {
     "labId": "fnd-01-appd-apm-java",
     "title": "Java Application Monitoring Fundamentals",
-    "slug": "Quickly learn how to use AppDynamics to monitor the health of your application services.  In this example, we show how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your application&#39;s health, and how to generate alerts in AppDynamic&#39;s monitoring service based off of data captured by APM.",
+    "slug": "In this lab you will learn how to use AppDynamics to monitor the health of your application services. You will learn how to install and configure the Java Application Performance Monitoring (APM) agent to monitor your applications health, and how to generate alerts in AppDynamics monitoring service based off of data captured by APM.",
     "time": "90",
-    "byod": true,
+    "byod": false,
     "tags": [
         {"title": "AppDynamics"},
         {"title": "Beginner"},
-        {"title": "Java"}
+        {"title": "APM"},
+        {"title": "Java Application Monitoring"}
     ],
     "files": [{
             "title": "Reserve Your Lab Sandbox Environment",

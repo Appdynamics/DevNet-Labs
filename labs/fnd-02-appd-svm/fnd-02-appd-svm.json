@@ -1,13 +1,14 @@
 {
     "labId": "fnd-02-appd-svm",
     "title": "Server Visibility Monitoring Fundamentals",
-    "slug": "Quickly learn how to use AppDynamics to enable you to quickly see underlying infrastructure issues impacting your application performance. This means you can rapidly troubleshoot hardware performance problems that are impacting your applications.",
+    "slug": "In this lab you will learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring, how they give you extended hardware metrics and enable you to quickly see underlying infrastructure issues impacting your application performance.",
     "time": "90",
-    "byod": true,
+    "byod": false,
     "tags": [
         {"title": "AppDynamics"},
         {"title": "Beginner"},
-        {"title": "Infrastucture"}
+        {"title": "APM"},
+        {"title": "Infrastucture Monitoring"}
     ],
     "files": [{
             "title": "Reserve Your Lab Sandbox Environment",

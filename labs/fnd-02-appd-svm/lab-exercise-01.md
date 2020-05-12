@@ -5,7 +5,7 @@
 
 ## Objectives
 
-In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.  You'll learn how they give you extended hardware metrics and enable you to quickly see underlying infrastructure issues impacting your application performance. This means you can rapidly troubleshoot hardware performance problems that are impacting your applications.
+In this Lab you learn about AppDynamics Server Visibility Monitoring and Service Availability Monitoring.  You'll learn how they give you extended hardware metrics and enable you to quickly see underlying infrastructure issues impacting your application performance.
 
 
 ## Prerequisites
