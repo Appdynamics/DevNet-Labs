@@ -58,21 +58,68 @@ Navigate to the Pages & AJAX Requests dashboard, review the options there, and o
 
 ### **3.** Review the Dashboard for a specific Base Page
 
+At the top of the Base Page dashboard you will see key performance indicators, End User Response Time, Load, Cache Hits, and Page Views with JS errors across the period selected in the timeframe dropdown from the upper-right side of the Controller UI. Cache Hits indicates a resource fetched from a cache, such as a CDN, rather than from the source.
+
+In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see [Browser RUM Metrics](https://docs.appdynamics.com/display/latest/Browser+RUM+Metrics).
+
 Review the details for the "localhost:8080/supercar-trader/car.do" Base Page by following the steps below.
 
-1. Click on the "Pages & AJAX Requests" tab on the left menu
-2. Explore the options on the toolbar
-3. Click on the "localhost:8080/supercar-trader/car.do" page
-4. Click on the "Details" button to open the Base Page dashboard
+1. Change the timeframe dropdown to "last 2 hours"
+2. Explore the key performance indicators
+3. Explore the metrics on the waterfall view
+4. Use the vertical scroll bar to move down the page
+5. Explore the graphs for all of the KPI Trends
 
 ![BRUM Dash 4](./assets/images/06-brum-dashboard-04.png)
-
-
-<br>
 
 ![BRUM Dash 5](./assets/images/06-brum-dashboard-05.png)
 
 <br>
+
+### **2.** Troublshoot a Browser Snapshot
+
+Navigate to the Browser Snapshots list dashboard and open a specific Browser Snapshot by following the steps below.
+
+1. Click on the "Browser Snapshots" option
+2. Click the "End User Response Time" column header twice to show the largest response times at the top
+3. Click on a browser snapshot that has a gray or blue icon in the third column from the left
+4. Click on the "Details" button to open the browser snapshot
+
+![BRUM Dash 6](./assets/images/06-brum-dashboard-06.png)
+
+<br>
+
+Once you open the browser snapshot, review the details and find root cause for the large response time by following the steps below.
+
+1. Review the waterfall view to understand where the response time was impacted
+2. Notice the extended "Server Time" metric.  Hover over the label for "Server Time" to understand its meaning
+3. Click on the server side transaction that was automatically captured and correlated to the browser snapshot
+4. Click on the "View Details" button to open the associated server side snapshot
+
+![BRUM Dash 7](./assets/images/06-brum-dashboard-07.png)
+
+<br>
+
+Once you open the correlated server side snapshot, use the steps below to pinpoint the root cause of the performance degredation.
+
+1. You can see that the percentage of transaction time spent in the browser was minimal
+2. The timing between the browser and the Web-Portal Tier represents the initial connection from the browser until the full response was returned
+3. It's evedant that the JDBC call was taking the most time
+4. Click on the "Drill Down" button to look at the code level view inside the Enquiry-Services Tier
+
+![BRUM Dash 8](./assets/images/06-brum-dashboard-08.png)
+
+
+<br>
+
+Once you open the snapshot segment for the Enquiry-Services Tier, you can see that there were JDBC calls to the database that caused issues with the transaction.
+
+1. Click on the "JDBC" link with the largest time to open the detail panel for the JDBC calls
+2. The timing between the browser and the Web-Portal Tier represents the initial connection from the browser until the full response was returned
+3. It's evedant that the JDBC call was taking the most time
+4. Click on the "Drill Down" button to look at the code level view inside the Enquiry-Services Tier
+
+![BRUM Dash 9](./assets/images/06-brum-dashboard-09.png)
 
 <br>
 

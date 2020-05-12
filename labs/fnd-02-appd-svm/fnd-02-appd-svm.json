@@ -1,0 +1,63 @@
+{
+    "labId": "fnd-02-appd-svm",
+    "title": "Server Visibility Monitoring Fundamentals",
+    "slug": "Quickly learn how to use AppDynamics to enable you to quickly see underlying infrastructure issues impacting your application performance. This means you can rapidly troubleshoot hardware performance problems that are impacting your applications.",
+    "time": "90",
+    "byod": true,
+    "tags": [
+        {"title": "AppDynamics"},
+        {"title": "Beginner"},
+        {"title": "Infrastucture"}
+    ],
+    "files": [{
+            "title": "Reserve Your Lab Sandbox Environment",
+            "file": "lab-exercise-00.md"
+        },
+        {
+            "title": "Server Visibility Monitoring Fundamentals",
+            "file": "lab-exercise-01.md"
+        },        
+        {
+            "title": "Check the Lab Prerequisites",
+            "file": "lab-exercise-02.md"
+        },
+        {
+            "title": "Download the Server Visibility Agent from the Controller",
+            "file": "lab-exercise-03.md"
+        },
+        {
+            "title": "Install the Server Visibility Agent",
+            "file": "lab-exercise-04.md"
+        },
+        {
+            "title": "Monitor Server Health",
+            "file": "lab-exercise-05.md"
+        },
+        {
+            "title": "Monitor Service Availability",
+            "file": "lab-exercise-06.md"
+        }
+    ],
+    "related": [{
+            "labId": "fnd-01-appd-apm-java",
+            "title": "Java Application Monitoring Fundamentals"
+        },
+        {
+            "labId": "fnd-03-appd-brum",
+            "title": "Browser Real User Monitoring Fundamentals"
+        },
+        {
+            "labId": "fnd-04-appd-dbmon",
+            "title": "Database Visibility Monitoring Fundamentals"
+        }
+    ],
+    "authors": [{
+        "name": "James Schneider",
+        "email": "james101@cisco.com"
+    },
+    {
+        "name": "",
+        "email": ""
+    }],
+    "active": true
+}

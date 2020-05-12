@@ -1,0 +1,63 @@
+{
+    "labId": "fnd-03-appd-brum",
+    "title": "Browser Real User Monitoring Fundamentals",
+    "slug": "Quickly learn how to use AppDynamics to monitor the health of your browser based application. In this Lab, you learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and find the root cause, whether it occurs on the browser side or the server side of the transaction.",
+    "time": "90",
+    "byod": true,
+    "tags": [
+        {"title": "AppDynamics"},
+        {"title": "Beginner"},
+        {"title": "Infrastucture"}
+    ],
+    "files": [{
+            "title": "Reserve Your Lab Sandbox Environment",
+            "file": "lab-exercise-00.md"
+        },
+        {
+            "title": "Browser Real User Monitoring Fundamentals",
+            "file": "lab-exercise-01.md"
+        },        
+        {
+            "title": "Check the Lab Prerequisites",
+            "file": "lab-exercise-02.md"
+        },
+        {
+            "title": "Create a browser application in the Controller",
+            "file": "lab-exercise-03.md"
+        },
+        {
+            "title": "Configure the browser agent injection settings",
+            "file": "lab-exercise-04.md"
+        },
+        {
+            "title": "Monitor and troubleshoot Browser App issues - Part 1",
+            "file": "lab-exercise-05.md"
+        },
+        {
+            "title": "Monitor and troubleshoot Browser App issues - Part 2",
+            "file": "lab-exercise-06.md"
+        }
+    ],
+    "related": [{
+            "labId": "fnd-01-appd-apm-java",
+            "title": "Java Application Monitoring Fundamentals"
+        },
+        {
+            "labId": "fnd-02-appd-svm",
+            "title": "Server Visibility Monitoring Fundamentals"
+        },
+        {
+            "labId": "fnd-04-appd-dbmon",
+            "title": "Database Visibility Monitoring Fundamentals"
+        }
+    ],
+    "authors": [{
+        "name": "James Schneider",
+        "email": "james101@cisco.com"
+    },
+    {
+        "name": "",
+        "email": ""
+    }],
+    "active": true
+}

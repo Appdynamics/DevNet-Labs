@@ -7,7 +7,7 @@
 aws_hostname="${aws_hostname:-appserver}"                               # [optional] hostname (defaults to 'appserver').
 user_name="${user_name:-centos}"                                        # [optional] user name (defaults to 'centos').
 set +x  # temporarily turn command display OFF.
-user_password="${user_password:-cisco123}"                              # [optional] user password (defaults to 'cisco123').
+user_password="${user_password:-}"                              # [optional] user password (defaults to 'cisco123').
 set -x  # turn command display back ON.
 user_group="${user_group:-centos}"                                      # [optional] user group (defaults to 'centos').
 group_name="${group_name:-centos}"                                      # [optional] group name (defaults to 'centos').
@@ -70,8 +70,8 @@ cd /opt/appd-cloud-kickstart
 ./provisioners/scripts/common/install_root_user_env.sh
 
 # create 'centos' user and configure shell and user tools.
-./provisioners/scripts/centos/create_centos7_group.sh
-./provisioners/scripts/centos/create_centos7_user.sh
+#./provisioners/scripts/centos/create_centos7_group.sh
+#./provisioners/scripts/centos/create_centos7_user.sh
 
 # tomcat is installed and by default runs as user 'centos'.
 ./provisioners/scripts/centos/install_centos7_apache_tomcat_7.sh

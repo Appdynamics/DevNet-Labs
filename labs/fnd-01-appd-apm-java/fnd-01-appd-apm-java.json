@@ -10,9 +10,13 @@
         {"title": "Java"}
     ],
     "files": [{
-            "title": "Getting started",
-            "file": "lab-exercise-01.md"
+            "title": "Reserve Your Lab Sandbox Environment",
+            "file": "lab-exercise-00.md"
         },
+        {
+            "title": "Java Application Monitoring Fundamentals",
+            "file": "lab-exercise-01.md"
+        },        
         {
             "title": "Download the AppDynamics Java APM Agent",
             "file": "lab-exercise-02.md"
