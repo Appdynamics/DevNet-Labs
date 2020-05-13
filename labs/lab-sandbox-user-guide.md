@@ -40,5 +40,10 @@ You will need to complete the [Java Application Monitoring Fundamentals](https:/
 
 ## <ins>Additional Information:</ins>
 
+ - [AppDynamics Concepts](https://docs.appdynamics.com/display/latest/AppDynamics+Concepts)
+ - [Application Monitoring](https://docs.appdynamics.com/display/latest/Application+Monitoring)
+ - [Server Visibility](https://docs.appdynamics.com/display/latest/Server+Visibility)
+ - [End User Monitoring](https://docs.appdynamics.com/display/latest/End+User+Monitoring)
+ - [Database Visibility](https://docs.appdynamics.com/display/latest/Database+Visibility)
  - [Sandbox Support](https://communities.cisco.com/community/developer/sandbox)
 
