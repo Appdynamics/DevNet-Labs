@@ -1,20 +1,21 @@
 {
     "labId": "fnd-04-appd-dbmon",
-    "title": "Server Visibility Monitoring Fundamentals",
-    "slug": "Quickly learn how to use AppDynamics to enable you to quickly see underlying infrastructure issues impacting your application performance. This means you can rapidly troubleshoot hardware performance problems that are impacting your applications.",
+    "title": "Database Visibility Monitoring Fundamentals",
+    "slug": "In this lab you will learn how to use AppDynamics to monitor the health of your databases. You will learn how to configure the Database Monitoring agent to gain visibility into database performance, how to troubleshoot performance issues and find the root cause, whether it occurs from application queries, blocked sessions, indexing, etc.",
     "time": "90",
     "byod": true,
     "tags": [
         {"title": "AppDynamics"},
         {"title": "Beginner"},
-        {"title": "Infrastucture"}
+        {"title": "APM"},
+        {"title": "Database Monitoring"}
     ],
     "files": [{
             "title": "Reserve Your Lab Sandbox Environment",
             "file": "lab-exercise-00.md"
         },
         {
-            "title": "Server Visibility Monitoring Fundamentals",
+            "title": "Database Visibility Monitoring Fundamentals",
             "file": "lab-exercise-01.md"
         },        
         {
@@ -22,19 +23,19 @@
             "file": "lab-exercise-02.md"
         },
         {
-            "title": "Download the Server Visibility Agent from the Controller",
+            "title": "Download the Database Visibility Agent",
             "file": "lab-exercise-03.md"
         },
         {
-            "title": "Install the Server Visibility Agent",
+            "title": "Install the Database Visibility Agent",
             "file": "lab-exercise-04.md"
         },
         {
-            "title": "Monitor Server Health",
+            "title": "Monitor and troubleshoot Database issues - Part 1",
             "file": "lab-exercise-05.md"
         },
         {
-            "title": "Monitor Service Availability",
+            "title": "Monitor and troubleshoot Database issues - Part 2",
             "file": "lab-exercise-06.md"
         }
     ],

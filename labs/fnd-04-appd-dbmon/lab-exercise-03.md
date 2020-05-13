@@ -1,7 +1,7 @@
-![Lab Icon](./assets/images/lab-icon.png) Download the Server Visibility Agent from the Controller
+![Lab Icon](./assets/images/lab-icon.png) Download the AppDynamics Database Visibility Agent from the Controller
 =========================================================================
 
-In this exercise you will access your AppDynamics Controller from your web browser and download the Server Visibility agent from there.  
+In this exercise you will access your AppDynamics Controller from your web browser and download the Database Visibility agent from there.  
 
 In the example URL below, substitute the IP Address or fully qualified domain name of your Controller VM. 
 
@@ -35,9 +35,9 @@ Use the case sensative credentials below to login:
 
 <br>
 
-### **3.** Select the Servers option
+### **3.** Select the Databases option
 
-1. Click on the "Servers" button
+1. Click on the "Databases" button
 
 <br>
 
@@ -45,9 +45,9 @@ Use the case sensative credentials below to login:
 
 <br>
 
-### **4.** Download the Server Visibility Agent
+### **4.** Download the Database Visibility Agent
 
-1. Leave the Platform Bundle set to "Linux" and "64-bit"
+1. Select "MySQL" from the "Select Database Type" dropdown menu
 2. Leave the defaults for the Controller connection as is
 3. Click on the "Click Here to Download" button
 
@@ -57,7 +57,7 @@ Use the case sensative credentials below to login:
 
 <br>
 
-### **5.** Save the Server Visibility Agent file to your local file system
+### **5.** Save the Database Visibility Agent file to your local file system
 
 Your browser should bring up a prompt for you to save the agent file to your local file system, similar to the image seen below (depending on your OS).
 

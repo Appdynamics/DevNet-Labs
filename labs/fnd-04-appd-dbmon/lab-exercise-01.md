@@ -26,8 +26,8 @@ This lab covers six main areas:
 2. Download the AppDynamics Database Visibility Agent
 3. Install the AppDynamics Database Visibility Agent
 4. Configure a Database Collector in the Controller
-5. Monitor and troubleshoot database issues - Part 1
-6. Monitor and troubleshoot database issues - Part 2
+5. Monitor and troubleshoot Database issues - Part 1
+6. Monitor and troubleshoot Database issues - Part 2
 
 
 ## Lab Virtual Machines

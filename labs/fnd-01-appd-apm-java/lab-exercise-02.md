@@ -57,7 +57,7 @@ Use the case sensative credentials below to login:
 
 <br>
 
-### **5.** Save the Java Agent file to your file local system
+### **5.** Save the Java Agent file to your local file system
 
 Your browser should bring up a prompt for you to save the agent file to your local file system, similar to the image seen below (depending on your OS).
 

@@ -1,7 +1,7 @@
 {
     "labId": "fnd-03-appd-brum",
     "title": "Browser Real User Monitoring Fundamentals",
-    "slug": "In this lab you will learn how to use AppDynamics to monitor the health of your browser based application. Youo will learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and find the root cause, whether it occurs on the browser side or the server side of the transaction.",
+    "slug": "In this lab you will learn how to use AppDynamics to monitor the health of your browser based application. You will learn how to configure the Browser Real User Monitoring (BRUM) agent to monitor your web application's health, how to troubleshoot performance issues and find the root cause, whether it occurs on the browser side or the server side of the transaction.",
     "time": "90",
     "byod": false,
     "tags": [
