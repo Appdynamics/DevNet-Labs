@@ -7,7 +7,7 @@
 aws_hostname="${aws_hostname:-appserver}"                               # [optional] hostname (defaults to 'appserver').
 user_name="${user_name:-centos}"                                        # [optional] user name (defaults to 'centos').
 set +x  # temporarily turn command display OFF.
-user_password="${user_password:-}"                              # [optional] user password (defaults to 'cisco123').
+user_password="${user_password:-cisco123}"                              # [optional] user password (defaults to 'cisco123').
 set -x  # turn command display back ON.
 user_group="${user_group:-centos}"                                      # [optional] user group (defaults to 'centos').
 group_name="${group_name:-centos}"                                      # [optional] group name (defaults to 'centos').
@@ -16,11 +16,13 @@ tomcat_group="${tomcat_group:-centos}"                                  # [optio
 user_supplementary_groups="${user_supplementary_groups:-docker}"        # [optional] user supplementary groups (defaults to 'docker').
 user_sudo_privileges="${user_sudo_privileges:-true}"                    # [optional] user sudo privileges (defaults to 'true').
 user_docker_profile="${user_docker_profile:-true}"                      # [optional] user docker profile (defaults to 'true').
-user_comment="${user_comment:-DevNet Cloud Kickstart Project user.}"    # [optional] user comment (defaults to 'DevNet Cloud Kickstart Project user.').
+user_comment="${user_comment:-AppD DevNet Kickstart Project user.}"     # [optional] user comment (defaults to 'DevNet Cloud Kickstart Project user.').
 user_install_env="${user_install_env:-true}"                            # [optional] user install env (defaults to 'true').
+devnet_update_db_timezone="${devnet_update_db_timezone:-true}"          # [optional] set the time zone of mysql db
+#devnet_mysql_db_timezone="${devnet_mysql_db_timezone:-false}"
 
 # [OPTIONAL] appdynamics cloud kickstart home folder [w/ default].
-kickstart_home="${kickstart_home:-/opt/appd-cloud-kickstart}"
+kickstart_home="${kickstart_home:-/tmp/appd-cloud-kickstart}"
 
 # export environment variables. --------------------------------------------------------------------
 export aws_hostname
@@ -35,15 +37,16 @@ export user_sudo_privileges
 export user_docker_profile
 export user_comment
 export user_install_env
+export devnet_update_db_timezone
 
 export kickstart_home
 
 # check-out appd-cloud-kickstart project from github.
-cd /opt
+cd /tmp
 git clone https://github.com/Appdynamics/AppD-Cloud-Kickstart.git appd-cloud-kickstart
 
 # provision the devnet environment.
-cd /opt/appd-cloud-kickstart
+cd /tmp/appd-cloud-kickstart
 
 # install general system tools and applicatons.
 ./provisioners/scripts/aws/config_al2_system_hostname.sh
@@ -66,12 +69,24 @@ cd /opt/appd-cloud-kickstart
 ./provisioners/scripts/common/initialize_supercar_trader_application_db.sh
 ./provisioners/scripts/centos/install_centos7_phantomjs_headless_browser.sh
 
+if [ "$devnet_update_db_timezone" == "true" ]; then
+	# change to the supercar trader sql scripts directory.
+	cd /usr/local/src/DevNet-Labs/applications/Supercar-Trader/src/main/resources/db
+    
+    # run sql script to set db time zone
+    mysql -u root -pWelcome1! < mysql-change-time-zone.sql
+
+    # change back to previous directory
+    cd /tmp/appd-cloud-kickstart
+fi
+
+
 # configure 'root' shell and user tools.
 ./provisioners/scripts/common/install_root_user_env.sh
 
 # create 'centos' user and configure shell and user tools.
-#./provisioners/scripts/centos/create_centos7_group.sh
-#./provisioners/scripts/centos/create_centos7_user.sh
+./provisioners/scripts/centos/create_centos7_group.sh
+./provisioners/scripts/centos/create_centos7_user.sh
 
 # tomcat is installed and by default runs as user 'centos'.
 ./provisioners/scripts/centos/install_centos7_apache_tomcat_7.sh
@@ -95,5 +110,6 @@ unset user_sudo_privileges
 unset user_docker_profile
 unset user_comment
 unset user_install_env
+unset devnet_update_db_timezone
 
 unset kickstart_home

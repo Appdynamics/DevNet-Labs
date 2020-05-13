@@ -23,10 +23,11 @@ You should already have access to the virtual machines for the lab.  If do not a
 This lab covers six main areas:
 
 1. Check the lab prerequisites 
-2. Create browser application in the Controller
-3. Configure browser agent injection settings
-4. Monitor and troubleshoot application issues - Part 1
-5. Monitor and troubleshoot application issues - Part 2
+2. Download the AppDynamics Database Visibility Agent
+3. Install the AppDynamics Database Visibility Agent
+4. Configure a Database Collector in the Controller
+5. Monitor and troubleshoot database issues - Part 1
+6. Monitor and troubleshoot database issues - Part 2
 
 
 ## Lab Virtual Machines
