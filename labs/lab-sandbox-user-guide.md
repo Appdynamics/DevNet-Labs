@@ -10,6 +10,8 @@ The AppDynamics Fundamentals Lab environment consists of two CentOS Linux based 
 
 After installing the AppDynamics agents with the sample application, you will access the AppDynamics Controller to monitor the application performance and troubleshoot issues in the application that are impacting end user experience.
 
+The topology diagram for the Lab environment can be found [here](https://github.com/Appdynamics/DevNet-Labs/blob/master/labs/lab-sandbox-topology.png).
+
 ## <ins>Access Details:</ins>
 
 After your AppDynamics Fundamentals Lab reservation begins, you will receive software VPN information and credentials via email.  After the VPN connection is established, you may access the devices and endpoints in your lab as follows:
@@ -36,7 +38,7 @@ The [AppDynamics Fundamentals](https://developer.cisco.com/learning/tracks/appd-
 - [Browser Real User Monitoring Fundamentals](https://developer.cisco.com/learning/lab/fnd-03-appd-brum/step/1)
 - [Database Visibility Monitoring Fundamentals](https://developer.cisco.com/learning/lab/fnd-04-appd-dbmon/step/1)
 
-You will need to complete the [Java Application Monitoring Fundamentals](https://developer.cisco.com/learning/lab/fnd-01-appd-apm-java/step/1) lab before you start the other labs in the learning track.  You will need to reuse the same two VM's for each lab within the learning track. 
+You will need to complete the [Java Application Monitoring Fundamentals](https://developer.cisco.com/learning/lab/fnd-01-appd-apm-java/step/1) lab before you start the other labs in the learning track.  You will need to use the same two VM instances for each lab within the learning track as they build on one another. 
 
 ## <ins>Additional Information:</ins>
 
