@@ -10,7 +10,7 @@ The AppDynamics Fundamentals Lab environment consists of two CentOS Linux based 
 
 After installing the AppDynamics agents with the sample application, you will access the AppDynamics Controller to monitor the application performance and troubleshoot issues in the application that are impacting end user experience.
 
-The topology diagram for the Lab environment can be found [here](https://github.com/Appdynamics/DevNet-Labs/blob/master/labs/lab-sandbox-architecture.png).
+The topology diagram for the Lab environment can be found [here](https://github.com/Appdynamics/DevNet-Labs/blob/master/labs/lab-sandbox-architecture.pdf).
 
 ## <ins>Access Details:</ins>
 
