@@ -17,16 +17,16 @@ The topology diagram for the Lab environment can be found [here](https://github.
 After your AppDynamics Fundamentals Lab reservation begins, you will receive software VPN information and credentials via email.  After the VPN connection is established, you may access the devices and endpoints in your lab as follows:
 
 - Controller VM
-  - Main Controller UI - http://10.10.20.40:8090/controller/
+  - Main Controller UI - http://10.10.20.2:8090/controller/
     - credentials [admin/welcome1]
-  - Admin Controller UI - http://10.10.20.40:8090/controller/admin.jsp
+  - Admin Controller UI - http://10.10.20.2:8090/controller/admin.jsp
     - credentials [welcome1]
 - Application VM
-  - SSH - ```ssh centos@10.10.20.41```
+  - SSH - ```ssh centos@10.10.20.10```
     - credentials [centos/cisco123]
-  - Tomcat Manager - http://10.10.20.41:8080/manager/html
+  - Tomcat Manager - http://10.10.20.10:8080/manager/html
     - credentials [admin/welcome1]
-  - Sample App - http://10.10.20.41:8080/Supercar-Trader/home.do
+  - Sample App - http://10.10.20.10:8080/Supercar-Trader/home.do
 
 
 ## <ins>Learning Track Labs:</ins>
