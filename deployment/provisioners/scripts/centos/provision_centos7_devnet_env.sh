@@ -48,6 +48,10 @@ git clone https://github.com/Appdynamics/AppD-Cloud-Kickstart.git appd-cloud-kic
 # provision the devnet environment.
 cd /tmp/appd-cloud-kickstart
 
+# create 'centos' user and configure shell and user tools.
+./provisioners/scripts/centos/create_centos7_group.sh
+./provisioners/scripts/centos/create_centos7_user.sh
+
 # install general system tools and applicatons.
 ./provisioners/scripts/aws/config_al2_system_hostname.sh
 ./provisioners/scripts/centos/install_centos7_repositories.sh
@@ -83,10 +87,6 @@ fi
 
 # configure 'root' shell and user tools.
 ./provisioners/scripts/common/install_root_user_env.sh
-
-# create 'centos' user and configure shell and user tools.
-./provisioners/scripts/centos/create_centos7_group.sh
-./provisioners/scripts/centos/create_centos7_user.sh
 
 # tomcat is installed and by default runs as user 'centos'.
 ./provisioners/scripts/centos/install_centos7_apache_tomcat_7.sh
