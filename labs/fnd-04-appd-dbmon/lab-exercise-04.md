@@ -2,9 +2,9 @@
 =========================================================================
 
 In this exercise you will need to do the following:
-- Upload the Server Visibility agent file to your "Application VM"
+- Upload the Database Visibility agent file to your "Application VM"
 - Unzip the file into a specific directory on the file system
-- Start the Server Visibility agent
+- Start the Database Visibility agent
 
 
 You will need the following connection details for the "Application VM" during this exercise.
@@ -15,21 +15,21 @@ You will need the following connection details for the "Application VM" during t
 
 These were provided in the email you received after reserving your sandbox environment for the labs.
 
-### **1.** Upload the Server Visibility agent file to your "Application VM"
+### **1.** Upload the Database Visibility agent file to your "Application VM"
 
 
 ***For Linux/Mac Users:***
 
 You will need to adjust parts of the example upload command seen below since:
 
-- It assumes that Server Visibility agent zip file you downloaded in the previous exercise is located in the "/tmp" directory of your local desktop
-- The file name of your Server Visibility agent zip file may be slightly different than the one seen in the example below
+- It assumes that Database Visibility agent zip file you downloaded in the previous exercise is located in the "/tmp" directory of your local desktop
+- The file name of your Database Visibility agent zip file may be slightly different than the one seen in the example below
 - The "application.vm.ip.address" needs to be replaced with actual IP Address of the "Application VM"
 
-Run the command below from a new terminal window to upload the Server Visibility agent zip file to the "/tmp" directory of the "Application VM".  
+Run the command below from a new terminal window to upload the Database Visibility agent zip file to the "/tmp" directory of the "Application VM".  
 
 ```bash
-scp /tmp/machineagent-bundle-64bit-linux-20.4.0.2571.zip centos@application.vm.ip.address:/tmp/
+scp /tmp/db-agent-20.4.0.1730.zip centos@application.vm.ip.address:/tmp/
 ```
 
 Executing the command will prompt you for the password for the "Application VM".  Enter the password to complete the command.
@@ -80,7 +80,7 @@ Navigate to the "/tmp" directory and select "Binary" for Transfer Settings.
 
 <br>
 
-Copy the Server Visibility agent zip file using the steps below:
+Copy the Database Visibility agent zip file using the steps below:
 
 1. Navigate to the directory where you downloaded the file
 2. Right click on the file and select "Copy"
@@ -89,7 +89,7 @@ Copy the Server Visibility agent zip file using the steps below:
 
 <br>
 
-Paste the Server Visibility agent zip file into the "/tmp" directory in the WinSCP window:
+Paste the Database Visibility agent zip file into the "/tmp" directory in the WinSCP window:
 
 1. Right click on the right pane within WinSCP and select "Paste"
 
@@ -110,53 +110,53 @@ Open an SSH window to your "Application VM" using the steps below:
 
 ### **2.** Unzip the file into a specific directory on the file system
 
-Use the commands below to create the directory structure where you will unzip the Server Visibility agent zip file.
+Use the commands below to create the directory structure where you will unzip the Database Visibility agent zip file.
 
 ```
 su centos
 
 cd /opt/appdynamics
 
-mkdir machineagent
+mkdir dbagent
 ```
-You should now be able to see the new directory structure where the Server Visibility agent zip file will be copied to.
+You should now be able to see the new directory structure where the Database Visibility agent zip file will be copied to.
 
-![SVM Install 1](./assets/images/04-svm-install-01.png)
+![DB Install 1](./assets/images/04-dbagent-install-01.png)
 
 <br>
 
-Use the commands below to copy the Server Visibility agent zip file to the directory and unzip the file.  The name of your Server Visibility agent file may be slightly different than the example below.
+Use the commands below to copy the Database Visibility agent zip file to the directory and unzip the file.  The name of your Database Visibility agent file may be slightly different than the example below.
 
 ```
-cp /tmp/machineagent-bundle-64bit-linux-20.4.0.2571.zip /opt/appdynamics/machineagent/
+cp /tmp/db-agent-20.4.0.1730.zip /opt/appdynamics/dbagent/
 
-cd /opt/appdynamics/machineagent
+cd /opt/appdynamics/dbagent
 
-unzip machineagent-bundle-64bit-linux-20.4.0.2571.zip
+unzip db-agent-20.4.0.1730.zip
 ```
 
 You should see the results of unzipping the file as in the image below.
 
-![SVM Install 2](./assets/images/04-svm-install-02.png)
+![DB Install 2](./assets/images/04-dbagent-install-02.png)
 
 <br>
 
 
-### **3.** Start the Server Visibility agent
+### **3.** Start the Database Visibility agent
 
-Use the commands below to start the Server Visibility agent and verify that it started.
+Use the commands below to start the Database Visibility agent and verify that it started.
 
 ```
-cd /opt/appdynamics/machineagent/bin
+cd /opt/appdynamics/dbagent
 
-nohup ./machine-agent &
+nohup java -Dappdynamics.agent.maxMetrics=300000 -Ddbagent.name=DevNet-Lab-DB-Agent -jar db-agent.jar &
 
-ps -ef | grep machine
+ps -ef | grep db-agent
 ```
 
 You should see the results of starting the agent as in the image below.
 
-![SVM Install 3](./assets/images/04-svm-install-03.png)
+![DB Install 3](./assets/images/04-dbagent-install-03.png)
 
 
 <br>

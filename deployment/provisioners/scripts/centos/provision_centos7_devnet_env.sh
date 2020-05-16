@@ -48,6 +48,8 @@ git clone https://github.com/Appdynamics/AppD-Cloud-Kickstart.git appd-cloud-kic
 # provision the devnet environment.
 cd /tmp/appd-cloud-kickstart
 
+./provisioners/scripts/centos/install_centos7_vim_8.sh
+
 # create 'centos' user and configure shell and user tools.
 ./provisioners/scripts/centos/create_centos7_group.sh
 ./provisioners/scripts/centos/create_centos7_user.sh
@@ -65,7 +67,6 @@ cd /tmp/appd-cloud-kickstart
 ./provisioners/scripts/common/install_jq_json_processor.sh
 ./provisioners/scripts/centos/install_centos7_git.sh
 ./provisioners/scripts/common/install_git_flow.sh
-./provisioners/scripts/centos/install_centos7_vim_8.sh
 ./provisioners/scripts/common/install_apache_ant.sh
 ./provisioners/scripts/common/install_apache_maven.sh
 ./provisioners/scripts/common/install_gradle.sh

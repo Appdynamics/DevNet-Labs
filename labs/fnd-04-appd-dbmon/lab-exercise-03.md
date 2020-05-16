@@ -29,7 +29,6 @@ Use the case sensative credentials below to login:
 2. Click on the "Getting Started" tab
 3. Click on the "Getting Started Wizard" button
 
-<br>
 
 ![Download Wizard 1](./assets/images/03-download-wizard-01.png)
 
@@ -39,7 +38,6 @@ Use the case sensative credentials below to login:
 
 1. Click on the "Databases" button
 
-<br>
 
 ![Download Wizard 2](./assets/images/03-download-wizard-02.png)
 
@@ -50,8 +48,6 @@ Use the case sensative credentials below to login:
 1. Select "MySQL" from the "Select Database Type" dropdown menu
 2. Leave the defaults for the Controller connection as is
 3. Click on the "Click Here to Download" button
-
-<br>
 
 ![Download Wizard 3](./assets/images/03-download-wizard-03.png)
 

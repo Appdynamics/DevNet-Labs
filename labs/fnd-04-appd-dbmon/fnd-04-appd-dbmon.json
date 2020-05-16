@@ -31,12 +31,16 @@
             "file": "lab-exercise-04.md"
         },
         {
+            "title": "Configure a Database Collector in the Controller",
+            "file": "lab-exercise-04.md"
+        },
+        {
             "title": "Monitor and troubleshoot Database issues - Part 1",
-            "file": "lab-exercise-05.md"
+            "file": "lab-exercise-06.md"
         },
         {
             "title": "Monitor and troubleshoot Database issues - Part 2",
-            "file": "lab-exercise-06.md"
+            "file": "lab-exercise-07.md"
         }
     ],
     "related": [{
