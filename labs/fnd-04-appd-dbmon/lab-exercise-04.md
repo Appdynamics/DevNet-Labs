@@ -149,7 +149,7 @@ Use the commands below to start the Database Visibility agent and verify that it
 ```
 cd /opt/appdynamics/dbagent
 
-nohup java -Dappdynamics.agent.maxMetrics=300000 -Ddbagent.name=DevNet-Lab-DB-Agent -jar db-agent.jar &
+nohup java -Dappdynamics.agent.maxMetrics=300000 -Ddbagent.name=DBMon-Lab-Agent -jar db-agent.jar &
 
 ps -ef | grep db-agent
 ```

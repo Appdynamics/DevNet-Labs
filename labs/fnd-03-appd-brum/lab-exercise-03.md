@@ -35,13 +35,13 @@ Use the following steps to create your new browser application.
 
 1. Click on the "User Experience" tab on the top menu
 2. Click on the "Browser Apps" option under "User Experience"
-3. Clcik on the "Create Browser App" button
+3. Click on the "Create Browser App" button
 4. Select the option to "Create an Application manually"
 5. Type in **a unique name** for your browser application
    - **Format:** Supercar-Trader-Web-<your_initials_or_name>-<four_random_numbers>
    - **Example 1:** Supercar-Trader-Web-JFK-3179
    - **Example 2:** Supercar-Trader-Web-JohnSmith-0953
-7. Click on the "OK" button
+6. Click on the "OK" button
 
 <br>
 

@@ -5,7 +5,7 @@
 
 ## Objectives
 
-In this Lab you learn how to use AppDynamics to ....................
+In this Lab you learn about AppDynamics Database Visibility Monitoring.  You will learn how to install and configure the Database Visibility agent to monitor the health of your databases and how to troubleshoot database performance issues.
 
 **!!!!!! Time to see SQL wait states and Queries = 17 minutes from agent startup !!!!!!!**
 
