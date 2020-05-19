@@ -1,6 +1,10 @@
 ![Lab Icon](./assets/images/lab-icon.png) Install the Database Visibility Agent
 =========================================================================
 
+The AppDynamics Database Agent is a standalone Java program that collects performance metrics about your database instances and database servers. You can deploy the Database Agent on any machine running Java 1.8 or higher. The machine must have network access to the AppDynamics Controller and the database instance that you want to be monitored.
+
+A database agent running on a typical machine with 16 GB of memory can monitor about 25 databases. On larger machines, a database agent can monitor up to 200 databases.
+
 In this exercise you will need to do the following:
 - Upload the Database Visibility agent file to your "Application VM"
 - Unzip the file into a specific directory on the file system
@@ -155,6 +159,8 @@ ps -ef | grep db-agent
 ```
 
 You should see the results of starting the agent as in the image below.
+
+You can read more about installing the AppDynamics Database Visibility agent [here](https://docs.appdynamics.com/display/latest/Overview+of+Database+Visibility) and [here](https://docs.appdynamics.com/display/latest/Install+the+Database+Agent)
 
 ![DB Install 3](./assets/images/04-dbagent-install-03.png)
 

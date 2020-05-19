@@ -1,6 +1,8 @@
 ![Lab Icon](./assets/images/lab-icon.png) Configure a Database Collector in the Controller
 =========================================================================
 
+The Database Agent Collector is the process that runs within the Database Agent to collect performance metrics about your database instances and database servers. One collector collects metrics for one database instance. Multiple collectors can run in one Database Agent.
+
 In this exercise you will need to do the following:
 
 - Access your AppDynamics Controller from your web browser
@@ -67,14 +69,19 @@ Use the following steps to configure a new Database collector.
 
 ### **3.** Confirm the Database Collector is collecting data
 
-Use the following steps to ............
+Wait for ten minutes to allow the collector to run and submit data, then use the following steps to verify the database collector is connecting to the database and collecting database metrics.
 
 1. Click on the "Databases" tab on the left menu
-2. Click on the ................
+2. Ensure the status is green and there are no errors shown
+3. Click on the "Supercar-MySQL" link to drill into the database
 
+**Note** It may take up to 18 minutes from the time you configure your collector to see the "Top 10 SQL Wait States" and any queries on the "Queries" tab.
+
+You can read more about configuring Database Collectors [here](https://docs.appdynamics.com/display/latest/Add+Database+Collectors) and [here](https://docs.appdynamics.com/display/latest/Configure+MySQL+Collectors)
 
 ![DB Dash 3](./assets/images/05-db-dashboard-03.png)
-
+![DB Dash 4](./assets/images/05-db-dashboard-04.png)
+![DB Dash 5](./assets/images/05-db-dashboard-05.png)
 
 <br>
 

@@ -7,8 +7,6 @@
 
 In this Lab you learn about AppDynamics Database Visibility Monitoring.  You will learn how to install and configure the Database Visibility agent to monitor the health of your databases and how to troubleshoot database performance issues.
 
-**!!!!!! Time to see SQL wait states and Queries = 17 minutes from agent startup !!!!!!!**
-
 ## Prerequisites
 
 You should already have access to the virtual machines for the lab.  If do not already have access to the VMs for the lab, follow the instructions [here](lab-exercise-00.md).
