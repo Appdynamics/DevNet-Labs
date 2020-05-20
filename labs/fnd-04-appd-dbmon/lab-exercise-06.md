@@ -19,7 +19,7 @@ The Overall Database and Server Performance Dashboard allows you to quickly see 
 5. Click on the "Sort" dropdown to see the sorting options
 6. Click on the "Supercar-MySQL" link to drill into the main database dashboard
 
-![DB Dash 1](./assets/images/06-db-dashboard-01.png)
+![DB Dash 1](assets/images/06-db-dashboard-01.png)
 
 <br>
 
@@ -50,7 +50,7 @@ Explore the features of the dashboard described below.
 8. Hover over the labels for each wait state to see a more detailed description
 9.  Observe the average number of active connections actively running a query during the selected time period
 
-![DB Dash 2](./assets/images/06-db-dashboard-02.png)
+![DB Dash 2](assets/images/06-db-dashboard-02.png)
 
 <br>
 
@@ -65,7 +65,7 @@ Explore the bottom half of the dashboard by following the steps below.
 You can read more about the Main Database dashboard [here](https://docs.appdynamics.com/display/latest/Database+Dashboard)
 
 
-![DB Dash 3](./assets/images/06-db-dashboard-03.png)
+![DB Dash 3](assets/images/06-db-dashboard-03.png)
 
 <br>
 
@@ -84,7 +84,7 @@ This report displays time-series data on Wait Events (states) within the databas
 
 The wait states consuming the most time may point to performance bottlenecks. For example, db file sequential reads may be caused by segment header contention on indexes or by disk contention.
 
-![DB Dash 4](./assets/images/06-db-dashboard-04.png)
+![DB Dash 4](assets/images/06-db-dashboard-04.png)
 
 <br>
 
@@ -94,7 +94,7 @@ This report displays the top time in database SQL statements in a time-series vi
 
 Use this report to see which SQL statements are using the most database time. This helps to determine the impact of specific SQL statements on overall system performance allowing you to focus your tuning efforts on the statements that have the most impact on database performance.
 
-![DB Dash 5](./assets/images/06-db-dashboard-05.png)
+![DB Dash 5](assets/images/06-db-dashboard-05.png)
 
 <br>
 
@@ -104,7 +104,7 @@ This report displays the wait times for the top (10, 50, 100, 200) queries.  Thi
 
 You can read more about the Reports in the Database Activity Window [here](https://docs.appdynamics.com/display/latest/Database+Activity+Window)
 
-![DB Dash 6](./assets/images/06-db-dashboard-06.png)
+![DB Dash 6](assets/images/06-db-dashboard-06.png)
 
 <br>
 
