@@ -53,13 +53,55 @@ You can read more about the Database Query Details dashboard [here](https://docs
 
 <br>
 
-### **2.** Troublshoot an expensive query
+### **3.** Troublshoot an expensive query
+
+The Database Query Execution Plan window can help you to determine the most efficient execution plan for your queries. Once you've discovered a potentially problematic query, you can run the EXPLAIN PLAN statement to check the execution plan that the database created. A query's execution plan reveals whether the query is optimizing its use of indexes and executing efficiently. This information is useful for troubleshooting queries that are executing slowly.
+
+1. Notice that the join type in the "Type" column is ALL for each table.
+2. Hover over one of the join types to see the description for the join type.
+3. Examine the entries in the "Extra" column.
+4. Hover over each of the entries to see the description for the entry.
+   - The descriptions in the Explain Plan Details point to the use of full table scans across all three tables in the query.
+   - Let's investigate the indexes on the table using the Obect Browser next.
+5. Click on the "Object Browser" option to view details of the schema for the tables
+
+
+
+You can read more about the Database Query Execution Plan dashboard [here](https://docs.appdynamics.com/display/latest/Database+Query+Execution+Plan+Window)
+
+![DB Dash 4](assets/images/07-db-dashboard-04.png)
 
 <br>
 
+1. Click on the "Database" option on the left.
+2. Click on the "supercars" schema to expand the list of tables.
+3. Click on the "CARS" table to see the details of the table.
+4. You can see that the "CAR_ID" column is defined as the primary key
+
+![DB Dash 5](assets/images/07-db-dashboard-05.png)
 
 <br>
 
+1. Use the outer scroll bar to scroll down the page.
+2. Notice the primary key index defined in the table.
+3. Click on the "MANUFACTURER" table to view its details.
 
+
+![DB Dash 6](assets/images/07-db-dashboard-06.png)
+
+
+<br>
+
+1. Notice the "MANUFACTURER_ID" column is not defined as a primary key.
+2. Scroll down the page to see there are no indexes defined for the table.
+
+The expensive query you looked at is joining across three tables and could benefit from an index for each column in each join.  The "MANUFACTURER_ID" column needs an index created for it to improve the performance of any queries on the table.
+
+
+![DB Dash 7](assets/images/07-db-dashboard-07.png)
+
+<br>
+
+You have now completed this lab!
 
 [Lab setup](lab-exercise-00.md) | [1](lab-exercise-01.md), [2](lab-exercise-02.md), [3](lab-exercise-03.md), [4](lab-exercise-04.md), [5](lab-exercise-05.md), [6](lab-exercise-06.md), 7 | [Back](lab-exercise-06.md) | Next
