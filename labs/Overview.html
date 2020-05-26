@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+  <link href="../code/tab_single.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background: white; font-family:Helvetica,Arial;">
+  <p><!--  DO NOT MODIFY ANYTHING ABOVE THIS LINE -->
+    <span style="font-weight: bold; text-decoration: underline;">Overview:</span><br><br>
+    The AppDynamics Fundamentals reservation based Lab provides a developer with an environment to deploy several AppDynamic's agents along with a sample application to understand how AppDynamics provides end-to-end application monitoring and allows you to quickly resolve performance issues before they become business problems.
+  <br> <br>
+  <span style="text-decoration: underline; font-weight: bold;">Lab Information:</span><br><br>
+  The AppDynamics Fundamentals Lab environment consists of two CentOS Linux based VM's. The first VM hosts the AppDynamics Controller and will be referred to from this point on as the "Controller VM". The second VM hosts the Supercar-Trader sample application used in the Lab. The second VM will be the host where you will install the AppDynamics agents and will be referred to from this point on as the "Application VM". 
+  
+<br><br/>
+
+A developer can reserve this lab and remotely access to install the AppDynamics agents with the sample application.  After installing the AppDynamics agents with the sample application, you will access the AppDynamics Controller to monitor the application performance and troubleshoot issues in the application that are impacting end user experience.
+
+<br><br/>
+
+The topology diagram for the Lab environment can be found <a href="./appd-architecture.pdf" target="_blank">here</a>.
+  <br><br/>
+
+  <span style="text-decoration: underline; font-weight: bold;">Access Details:<br>
+  </span><br>
+  After your AppDynamics Fundamentals Lab reservation begins, you will receive software VPN information and credentials via email. After the VPN connection is established, you may access the devices and endpoints in your lab as follows:  </p>
+  <ul>
+    <li>Controller VM
+        <ul>
+            <li>Main Controller UI - <a href="http://10.10.20.2:8090/controller/" rel="nofollow">http://10.10.20.2:8090/controller/</a>
+                <ul>
+                    <li>credentials [admin/welcome1]</li>
+                </ul>
+            </li>
+            <li>Admin Controller UI - <a href="http://10.10.20.2:8090/controller/admin.jsp" rel="nofollow">http://10.10.20.2:8090/controller/admin.jsp</a>
+                <ul>
+                    <li>credentials [welcome1]</li>
+                </ul>
+            </li>
+         </ul>
+    </li>
+    <li>Application VM
+        <ul>
+            <li>SSH - ssh centos@10.10.20.10
+                <ul>
+                    <li>credentials [centos/cisco123]</li>
+                </ul>
+            </li>
+            <li>Tomcat Manager - <a href="http://10.10.20.10:8080/manager/html" rel="nofollow">http://10.10.20.10:8080/manager/html</a>
+                <ul>
+                    <li>credentials [admin/welcome1]</li>
+                </ul>
+            </li>
+            <li>Sample App - <a href="http://10.10.20.10:8080/Supercar-Trader/home.do" rel="nofollow">http://10.10.20.10:8080/Supercar-Trader/home.do</a></li>
+      </ul>
+   </li>
+</ul>
+
+  <span style="text-decoration: underline; font-weight: bold;">Learning Track Labs:<br>
+    </span>
+  <p>The <a href="https://developer.cisco.com/learning/tracks/appd-fundamentals" rel="nofollow">AppDynamics Fundamentals</a> learning track consists of the following Labs.</p>
+  <ul>
+    <li>
+        <a href="https://developer.cisco.com/learning/lab/fnd-01-appd-apm-java/step/1" rel="nofollow">Java Application Monitoring Fundamentals</a>
+    </li>
+    <li>
+        <a href="https://developer.cisco.com/learning/lab/fnd-02-appd-svm/step/1" rel="nofollow">Server Visibility Monitoring Fundamentals</a>
+    </li>
+    <li>
+        <a href="https://developer.cisco.com/learning/lab/fnd-03-appd-brum/step/1" rel="nofollow">Browser Real User Monitoring Fundamentals</a>
+    </li>
+    <li>
+        <a href="https://developer.cisco.com/learning/lab/fnd-04-appd-dbmon/step/1" rel="nofollow">Database Visibility Monitoring Fundamentals</a>
+    </li>
+  </ul>
+
+  <p>You will need to complete the <a href="https://developer.cisco.com/learning/lab/fnd-01-appd-apm-java/step/1" rel="nofollow">Java Application Monitoring Fundamentals</a> lab before you start the other labs in the learning track.  You will need to use the same two VM instances for each lab within the learning track as they build on one another.</p>
+
+  <span style="text-decoration: underline; font-weight: bold;">Additional Information:<br>
+  </span>
+  <ul>
+    <li><a href="https://docs.appdynamics.com/display/latest/AppDynamics+Concepts" rel="nofollow">AppDynamics Concepts</a></li>
+    <li><a href="https://docs.appdynamics.com/display/latest/Application+Monitoring" rel="nofollow">Application Monitoring</a></li>
+    <li><a href="https://docs.appdynamics.com/display/latest/Server+Visibility" rel="nofollow">Server Visibility</a></li>
+    <li><a href="https://docs.appdynamics.com/display/latest/End+User+Monitoring" rel="nofollow">End User Monitoring</a></li>
+    <li><a href="https://docs.appdynamics.com/display/latest/Database+Visibility" rel="nofollow">Database Visibility</a></li>
+    <li><a href="https://communities.cisco.com/community/developer/sandbox" rel="nofollow">Sandbox Support</a></li>
+  </ul>
+
+  If there are any issues with the Sandbox, please reach out to <a href="https://communities.cisco.com/community/developer/sandbox" target="_blank">Sandbox Support</a>
+</body>
+
+</html>

@@ -84,6 +84,20 @@ border: 0px #d79900 solid;
 border-collapse: collapse;
 border-spacing: 0px;}
 
+p.webdesign
+{
+/* background-color: #232b2d; */
+text-align: right;
+font-family: Verdana;
+font-weight: normal;
+font-size: 12px;
+width: 970px;
+height 970px;
+color: #e8e8e8;
+border: 0px #d79900 solid;
+border-collapse: collapse;
+border-spacing: 0px;}
+
 p
 {
 /* background-color: #222a2d; */

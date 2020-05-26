@@ -21,6 +21,9 @@
 <p class="car">
     Supercar Trader has positioned itself as the synonymous choice for buying and selling a motor vehicle with the success of the magazine built on the combination of photo-ads, choice and a unique structure of regional publishing, offering the combined advantages of local targeting and comprehensive national coverage.
 </p>
+
+<p class="webdesign">website design by<img src="images/web-site-design.png" title="james101"></p>
+
 <!--  p style="color:#ffffff">
     <b>Leak Generation</b>
 </p>

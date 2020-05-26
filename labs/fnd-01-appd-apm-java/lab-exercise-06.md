@@ -2,6 +2,7 @@
 =========================================================================
 
 In this exercise you will need to do the following:
+
 - Monitor the application dashboard and flow map
 - Troubleshoot a slow transaction snapshot
 
