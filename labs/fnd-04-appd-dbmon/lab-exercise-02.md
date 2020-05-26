@@ -1,13 +1,13 @@
-![Lab Icon](./assets/images/lab-icon.png) Check the Lab Prerequisites
+![Lab Icon](assets/images/lab-icon.png) Check the Learning Lab prerequisites
 =========================================================================
 
-In this exercise you will need to do the following:
+In this exercise you will complete the following tasks:
 
-- Access your AppDynamics Controller from your web browser
-- Verify transaction load to the application
-- Restart the application and transaction load if needed
+- Access your AppDynamics Controller from your web browser.
+- Verify transaction load to the application.
+- Restart the application and transaction load if needed.
 
-In the example URL below, substitute the IP Address or fully qualified domain name of your Controller VM. 
+The Controller can be accessed at a URL similar to the following example. Substitute the IP Address or fully qualified domain name of your Controller VM.
 
 Example Controller URL for browser:
 
@@ -15,88 +15,70 @@ Example Controller URL for browser:
 http://IP_OR_FQDN_OF_HOST:8090/controller
 ```
 
-### **1.** Access the controller login screen from your web browser
-You should see the login page of the Controller like the image below.
+Access the controller login screen from your web browser.
 
-![Controller Login Screen](./assets/images/02-controller-login.png)
+![Controller Login Screen](assets/images/02-controller-login.png)
 
-Use the case sensative credentials below to login:
+Use the following case-sensitive credentials to login:
+- Username: `admin`
+- Password: `welcome1`
 
-- Username = admin 
-- Password = welcome1
+## Verify transaction load to the application
 
-<br>
+Check the application flow map:
 
-### **2.** Verify transaction load to the application
-
-#### Check the application flow map:
-
-1. Select the "last 1 hour" time frame
-2. Verify you see the five different Tiers on the flow map
-3. Verify there has been consistent load over the last 1 hour
-
-<br>
-
-![Verify Load 1](./assets/images/02-verify-app-load-01.png)
-
-<br>
-
-#### Check the list of business transactions:
-
-1. Click on the "Business Transactions" option on the left menu
-2. Verify you see the eleven business transactions seen below
-3. Verify that they have some number of calls during the last hour
-
-**NOTE:** If you don't see the "Calls" column, you can click on the "View Options" toolbar button to show that column.
-
-<br>
-
-![Verify Load 2](./assets/images/02-verify-app-load-02.png)
-
-<br>
-
-#### Check the agent status for the Nodes:
-
-1. Click on the "Tiers & Nodes" option on the left menu
-2. Click on the "Grid View" button
-3. Verify that the "App Agent Status" for each Node is greater than 90% during the last hour
-
-<br>
-
-![Verify Load 3](./assets/images/02-verify-app-load-03.png)
+1. Select the **last 1 hour** time frame.
+2. Verify you see the five different Tiers on the flow map.
+3. Verify there has been consistent load over the last 1 hour.
 
 
-### **3.** Restart the application and transaction load if needed
+![Verify Load 1](assets/images/02-verify-app-load-01.png)
 
-If any of the checks you performed in the previous steps could not be verified, SSH into your "Application VM" and follow the steps below to restart the application and transaction load.
+Check the list of business transactions:
 
-#### Restart Apache Tomcat:
+1. Click on the **Business Transactions** option on the left menu.
+2. Verify you see the eleven business transactions seen below.
+3. Verify that they have some number of calls during the last hour.
 
-Use the command below to stop the running instance of Apache Tomcat.
+> *Note:* If you don't see the **Calls** column, you can click on the **View Options** toolbar button to show that column.
 
-```
-sudo systemctl stop apache-tomcat-7.service
-```
+![Verify Load 2](assets/images/02-verify-app-load-02.png)
 
-Wait for one minute then use the command below to start Apache Tomcat.
+Check the agent status for the Nodes:
 
-```
-sudo systemctl start apache-tomcat-7.service
-```
+1. Click on the **Tiers & Nodes** option on the left menu
+2. Click on the **Grid View** button
+3. Verify that the **App Agent Status** for each Node is greater than 90% during the last hour
 
-Wait for two minutes and use the command below to ensure Apache Tomcat is running on port 8080.
+![Verify Load 3](assets/images/02-verify-app-load-03.png)
 
-```
-sudo netstat -tulpn | grep LISTEN
-```
-You should see output like the image below showing that port 8080 is in use by Apache Tomcat.
+## Restart the application and transaction load if needed
 
-![Restart App 1](./assets/images/02-restart-app-and-load-01.png)
+If any of the checks you performed in the previous steps could not be verified, SSH into your **Application VM** and follow these steps to restart the application and transaction load.
 
+1. Use the following command to stop the running instance of Apache Tomcat.
 
-#### Restart the application transaction load:
+    ```
+    sudo systemctl stop apache-tomcat-7.service
+    ```
 
-Use the commands below to stop the load generation for the application.
+2. Wait for one minute then use the following command to start Apache Tomcat.
+
+    ```
+    sudo systemctl start apache-tomcat-7.service
+    ```
+
+3. Wait for two minutes and use the following command to ensure Apache Tomcat is running on port 8080.
+
+    ```
+    sudo netstat -tulpn | grep LISTEN
+    ```
+
+You should see output similar to the following image showing that port 8080 is in use by Apache Tomcat.
+
+![Restart App 1](assets/images/02-restart-app-and-load-01.png)
+
+Use the following commands to stop the load generation for the application.
 
 ```
 su centos
@@ -106,13 +88,12 @@ cd /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs
 ./stop_load.sh
 ```
 
-You should see output like the image below.
+You should see output similar to the following image.
 
-![Restart App 2](./assets/images/02-restart-app-and-load-02.png)
+![Restart App 2](assets/images/02-restart-app-and-load-02.png)
 
-<br>
 
-Use the commands below to start the load generation for the application.
+Use the following commands to start the load generation for the application.
 
 ```
 cd /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs
@@ -120,10 +101,9 @@ cd /opt/appdynamics/DevNet-Labs/applications/Load-Generator/phantomjs
 ./start_load.sh
 ```
 
-You should see output like the image below.
+You should see output similar to the following image.
 
-![Restart App 3](./assets/images/02-restart-app-and-load-03.png)
-
+![Restart App 3](assets/images/02-restart-app-and-load-03.png)
 
 <br>
 

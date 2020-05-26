@@ -1,4 +1,4 @@
-![Lab Icon](./assets/images/lab-icon.png) Download the Database Visibility Agent from the Controller
+![Lab Icon](assets/images/lab-icon.png) Download the Database Visibility Agent from the Controller
 =========================================================================
 
 In this exercise you will access your AppDynamics Controller from your web browser and download the Database Visibility agent from there.  
@@ -14,7 +14,7 @@ http://IP_OR_FQDN_OF_HOST:8090/controller
 ### **1.** Access the controller login screen from your web browser
 You should see the login page of the Controller like the image below.
 
-![Controller Login Screen](./assets/images/03-controller-login.png)
+![Controller Login Screen](assets/images/03-controller-login.png)
 
 Use the case sensative credentials below to login:
 
@@ -30,7 +30,7 @@ Use the case sensative credentials below to login:
 3. Click on the "Getting Started Wizard" button
 
 
-![Download Wizard 1](./assets/images/03-download-wizard-01.png)
+![Download Wizard 1](assets/images/03-download-wizard-01.png)
 
 <br>
 
@@ -39,7 +39,7 @@ Use the case sensative credentials below to login:
 1. Click on the "Databases" button
 
 
-![Download Wizard 2](./assets/images/03-download-wizard-02.png)
+![Download Wizard 2](assets/images/03-download-wizard-02.png)
 
 <br>
 
@@ -49,7 +49,7 @@ Use the case sensative credentials below to login:
 2. Leave the defaults for the Controller connection as is
 3. Click on the "Click Here to Download" button
 
-![Download Wizard 3](./assets/images/03-download-wizard-03.png)
+![Download Wizard 3](assets/images/03-download-wizard-03.png)
 
 <br>
 
@@ -59,7 +59,7 @@ Your browser should bring up a prompt for you to save the agent file to your loc
 
 <br>
 
-![Download Wizard 4](./assets/images/03-download-wizard-04.png)
+![Download Wizard 4](assets/images/03-download-wizard-04.png)
 
 <br>
 

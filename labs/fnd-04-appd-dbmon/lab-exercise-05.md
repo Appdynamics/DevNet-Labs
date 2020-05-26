@@ -1,4 +1,4 @@
-![Lab Icon](./assets/images/lab-icon.png) Configure a Database Collector in the Controller
+![Lab Icon](assets/images/lab-icon.png) Configure a Database Collector in the Controller
 =========================================================================
 
 The Database Agent Collector is the process that runs within the Database Agent to collect performance metrics about your database instances and database servers. One collector collects metrics for one database instance. Multiple collectors can run in one Database Agent.
@@ -20,7 +20,7 @@ http://IP_OR_FQDN_OF_HOST:8090/controller
 ### **1.** Access the controller login screen from your web browser
 You should see the login page of the Controller like the image below.
 
-![Controller Login Screen](./assets/images/03-controller-login.png)
+![Controller Login Screen](assets/images/03-controller-login.png)
 
 Use the case sensative credentials below to login:
 
@@ -39,7 +39,7 @@ Use the following steps to change the settings for the query literals and naviga
 4. Click the "OK" button
 5. Click on the "Collectors" option
 
-![DB Dash 1](./assets/images/05-db-dashboard-01.png)
+![DB Dash 1](assets/images/05-db-dashboard-01.png)
 
 <br>
 
@@ -63,7 +63,7 @@ Use the following steps to configure a new Database collector.
 
 **NOTE:** The passwords in the steps above are case sensative.
 
-![DB Dash 2](./assets/images/05-db-dashboard-02.png)
+![DB Dash 2](assets/images/05-db-dashboard-02.png)
 
 <br>
 
@@ -79,9 +79,9 @@ Wait for ten minutes to allow the collector to run and submit data, then use the
 
 You can read more about configuring Database Collectors [here](https://docs.appdynamics.com/display/latest/Add+Database+Collectors) and [here](https://docs.appdynamics.com/display/latest/Configure+MySQL+Collectors)
 
-![DB Dash 3](./assets/images/05-db-dashboard-03.png)
-![DB Dash 4](./assets/images/05-db-dashboard-04.png)
-![DB Dash 5](./assets/images/05-db-dashboard-05.png)
+![DB Dash 3](assets/images/05-db-dashboard-03.png)
+![DB Dash 4](assets/images/05-db-dashboard-04.png)
+![DB Dash 5](assets/images/05-db-dashboard-05.png)
 
 <br>
 

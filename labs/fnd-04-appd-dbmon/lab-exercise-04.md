@@ -1,4 +1,4 @@
-![Lab Icon](./assets/images/lab-icon.png) Install the Database Visibility Agent
+![Lab Icon](assets/images/lab-icon.png) Install the Database Visibility Agent
 =========================================================================
 
 The AppDynamics Database Agent is a standalone Java program that collects performance metrics about your database instances and database servers. You can deploy the Database Agent on any machine running Java 1.8 or higher. The machine must have network access to the AppDynamics Controller and the database instance that you want to be monitored.
@@ -65,7 +65,7 @@ Add a new site in WinSCP for your "Application VM" using the steps below:
 3. Enter the Password for your "Application VM"
 4. Click the "Save" button
 
-![WinSCP 1](./assets/images/04-winscp-01.png)
+![WinSCP 1](assets/images/04-winscp-01.png)
 
 <br>
 
@@ -74,13 +74,13 @@ Login to your "Application VM" using the steps below:
 1. Click on the new site you created for your "Application VM"
 2. Click on the "Login" button
 
-![WinSCP 2](./assets/images/04-winscp-02.png)
+![WinSCP 2](assets/images/04-winscp-02.png)
 
 <br>
 
 Navigate to the "/tmp" directory and select "Binary" for Transfer Settings.
 
-![WinSCP 3](./assets/images/04-winscp-03.png)
+![WinSCP 3](assets/images/04-winscp-03.png)
 
 <br>
 
@@ -89,7 +89,7 @@ Copy the Database Visibility agent zip file using the steps below:
 1. Navigate to the directory where you downloaded the file
 2. Right click on the file and select "Copy"
 
-![WinSCP 4](./assets/images/04-winscp-04.png)
+![WinSCP 4](assets/images/04-winscp-04.png)
 
 <br>
 
@@ -97,7 +97,7 @@ Paste the Database Visibility agent zip file into the "/tmp" directory in the Wi
 
 1. Right click on the right pane within WinSCP and select "Paste"
 
-![WinSCP 5](./assets/images/04-winscp-05.png)
+![WinSCP 5](assets/images/04-winscp-05.png)
 
 <br>
 
@@ -108,7 +108,7 @@ Open an SSH window to your "Application VM" using the steps below:
 3. Click on the arrow on the right side of the "Login" button and select "Open in PuTTY"
 
 
-![WinSCP 6](./assets/images/04-winscp-06.png)
+![WinSCP 6](assets/images/04-winscp-06.png)
 
 <br>
 
@@ -125,7 +125,7 @@ mkdir dbagent
 ```
 You should now be able to see the new directory structure where the Database Visibility agent zip file will be copied to.
 
-![DB Install 1](./assets/images/04-dbagent-install-01.png)
+![DB Install 1](assets/images/04-dbagent-install-01.png)
 
 <br>
 
@@ -141,7 +141,7 @@ unzip db-agent-20.4.0.1730.zip
 
 You should see the results of unzipping the file as in the image below.
 
-![DB Install 2](./assets/images/04-dbagent-install-02.png)
+![DB Install 2](assets/images/04-dbagent-install-02.png)
 
 <br>
 
@@ -162,7 +162,7 @@ You should see the results of starting the agent as in the image below.
 
 You can read more about installing the AppDynamics Database Visibility agent [here](https://docs.appdynamics.com/display/latest/Overview+of+Database+Visibility) and [here](https://docs.appdynamics.com/display/latest/Install+the+Database+Agent)
 
-![DB Install 3](./assets/images/04-dbagent-install-03.png)
+![DB Install 3](assets/images/04-dbagent-install-03.png)
 
 
 <br>

@@ -1,6 +1,6 @@
-![APPD LOGO](./assets/images/appd-logo.png)
+![APPD LOGO](assets/images/appd-logo.png)
 
-![Lab Icon](./assets/images/lab-icon.png) Database Visibility Monitoring Fundamentals
+![Lab Icon](assets/images/lab-icon.png) Database Visibility Monitoring Fundamentals
 =========================================================================
 
 ## Objectives
@@ -39,12 +39,12 @@ The second virtual machine hosts the Supercar Trader application used in the lab
 <br>
 
 ### Controller VM
-![Controller VM Screenshot](./assets/images/01-controller-vm.png)
+![Controller VM Screenshot](assets/images/01-controller-vm.png)
 
 <br>
 
 ### Application VM
-![Application VM Screenshot](./assets/images/01-application-vm.png)
+![Application VM Screenshot](assets/images/01-application-vm.png)
 
 <br>
 
