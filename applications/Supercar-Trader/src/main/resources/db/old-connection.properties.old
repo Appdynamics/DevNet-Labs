@@ -1,0 +1,4 @@
+db.url=jdbc:mysql://localhost:3306/supercars
+db.url=jdbc:mysql://supercar-trader-db.czgm2c0uvnhv.us-west-2.rds.amazonaws.com:3306/supercars
+db.user=root
+db.password=Welcome1!
