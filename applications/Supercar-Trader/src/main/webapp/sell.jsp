@@ -26,43 +26,47 @@ try {
     }
   });
 </script>
+
 <p class="normal"><!-- img src="images/line.gif" --></p>
 <p class="normal"></br></p>
 <p class="normal">Please enter details of your supercar:</p>
-  <html:form action="/sell?query=save"> 
+  <form name="sellForm" id="sellForm" action="sell.do?query=save" method="POST"> 
     <table width="80%" border="0">
       <tr>
-       <td>Manufacturer:<br>&nbsp;<select name="manufacturer">
+       <td>Manufacturer:<br>&nbsp;<select name="manufacturer" id="manufacturer">
 		<c:forEach var="manu" items="${manufacturers}">
-  			<option value="<c:out value="${manu.manufacturerId}"/>"><c:out value="${manu.name}"/></option>
+  			<option name="carManuf" id="carManuf" value="<c:out value="${manu.manufacturerId}"/>"><c:out value="${manu.name}"/></option>
 		</c:forEach>
        </select>
         </td>
       </tr>
       <tr> 
-       <td>Model:<br>&nbsp;<html:text property="model" /></td> 
+       <td>Model:<br>&nbsp;<input type="text" name="carModel" id="carModel" property="carModel" /></td> 
       </tr>
       <tr> 
-       <td>Version:<br>&nbsp;<html:text property="name" /></td>
+       <td>Engine:<br>&nbsp;<input type="text" name="carEngine" id="carEngine" property="carEngine" /></td>
       </tr>
       <tr>
-       <td>Color:<br>&nbsp;<html:text property="colour" /></td> 
+       <td>Color:<br>&nbsp;<input type="text" name="carColor" id="carColor" property="carColor" /></td> 
       </tr>
       <tr>
-       <td>Year:<br>&nbsp;<html:text property="year" /></td> 
+       <td>Year:<br>&nbsp;<input type="text" name="carYear" id="carYear" property="carYear" /></td> 
       </tr>
       <tr>
-       <td>Price:<br>&nbsp;<html:text property="price" /></td> 
+       <td>Price:<br>&nbsp;<input type="text" name="carPrice" id="carPrice" property="carPrice" /></td> 
       </tr>
       <tr>
-       <td>Summary:<br><!-- img src="images/line.gif" --><br>&nbsp;<html:textarea rows="6" cols="45" property="summary" /></td> 
+       <td>Summary:<br><!-- img src="images/line.gif" --><br>&nbsp;<input typ="textarea" name="carSummary" id="carSummary" rows="16" cols="145" property="carSummary" /></td> 
       </tr>
       <tr>
-       <td>Detailed Description:<br><!-- img src="images/line.gif" --><br>&nbsp;<html:textarea rows="12" cols="45" property="description" /></td> 
+       <td>Detailed Description:<br><!-- img src="images/line.gif" --><br>&nbsp;<input typ="textarea" name="carDetails" id="carDetails" rows="12" cols="145" property="carDetails" /></td> 
       </tr>  
       <tr> 
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" src="images/submit_button.gif" align="absmiddle"></td> 
+        <td>&nbsp;</td> 
+      </tr> 
+      <tr> 
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" id="commit" name="commit" src="images/submit_button.gif" align="absmiddle"></td> 
       </tr> 
     </table> 
-  </html:form> 
+  </form> 
 <%@ include file="footer.jsp" %>

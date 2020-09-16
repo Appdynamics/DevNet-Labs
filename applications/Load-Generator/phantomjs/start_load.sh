@@ -63,12 +63,12 @@ nohup ./appd-sc-sessions-01.sh &> sessions-01.out &
 sleep 2s
 echo "Starting sessions-02"
 nohup ./appd-sc-sessions-01.sh &> sessions-02.out &
-#sleep 2s
-#echo "Starting sessions-03"
-#nohup ./appd-sc-sessions-01.sh &> sessions-03.out &
-#sleep 3s
-#echo "Starting sessions-04"
-#nohup ./appd-sc-sessions-01.sh &> sessions-04.out &
+sleep 2s
+echo "Starting sell-car-01"
+nohup ./appd-sc-sell-car-01.sh &> sell-car-01.out &
+sleep 3s
+echo "Starting sell-car-02"
+nohup ./appd-sc-sell-car-01.sh &> sell-car-02.out &
 sleep 2s
 echo "Starting sessions-03"
 nohup ./appd-sc-sessions-01.sh &> sessions-03.out &

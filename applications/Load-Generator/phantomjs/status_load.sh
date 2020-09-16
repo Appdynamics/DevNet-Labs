@@ -6,6 +6,8 @@ ps -ef | grep appd-sc-slow-query
 sleep 1s
 ps -ef | grep appd-sc-session
 sleep 1s
+ps -ef | grep appd-sc-sell-car
+sleep 1s
 ps -ef | grep appd-sc-request-error
 sleep 1s
 ps -ef | grep appd-sc-search
