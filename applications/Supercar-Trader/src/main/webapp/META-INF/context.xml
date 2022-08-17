@@ -7,7 +7,8 @@
               username="root" 
               password="Welcome1!"
               driverClassName="com.mysql.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/supercars"
+              url="jdbc:mysql://localhost:3306/supercars?useSSL=false&amp;verifyServerCertificate=false"
+              useSSL="false"
               maxActive="10" 
               maxIdle="4" />
 </Context>

@@ -5,8 +5,8 @@ package supercars.services.enquiry;
 
 import java.util.Properties;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import supercars.logging.Log;
+import supercars.logging.LogFactory;
 
 import supercars.services.JettyServer;
 import supercars.utils.PropertiesHelper;

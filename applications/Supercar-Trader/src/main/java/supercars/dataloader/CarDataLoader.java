@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import supercars.logging.Log;
+import supercars.logging.LogFactory;
 
 import supercars.Car;
 import supercars.Engine;
@@ -53,7 +53,10 @@ public class CarDataLoader {
             pstmt.execute();
             pstmt.close();
             connection.close();
-            throw new XMLException("XML Example Exception Thrown");
+            if (Math.random() < 1.0/100.0) {
+            	throw new XMLException("XML Example Exception Thrown");
+            }
+            
         } catch (SQLException | XMLException ex) {
         	log.error("Error saving car to database: ", ex);
             

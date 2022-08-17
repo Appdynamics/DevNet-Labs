@@ -1,7 +1,12 @@
 package supercars;
 
 public class XMLException extends Exception {
-	  private Throwable cause = null;
+	  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6249611221152237774L;
+	
+	private Throwable cause = null;
 
 	  public XMLException() {
 	    super();
